@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T19:31:23.221Z",
+  "generatedAt": "2026-08-09T22:45:55.756Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -23,8 +23,8 @@
           "paid": "unknown"
         },
         {
-          "rawName": "Tehama Gold McWilliams",
-          "normalizedName": "tehama gold mcwilliams",
+          "rawName": "Tehama Gold-McWilliams",
+          "normalizedName": "tehama gold-mcwilliams",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -37,8 +37,8 @@
         {
           "rawName": "WolfPAC-Coffey",
           "normalizedName": "wolfpac-coffey",
-          "confirmed": "yes",
-          "paid": "unknown"
+          "confirmed": "unknown",
+          "paid": "yes"
         },
         {
           "rawName": "Yard Sharks",
@@ -63,11 +63,28 @@
           "normalizedName": "dft poppys-eddy",
           "confirmed": "unknown",
           "paid": "yes"
+        },
+        {
+          "rawName": "Tehama Gold McWilliams",
+          "normalizedName": "tehama gold mcwilliams",
+          "confirmed": "unknown",
+          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:28.756Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:28.756Z",
+      "pendingRemovals": [
+        {
+          "team": {
+            "rawName": "Tehama Gold McWilliams",
+            "normalizedName": "tehama gold mcwilliams",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T22:43:51.196Z",
+          "observations": 1
+        }
+      ],
+      "checkedAt": "2026-08-09T22:43:51.196Z",
+      "lastSuccessfulCheck": "2026-08-09T22:43:51.196Z",
       "officialName": "Fab 5",
       "weekendId": "2026-08-15",
       "role": "primary"
@@ -165,8 +182,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:43.907Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:43.907Z",
+      "checkedAt": "2026-08-09T22:44:01.304Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:01.304Z",
       "officialName": "Stay Humble Summer Event",
       "capacity": 30,
       "weekendId": "2026-08-29",
@@ -229,8 +246,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:43.714Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:43.714Z",
+      "checkedAt": "2026-08-09T22:44:00.557Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:00.557Z",
       "officialName": "9/11 Freedom Rings",
       "capacity": 40,
       "weekendId": "2026-09-12",
@@ -252,8 +269,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:37.908Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:37.908Z",
+      "checkedAt": "2026-08-09T22:43:58.837Z",
+      "lastSuccessfulCheck": "2026-08-09T22:43:58.837Z",
       "officialName": "11th Annual Sorcerer/Phil Mumma Memorial",
       "weekendId": "2026-09-26",
       "role": "primary"
@@ -300,8 +317,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:29.932Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:29.932Z",
+      "checkedAt": "2026-08-09T22:43:52.457Z",
+      "lastSuccessfulCheck": "2026-08-09T22:43:52.457Z",
       "officialName": "Pink Panther"
     },
     {
@@ -321,8 +338,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:31.027Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:31.027Z",
+      "checkedAt": "2026-08-09T22:43:53.529Z",
+      "lastSuccessfulCheck": "2026-08-09T22:43:53.529Z",
       "officialName": "Pink Panther"
     },
     {
@@ -396,8 +413,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:47.883Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:47.883Z",
+      "checkedAt": "2026-08-09T22:44:03.382Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:03.382Z",
       "officialName": "Stay Humble Fall PCFL Alliance Qualifier",
       "capacity": 50
     },
@@ -436,10 +453,11 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:53.980Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:53.980Z",
+      "checkedAt": "2026-08-09T22:44:08.730Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:08.730Z",
       "officialName": "Stay Humble Fall Event",
-      "capacity": 30
+      "capacity": 30,
+      "spotsRemaining": 4
     },
     {
       "id": "wcp-bart-magellan-2026-stockton",
@@ -459,8 +477,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:44.433Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:44.433Z",
+      "checkedAt": "2026-08-09T22:44:08.837Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:08.837Z",
       "officialName": "Bart Magellan Cancer Awareness Classic",
       "registrationStatus": "Event posted; 12U roster page is not linked yet"
     },
@@ -478,8 +496,8 @@
       "outcome": "not_published",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:44.901Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:44.901Z",
+      "checkedAt": "2026-08-09T22:44:02.575Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:02.575Z",
       "weekendId": "2026-10-10",
       "role": "primary",
       "registrationStatus": "Not yet published by PGF"
@@ -541,8 +559,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:00.477Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:00.477Z",
+      "checkedAt": "2026-08-09T22:44:12.654Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:12.654Z",
       "officialName": "Fight the Fight BC Awareness Series",
       "capacity": 30,
       "weekendId": "2026-10-10",
@@ -589,8 +607,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:01.143Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:01.143Z",
+      "checkedAt": "2026-08-09T22:44:13.502Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:13.502Z",
       "officialName": "Fight the Fight BC Awareness Series",
       "capacity": 30,
       "spotsRemaining": 13
@@ -612,8 +630,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:49.301Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:49.301Z",
+      "checkedAt": "2026-08-09T22:44:09.762Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:09.762Z",
       "officialName": "Black Widow",
       "registrationStatus": "Event posted; 12U roster section is not published yet"
     },
@@ -676,8 +694,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:30:49.841Z",
-      "lastSuccessfulCheck": "2026-08-09T19:30:49.841Z",
+      "checkedAt": "2026-08-09T22:44:09.578Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:09.578Z",
       "officialName": "The Golden Ticket"
     },
     {
@@ -697,8 +715,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:00.104Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:00.104Z",
+      "checkedAt": "2026-08-09T22:44:18.938Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:18.938Z",
       "officialName": "Quest for the Best"
     },
     {
@@ -718,8 +736,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:01.216Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:01.216Z",
+      "checkedAt": "2026-08-09T22:44:16.208Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:16.208Z",
       "officialName": "2026 PGF Futures Ultimate Challenge (INVITE ONLY)",
       "registrationStatus": "Event posted; organizer does not provide a public committed-team list"
     },
@@ -762,8 +780,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:15.654Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:15.654Z",
+      "checkedAt": "2026-08-09T22:44:22.529Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:22.529Z",
       "officialName": "Finish the Fight BC Awareness Series",
       "capacity": 30,
       "weekendId": "2026-10-17",
@@ -786,8 +804,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:01.563Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:01.563Z",
+      "checkedAt": "2026-08-09T22:44:14.549Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:14.549Z",
       "officialName": "Monster Mash",
       "registrationStatus": "Event posted; 12U roster section is not published yet"
     },
@@ -868,8 +886,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:01.776Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:01.776Z",
+      "checkedAt": "2026-08-09T22:44:15.255Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:15.255Z",
       "officialName": "Power in Pink"
     },
     {
@@ -889,8 +907,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:09.085Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:09.085Z",
+      "checkedAt": "2026-08-09T22:44:22.128Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:22.128Z",
       "officialName": "Pink out the Parks"
     },
     {
@@ -908,8 +926,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:13.016Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:13.016Z",
+      "checkedAt": "2026-08-09T22:44:26.149Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:26.149Z",
       "officialName": "Monster Mash for Cash",
       "weekendId": "2026-10-24",
       "role": "primary"
@@ -931,8 +949,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:02.799Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:02.799Z",
+      "checkedAt": "2026-08-09T22:44:20.057Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:20.057Z",
       "officialName": "Jack Ball",
       "registrationStatus": "Event posted; 12U roster section is not published yet"
     },
@@ -952,8 +970,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:03.374Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:03.374Z",
+      "checkedAt": "2026-08-09T22:44:20.686Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:20.686Z",
       "officialName": "NorCal Championship Challenge"
     },
     {
@@ -969,12 +987,13 @@
       "sourceType": "usssa",
       "sourceUrl": "https://cafastpitch.usssa.com/event/sandlot-dugout-wars/",
       "status": "active",
-      "outcome": "success",
+      "outcome": "failure",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:06.156Z",
+      "checkedAt": "2026-08-09T22:45:55.722Z",
       "lastSuccessfulCheck": "2026-08-09T19:31:06.156Z",
-      "officialName": "Sandlot Dugout Wars"
+      "officialName": "Sandlot Dugout Wars",
+      "diagnostic": "locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for getByText('Who\\'s Coming', { exact: true })\n"
     },
     {
       "id": "pgf-halloween-bash-2026-salinas",
@@ -993,8 +1012,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:14.435Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:14.435Z",
+      "checkedAt": "2026-08-09T22:44:28.508Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:28.508Z",
       "officialName": "2026 PGF Halloween Bash",
       "registrationStatus": "Event posted; organizer does not provide a public committed-team list"
     },
@@ -1013,8 +1032,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:16.328Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:16.328Z",
+      "checkedAt": "2026-08-09T22:44:27.630Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:27.630Z",
       "officialName": "South Bay Showdown",
       "weekendId": "2026-11-07",
       "role": "primary"
@@ -1036,8 +1055,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:13.968Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:13.968Z",
+      "checkedAt": "2026-08-09T22:44:27.173Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:27.173Z",
       "officialName": "M&M Candy Classic",
       "registrationStatus": "Event posted; 12U roster section is not published yet"
     },
@@ -1057,8 +1076,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:14.524Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:14.524Z",
+      "checkedAt": "2026-08-09T22:44:27.886Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:27.886Z",
       "officialName": "Veterans Day Classic"
     },
     {
@@ -1078,8 +1097,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:22.693Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:22.693Z",
+      "checkedAt": "2026-08-09T22:44:34.205Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:34.205Z",
       "officialName": "2026 PGF Homerun Hoedown",
       "registrationStatus": "Event posted; organizer does not provide a public committed-team list"
     },
@@ -1098,8 +1117,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:23.186Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:23.186Z",
+      "checkedAt": "2026-08-09T22:44:35.118Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:35.118Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary"
@@ -1121,8 +1140,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:16.594Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:16.594Z",
+      "checkedAt": "2026-08-09T22:44:29.552Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:29.552Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "Event posted; 12U roster section is not published yet"
     },
@@ -1143,8 +1162,8 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:17.458Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:17.458Z",
+      "checkedAt": "2026-08-09T22:44:30.546Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:30.546Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "Event posted; 12U roster section is not published yet"
     },
@@ -1164,10 +1183,42 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-09T19:31:17.243Z",
-      "lastSuccessfulCheck": "2026-08-09T19:31:17.243Z",
+      "checkedAt": "2026-08-09T22:44:31.118Z",
+      "lastSuccessfulCheck": "2026-08-09T22:44:31.118Z",
       "officialName": "Bay Area Bash for Cash"
     }
   ],
-  "changes": []
+  "changes": [
+    {
+      "id": "2026-08-09t22-45-55-722z-usssa-sandlot-dugout-wars-2026-source-unhealthy-event",
+      "tournamentId": "usssa-sandlot-dugout-wars-2026",
+      "occurredAt": "2026-08-09T22:45:55.722Z",
+      "type": "source_unhealthy",
+      "detail": "The official source could not be read."
+    },
+    {
+      "id": "2026-08-09t22-43-51-196z-ast-fab-5-2026-sacramento-paid-changed-wolfpac-coffey",
+      "tournamentId": "ast-fab-5-2026-sacramento",
+      "occurredAt": "2026-08-09T22:43:51.196Z",
+      "type": "paid_changed",
+      "teamName": "WolfPAC-Coffey",
+      "detail": "WolfPAC-Coffey payment status changed to yes."
+    },
+    {
+      "id": "2026-08-09t22-43-51-196z-ast-fab-5-2026-sacramento-confirmed-changed-wolfpac-coffey",
+      "tournamentId": "ast-fab-5-2026-sacramento",
+      "occurredAt": "2026-08-09T22:43:51.196Z",
+      "type": "confirmed_changed",
+      "teamName": "WolfPAC-Coffey",
+      "detail": "WolfPAC-Coffey confirmation changed to unknown."
+    },
+    {
+      "id": "2026-08-09t22-43-51-196z-ast-fab-5-2026-sacramento-team-added-tehama-gold-mcwilliams",
+      "tournamentId": "ast-fab-5-2026-sacramento",
+      "occurredAt": "2026-08-09T22:43:51.196Z",
+      "type": "team_added",
+      "teamName": "Tehama Gold-McWilliams",
+      "detail": "Tehama Gold-McWilliams joined the 12U field."
+    }
+  ]
 }
