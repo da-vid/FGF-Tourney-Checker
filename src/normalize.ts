@@ -1,36 +1,1 @@
-import type { TeamRecord, TriState } from "./types";
-
-const STATUS_SUFFIX = /(?:\s*[-â€“â€”]\s*|\s+)(pd|paid|conf|confirmed)\.?$/i;
-
-export function normalizeTeamName(value: string): string {
-  return value
-    .trim()
-    .replace(STATUS_SUFFIX, "")
-    .replace(/[â€œâ€]/g, '"')
-    .replace(/[â€™]/g, "'")
-    .replace(/\s+/g, " ")
-    .replace(/\s*[-â€“â€”]\s*/g, "-")
-    .trim()
-    .toLocaleLowerCase("en-US");
-}
-
-export function parseTeamLine(rawValue: string, confirmed: TriState = "unknown", paid: TriState = "unknown"): TeamRecord {
-  const rawName = rawValue.trim();
-  const suffixes = [...rawName.matchAll(/(?:^|[-â€“â€”\s])(pd|paid|conf|confirmed)\.?\b/gi)].map(
-    (match) => match[1].toLowerCase(),
-  );
-
-  return {
-    rawName: rawName.replace(STATUS_SUFFIX, "").trim(),
-    normalizedName: normalizeTeamName(rawName),
-    confirmed: suffixes.some((value) => value.startsWith("conf")) ? "yes" : confirmed,
-    paid: suffixes.some((value) => value === "pd" || value === "paid") ? "yes" : paid,
-  };
-}
-
-export function triState(value: string | undefined): TriState {
-  if (!value) return "unknown";
-  if (/^(yes|y|true|confirmed|paid)$/i.test(value.trim())) return "yes";
-  if (/^(no|n|false)$/i.test(value.trim())) return "no";
-  return "unknown";
-}
+m«ëˆ§½©buªàºg§¶ÊÜşz+™©bÍëlRÆ y¶¬{®vçºh¢ø¥zŠ.µø¥y¶ëy©­æ¤zw(uçhºÚn¶êbÚ%Šw¬¡ù^aéƒu×œ¡×yÊz)éºØazZ]ŠÊek+aŠÉ²Æ z(§¦ëb›­~)^uçÚº[_¢»-v)è¢ëiºÚ.¶›­~)^uçÚº[_¢»-v‹­
