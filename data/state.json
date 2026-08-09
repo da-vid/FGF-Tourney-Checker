@@ -1,1 +1,1408 @@
-m´ÎàßΩ©bu™‡∫gßµ÷≠k˚-j◊£≤â‘±®m´ÎÄ›ÖπÓö(ß~)^¢ã≠~)^m∫ﬁjFÎy©ù y⁄.∂õ≠∫òß∂âbùÎ(~WßÇÿg∫`›uÁ(uÁ^rá^äzn∂^ñób≤ôZ ÿb≤g¨±®ä)È∫ÿß¶Î_äWùyˆÆñ◊ËÆÀ]äz(∫⁄n∂ã≠¶Î_äWùyˆÆñ◊ËÆÀ]¢Î
+{
+  "generatedAt": "2026-08-09T23:36:07.238Z",
+  "baselineEstablished": true,
+  "tournaments": [
+    {
+      "id": "ast-fab-5-2026-sacramento",
+      "name": "Fab 5",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-16",
+      "location": "Sacramento / Fair Oaks",
+      "division": "12U",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/fab-5/",
+      "locationScope": "SACRAMENTO",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Lightning",
+          "normalizedName": "lightning",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Tehama Gold-McWilliams",
+          "normalizedName": "tehama gold-mcwilliams",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Foothill Gold Fowler-Wong",
+          "normalizedName": "foothill gold fowler-wong",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "WolfPAC-Coffey",
+          "normalizedName": "wolfpac-coffey",
+          "confirmed": "unknown",
+          "paid": "yes"
+        },
+        {
+          "rawName": "Yard Sharks",
+          "normalizedName": "yard sharks",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "CenCal Outlaws",
+          "normalizedName": "cencal outlaws",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "OC Batbusters-Murillo",
+          "normalizedName": "oc batbusters-murillo",
+          "confirmed": "unknown",
+          "paid": "yes"
+        },
+        {
+          "rawName": "DFT Poppys-Eddy",
+          "normalizedName": "dft poppys-eddy",
+          "confirmed": "unknown",
+          "paid": "yes"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:07.557Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:07.557Z",
+      "officialName": "Fab 5",
+      "weekendId": "2026-08-15",
+      "role": "primary",
+      "capacityScope": "12U",
+      "registrationState": "unknown",
+      "registrationStatus": "12U availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:07.557Z"
+    },
+    {
+      "id": "legacy-stay-humble-2026-08",
+      "name": "Stay Humble Summer Event",
+      "organizer": "Legacy Sports Fastpitch",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-30",
+      "location": "Folsom",
+      "division": "12U",
+      "sourceType": "legacy",
+      "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/stay-humble-summer-event-rec5y1LmaYTRvNQpw",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Athletics Mercado Cole 2032",
+          "normalizedName": "athletics mercado cole 2032",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Crawdads-Ferrini 12U",
+          "normalizedName": "crawdads-ferrini 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Athletics Mercado Cordell 12U",
+          "normalizedName": "athletics mercado cordell 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Foothill Gold Fowler",
+          "normalizedName": "foothill gold fowler",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "WolfPAC",
+          "normalizedName": "wolfpac",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Nevada Dream Fastpitch",
+          "normalizedName": "nevada dream fastpitch",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Nor Cal Choppers Hernandez",
+          "normalizedName": "nor cal choppers hernandez",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Athletics Mercado Kemp-Kreitschitz",
+          "normalizedName": "athletics mercado kemp-kreitschitz",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "The Nevada Freedom 12u",
+          "normalizedName": "the nevada freedom 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Lost Coast Chaos",
+          "normalizedName": "lost coast chaos",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "PowerSurge Hooser",
+          "normalizedName": "powersurge hooser",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "OC Batbusters Murillo 12u",
+          "normalizedName": "oc batbusters murillo 12u",
+          "confirmed": "yes",
+          "paid": "yes"
+        },
+        {
+          "rawName": "Foothill Gold Kiloh 2033",
+          "normalizedName": "foothill gold kiloh 2033",
+          "confirmed": "yes",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:19.674Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:19.674Z",
+      "officialName": "Stay Humble Summer Event",
+      "capacity": 30,
+      "weekendId": "2026-08-29",
+      "role": "primary",
+      "capacityScope": "event",
+      "registrationState": "unknown",
+      "registrationStatus": "Availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:19.674Z"
+    },
+    {
+      "id": "legacy-freedom-rings-2026",
+      "name": "9/11 Freedom Rings",
+      "organizer": "Legacy Sports Fastpitch",
+      "startDate": "2026-09-12",
+      "endDate": "2026-09-13",
+      "location": "Folsom",
+      "division": "12U",
+      "sourceType": "legacy",
+      "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/9/11-freedom-rings-rec06Ar0KnM4KR32T",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Athletics Mercado Cole 2032",
+          "normalizedName": "athletics mercado cole 2032",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Firecrackers BB Carrion",
+          "normalizedName": "firecrackers bb carrion",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Foothill Gold Fowler",
+          "normalizedName": "foothill gold fowler",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Foothill Gold Kiloh 12U",
+          "normalizedName": "foothill gold kiloh 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "WolfPAC",
+          "normalizedName": "wolfpac",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Nor Cal Choppers Hernandez 12U",
+          "normalizedName": "nor cal choppers hernandez 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Athletics Mercado Kemp-Kreitschitz",
+          "normalizedName": "athletics mercado kemp-kreitschitz",
+          "confirmed": "no",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:19.938Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:19.938Z",
+      "officialName": "9/11 Freedom Rings",
+      "capacity": 40,
+      "weekendId": "2026-09-12",
+      "role": "primary",
+      "capacityScope": "event",
+      "registrationState": "unknown",
+      "registrationStatus": "Availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:19.938Z"
+    },
+    {
+      "id": "first-to-third-phil-mumma-2026",
+      "name": "11th Annual Sorcerer/Phil Mumma Memorial",
+      "organizer": "1st to 3rd Softball Events",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "location": "Stockton / Tracy",
+      "division": "12U",
+      "sourceType": "tournamentConnect",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
+      "eventMatch": "11th Annual Sorcerer/Phil Mumma Memorial",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:13.721Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:13.721Z",
+      "officialName": "11th Annual Sorcerer/Phil Mumma Memorial",
+      "weekendId": "2026-09-26",
+      "role": "primary",
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationDeadline": "Sep 18, 2026",
+      "registrationObservedAt": "2026-08-09T23:35:13.721Z"
+    },
+    {
+      "id": "ast-pink-panther-2026-sacramento",
+      "name": "Pink Panther",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "location": "Sacramento",
+      "division": "12U",
+      "weekendId": "2026-09-26",
+      "role": "alternate",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/pink-panther/",
+      "locationScope": "SACRAMENTO",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Foothill Gold Moyer",
+          "normalizedName": "foothill gold moyer",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Chico Patriot Mendoza",
+          "normalizedName": "chico patriot mendoza",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Davis Dynamite ‚Äì MacLeod",
+          "normalizedName": "davis dynamite-macleod",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "OC Batbusters Murillo",
+          "normalizedName": "oc batbusters murillo",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:09.376Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:09.376Z",
+      "officialName": "Pink Panther",
+      "capacityScope": "12U",
+      "registrationState": "unknown",
+      "registrationStatus": "12U availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:09.376Z"
+    },
+    {
+      "id": "ast-pink-panther-2026-salinas",
+      "name": "Pink Panther",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "location": "Salinas",
+      "division": "12U",
+      "weekendId": "2026-09-26",
+      "role": "alternate",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/pink-panther/",
+      "locationScope": "SALINAS",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:11.730Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:11.730Z",
+      "officialName": "Pink Panther",
+      "capacityScope": "12U",
+      "registrationState": "unknown",
+      "registrationStatus": "12U availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:11.730Z"
+    },
+    {
+      "id": "legacy-stay-humble-fall-pcfl-2026-folsom",
+      "name": "Stay Humble Fall PCFL Alliance Qualifier",
+      "organizer": "Legacy Sports Fastpitch",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "location": "Folsom",
+      "division": "12U",
+      "weekendId": "2026-09-26",
+      "role": "alternate",
+      "sourceType": "legacy",
+      "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/stay-humble-fall-pcfl-alliance-qualifier-folsom%2C%20ca-recEJ8C2lfpM6UGY4",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "OC Batbusters Maples",
+          "normalizedName": "oc batbusters maples",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "PowerSurge Reis 12u",
+          "normalizedName": "powersurge reis 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "WolfPAC",
+          "normalizedName": "wolfpac",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Firecrackers Leles Blevins",
+          "normalizedName": "firecrackers leles blevins",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Firecrackers Leles Bidwal 12u",
+          "normalizedName": "firecrackers leles bidwal 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Nor Cal Choppers Hernandez 12U",
+          "normalizedName": "nor cal choppers hernandez 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Athletics Mercado Cole 2032",
+          "normalizedName": "athletics mercado cole 2032",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Athletics Mercado Kemp-Kreitschitz",
+          "normalizedName": "athletics mercado kemp-kreitschitz",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Batbusters Harrison 12u",
+          "normalizedName": "batbusters harrison 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:28.206Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:28.206Z",
+      "officialName": "Stay Humble Fall PCFL Alliance Qualifier",
+      "capacity": 50,
+      "capacityScope": "event",
+      "registrationState": "unknown",
+      "registrationStatus": "Availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:28.206Z"
+    },
+    {
+      "id": "legacy-stay-humble-fall-2026-fernley",
+      "name": "Stay Humble Fall Event",
+      "organizer": "Legacy Sports Fastpitch",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "location": "Fernley, NV",
+      "division": "12U",
+      "weekendId": "2026-09-26",
+      "role": "alternate",
+      "sourceType": "legacy",
+      "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/stay-humble-fall-event-recNxYWJSPKRjeNUH",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Nevada Dream Fastpitch",
+          "normalizedName": "nevada dream fastpitch",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Gladiator Softball",
+          "normalizedName": "gladiator softball",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Gladiator Softball",
+          "normalizedName": "gladiator softball",
+          "confirmed": "no",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:29.372Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:29.372Z",
+      "officialName": "Stay Humble Fall Event",
+      "capacity": 30,
+      "capacityScope": "event",
+      "registrationState": "closed",
+      "registrationStatus": "Registration closed",
+      "registrationObservedAt": "2026-08-09T23:35:29.372Z"
+    },
+    {
+      "id": "wcp-bart-magellan-2026-stockton",
+      "name": "Bart Magellan Cancer Awareness Classic",
+      "organizer": "West Coast Premier",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "location": "Stockton",
+      "division": "12U",
+      "weekendId": "2026-09-26",
+      "role": "alternate",
+      "sourceType": "wcpSchedule",
+      "sourceUrl": "https://www.westcoastpremier.com/upcoming-tournaments-fall.html",
+      "eventMatch": "Sept 26-27, 2026",
+      "locationScope": "Stockton",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:25.207Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:25.207Z",
+      "officialName": "Bart Magellan Cancer Awareness Classic",
+      "registrationStatus": "Registration page available",
+      "registrationState": "unknown",
+      "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11473",
+      "registrationObservedAt": "2026-08-09T23:35:25.207Z",
+      "registrationDeadline": "September 19th"
+    },
+    {
+      "id": "pgf-stockton-tracy-qualifier-2026-10",
+      "name": "PGF 12U National Qualifier ‚Äî Stockton / Tracy watch",
+      "organizer": "Premier Girls Fastpitch",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "location": "Stockton or Tracy",
+      "division": "12U",
+      "sourceType": "pgfDiscovery",
+      "sourceUrl": "https://www.premiergirlsfastpitch.com/home.php?layout=923173",
+      "status": "discovery",
+      "outcome": "not_published",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:21.419Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:21.419Z",
+      "weekendId": "2026-10-10",
+      "role": "primary",
+      "registrationStatus": "Not yet published by PGF",
+      "registrationState": "not_published",
+      "registrationObservedAt": "2026-08-09T23:35:21.419Z"
+    },
+    {
+      "id": "legacy-fight-the-fight-2026",
+      "name": "Fight the Fight BC Awareness Series",
+      "organizer": "Legacy Sports Fastpitch",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "location": "Folsom",
+      "division": "12U",
+      "sourceType": "legacy",
+      "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/fight-the-fight-bc-awareness-series-recSSvaBPNI9IhQLw",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Foothill Gold Fowler",
+          "normalizedName": "foothill gold fowler",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Foothill Gold Kiloh 12U",
+          "normalizedName": "foothill gold kiloh 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Blitz 12U",
+          "normalizedName": "blitz 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "WolfPAC",
+          "normalizedName": "wolfpac",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Nor Cal Choppers Hernandez 12U",
+          "normalizedName": "nor cal choppers hernandez 12u",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Alpha Athletics",
+          "normalizedName": "alpha athletics",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "OC Batbusters Murillo 12u",
+          "normalizedName": "oc batbusters murillo 12u",
+          "confirmed": "yes",
+          "paid": "yes"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:36.595Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:36.595Z",
+      "officialName": "Fight the Fight BC Awareness Series",
+      "capacity": 30,
+      "weekendId": "2026-10-10",
+      "role": "alternate",
+      "capacityScope": "event",
+      "registrationState": "unknown",
+      "registrationStatus": "Availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:36.595Z"
+    },
+    {
+      "id": "legacy-fight-the-fight-2026-fernley",
+      "name": "Fight the Fight BC Awareness Series",
+      "organizer": "Legacy Sports Fastpitch",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "location": "Fernley, NV",
+      "division": "12U",
+      "weekendId": "2026-10-10",
+      "role": "alternate",
+      "sourceType": "legacy",
+      "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/fight-the-fight-bc-awareness-series-recBdtydE4T63J2yd",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Nevada Dream Fastpitch",
+          "normalizedName": "nevada dream fastpitch",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Firecrackers BB Carriom",
+          "normalizedName": "firecrackers bb carriom",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Gladiator Softball",
+          "normalizedName": "gladiator softball",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Gladiator Softball",
+          "normalizedName": "gladiator softball",
+          "confirmed": "no",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:40.344Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:40.344Z",
+      "officialName": "Fight the Fight BC Awareness Series",
+      "capacity": 30,
+      "capacityScope": "event",
+      "registrationState": "closed",
+      "registrationStatus": "Registration closed",
+      "registrationObservedAt": "2026-08-09T23:35:40.344Z"
+    },
+    {
+      "id": "ast-black-widow-2026-sacramento",
+      "name": "Black Widow",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "location": "Sacramento",
+      "division": "12U",
+      "weekendId": "2026-10-10",
+      "role": "alternate",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/black-widow/",
+      "locationScope": "SACRAMENTO",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:30.069Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:30.069Z",
+      "officialName": "Black Widow",
+      "registrationStatus": "Event posted; 12U roster section is not published yet",
+      "registrationState": "unknown",
+      "registrationObservedAt": "2026-08-09T23:35:30.069Z"
+    },
+    {
+      "id": "wcp-golden-ticket-2026",
+      "name": "The Golden Ticket",
+      "organizer": "West Coast Premier",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "location": "San Jose (12U)",
+      "division": "12U",
+      "weekendId": "2026-10-10",
+      "role": "alternate",
+      "sourceType": "wcp",
+      "sourceUrl": "https://www.westcoastpremier.com/oct-10-11-the-golden-ticket.html",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Firecrackers Zeigler",
+          "normalizedName": "firecrackers zeigler",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Swat Turner",
+          "normalizedName": "swat turner",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "BB Harrison",
+          "normalizedName": "bb harrison",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "RC Chaos Cho",
+          "normalizedName": "rc chaos cho",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Team CA Vandenbroeck",
+          "normalizedName": "team ca vandenbroeck",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:34.048Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:34.048Z",
+      "officialName": "The Golden Ticket",
+      "registrationState": "unknown",
+      "registrationStatus": "Registration page available",
+      "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11440",
+      "registrationObservedAt": "2026-08-09T23:35:34.048Z",
+      "registrationDeadline": "September 19th"
+    },
+    {
+      "id": "first-to-third-quest-best-2026",
+      "name": "Quest for the Best",
+      "organizer": "1st to 3rd Softball Events",
+      "startDate": "2026-10-10",
+      "endDate": "2026-10-11",
+      "location": "Lincoln / Modesto",
+      "division": "12U",
+      "weekendId": "2026-10-10",
+      "role": "alternate",
+      "sourceType": "tournamentConnect",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
+      "eventMatch": "Quest for the Best",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:42.603Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:42.603Z",
+      "officialName": "Quest for the Best",
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationDeadline": "Oct 4, 2026",
+      "registrationObservedAt": "2026-08-09T23:35:42.603Z"
+    },
+    {
+      "id": "pgf-futures-ultimate-challenge-2026-salinas",
+      "name": "PGF Futures Ultimate Challenge (Invite Only)",
+      "organizer": "Premier Girls Fastpitch",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-11",
+      "location": "Salinas",
+      "division": "12U",
+      "weekendId": "2026-10-10",
+      "role": "alternate",
+      "sourceType": "tournamentConnectListing",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/premiergirlsfastpitch",
+      "eventMatch": "2026 PGF Futures Ultimate Challenge (INVITE ONLY)",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:41.364Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:41.364Z",
+      "officialName": "2026 PGF Futures Ultimate Challenge (INVITE ONLY)",
+      "registrationStatus": "Invite only",
+      "registrationState": "invite_only",
+      "registrationDeadline": "Sep 4, 2026",
+      "registrationObservedAt": "2026-08-09T23:35:41.364Z"
+    },
+    {
+      "id": "legacy-finish-the-fight-2026",
+      "name": "Finish the Fight BC Awareness Series",
+      "organizer": "Legacy Sports Fastpitch",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-18",
+      "location": "Folsom",
+      "division": "12U",
+      "sourceType": "legacy",
+      "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/finish-the-fight-bc-awareness-series-recsqr8yWi46XXFTN",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "Natomas Lady Tigers",
+          "normalizedName": "natomas lady tigers",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Foothill Gold Fowler",
+          "normalizedName": "foothill gold fowler",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "NorCal Choppers Hernandez",
+          "normalizedName": "norcal choppers hernandez",
+          "confirmed": "no",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Alpha Athletics",
+          "normalizedName": "alpha athletics",
+          "confirmed": "no",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:52.238Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:52.238Z",
+      "officialName": "Finish the Fight BC Awareness Series",
+      "capacity": 30,
+      "weekendId": "2026-10-17",
+      "role": "primary",
+      "capacityScope": "event",
+      "registrationState": "unknown",
+      "registrationStatus": "Availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:52.238Z"
+    },
+    {
+      "id": "ast-monster-mash-2026-sacramento",
+      "name": "Monster Mash",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-18",
+      "location": "Sacramento",
+      "division": "12U",
+      "weekendId": "2026-10-17",
+      "role": "alternate",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/monster-mash/",
+      "locationScope": "SACRAMENTO",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:43.281Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:43.281Z",
+      "officialName": "Monster Mash",
+      "registrationStatus": "Event posted; 12U roster section is not published yet",
+      "registrationState": "unknown",
+      "registrationObservedAt": "2026-08-09T23:35:43.281Z"
+    },
+    {
+      "id": "wcp-power-in-pink-2026",
+      "name": "Power in Pink",
+      "organizer": "West Coast Premier",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-18",
+      "location": "Stockton",
+      "division": "12U",
+      "weekendId": "2026-10-17",
+      "role": "alternate",
+      "sourceType": "wcp",
+      "sourceUrl": "https://www.westcoastpremier.com/bay-area-premier-754260.html",
+      "status": "active",
+      "outcome": "success",
+      "teams": [
+        {
+          "rawName": "‚Äã14u",
+          "normalizedName": "‚Äã14u",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "‚Äã16u",
+          "normalizedName": "‚Äã16u",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "‚Äã18u",
+          "normalizedName": "‚Äã18u",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "College Showcases",
+          "normalizedName": "college showcases",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Park Addresses",
+          "normalizedName": "park addresses",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Privacy Policy‚Äã",
+          "normalizedName": "privacy policy‚Äã",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Terms of Service",
+          "normalizedName": "terms of service",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Refund Policy",
+          "normalizedName": "refund policy",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "All pricing is in USD",
+          "normalizedName": "all pricing is in usd",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        }
+      ],
+      "pendingRemovals": [
+        {
+          "team": {
+            "rawName": "‚Äã14u",
+            "normalizedName": "‚Äã14u",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        },
+        {
+          "team": {
+            "rawName": "‚Äã16u",
+            "normalizedName": "‚Äã16u",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        },
+        {
+          "team": {
+            "rawName": "‚Äã18u",
+            "normalizedName": "‚Äã18u",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        },
+        {
+          "team": {
+            "rawName": "College Showcases",
+            "normalizedName": "college showcases",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        },
+        {
+          "team": {
+            "rawName": "Park Addresses",
+            "normalizedName": "park addresses",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        },
+        {
+          "team": {
+            "rawName": "Privacy Policy‚Äã",
+            "normalizedName": "privacy policy‚Äã",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        },
+        {
+          "team": {
+            "rawName": "Terms of Service",
+            "normalizedName": "terms of service",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        },
+        {
+          "team": {
+            "rawName": "Refund Policy",
+            "normalizedName": "refund policy",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        },
+        {
+          "team": {
+            "rawName": "All pricing is in USD",
+            "normalizedName": "all pricing is in usd",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-08-09T23:35:46.944Z",
+          "observations": 1
+        }
+      ],
+      "checkedAt": "2026-08-09T23:35:46.944Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:46.944Z",
+      "officialName": "Power in Pink",
+      "registrationState": "unknown",
+      "registrationStatus": "Registration page available",
+      "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11441",
+      "registrationObservedAt": "2026-08-09T23:35:46.944Z"
+    },
+    {
+      "id": "first-to-third-pink-out-parks-2026",
+      "name": "Pink Out the Parks ‚Äî Bash for Cash",
+      "organizer": "1st to 3rd Softball Events",
+      "startDate": "2026-10-17",
+      "endDate": "2026-10-18",
+      "location": "Stockton / Tracy",
+      "division": "12U",
+      "weekendId": "2026-10-17",
+      "role": "alternate",
+      "sourceType": "tournamentConnect",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
+      "eventMatch": "Pink out the Parks",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:50.696Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:50.696Z",
+      "officialName": "Pink out the Parks",
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationDeadline": "Oct 12, 2026",
+      "registrationObservedAt": "2026-08-09T23:35:50.696Z"
+    },
+    {
+      "id": "first-to-third-monster-mash-2026",
+      "name": "Monster Mash for Cash",
+      "organizer": "1st to 3rd Softball Events",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "location": "Stockton / Tracy",
+      "division": "12U",
+      "sourceType": "tournamentConnect",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
+      "eventMatch": "Monster Mash for Cash",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:53.887Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:53.887Z",
+      "officialName": "Monster Mash for Cash",
+      "weekendId": "2026-10-24",
+      "role": "primary",
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationDeadline": "Oct 19, 2026",
+      "registrationObservedAt": "2026-08-09T23:35:53.887Z"
+    },
+    {
+      "id": "ast-jack-ball-2026-sacramento",
+      "name": "Jack Ball",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "location": "Sacramento",
+      "division": "12U",
+      "weekendId": "2026-10-24",
+      "role": "alternate",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/jack-ball/",
+      "locationScope": "SACRAMENTO",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:48.499Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:48.499Z",
+      "officialName": "Jack Ball",
+      "registrationStatus": "Event posted; 12U roster section is not published yet",
+      "registrationState": "unknown",
+      "registrationObservedAt": "2026-08-09T23:35:48.499Z"
+    },
+    {
+      "id": "wcp-norcal-championship-challenge-2026",
+      "name": "NorCal Championship Challenge",
+      "organizer": "West Coast Premier",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "location": "Stockton",
+      "division": "12U",
+      "weekendId": "2026-10-24",
+      "role": "alternate",
+      "sourceType": "wcp",
+      "sourceUrl": "https://www.westcoastpremier.com/oct-24-25-norcal-championship-challenge.html",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:53.436Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:53.436Z",
+      "officialName": "NorCal Championship Challenge",
+      "registrationState": "unknown",
+      "registrationStatus": "Registration page available",
+      "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11441",
+      "registrationObservedAt": "2026-08-09T23:35:53.436Z"
+    },
+    {
+      "id": "usssa-sandlot-dugout-wars-2026",
+      "name": "Sandlot Dugout Wars",
+      "organizer": "USSSA",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "location": "Lincoln",
+      "division": "12U",
+      "weekendId": "2026-10-24",
+      "role": "alternate",
+      "sourceType": "usssa",
+      "sourceUrl": "https://cafastpitch.usssa.com/event/sandlot-dugout-wars/",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:56.634Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:56.634Z",
+      "officialName": "Sandlot Dugout Wars",
+      "capacityScope": "12U",
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationObservedAt": "2026-08-09T23:35:56.634Z",
+      "capacity": 8
+    },
+    {
+      "id": "pgf-halloween-bash-2026-salinas",
+      "name": "PGF Halloween Bash",
+      "organizer": "Premier Girls Fastpitch",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-25",
+      "location": "Salinas",
+      "division": "12U",
+      "weekendId": "2026-10-24",
+      "role": "alternate",
+      "sourceType": "tournamentConnectListing",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/premiergirlsfastpitch",
+      "eventMatch": "2026 PGF Halloween Bash",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:36:00.728Z",
+      "lastSuccessfulCheck": "2026-08-09T23:36:00.728Z",
+      "officialName": "2026 PGF Halloween Bash",
+      "registrationStatus": "No public registration",
+      "registrationState": "not_public",
+      "registrationDeadline": "Oct 16, 2026",
+      "registrationObservedAt": "2026-08-09T23:36:00.728Z"
+    },
+    {
+      "id": "first-to-third-south-bay-showdown-2026",
+      "name": "South Bay Showdown ‚Äî Bash for Cash",
+      "organizer": "1st to 3rd Softball Events",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
+      "location": "San Jose",
+      "division": "12U",
+      "sourceType": "tournamentConnect",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
+      "eventMatch": "South Bay Showdown",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:36:01.295Z",
+      "lastSuccessfulCheck": "2026-08-09T23:36:01.295Z",
+      "officialName": "South Bay Showdown",
+      "weekendId": "2026-11-07",
+      "role": "primary",
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationDeadline": "Oct 5, 2026",
+      "registrationObservedAt": "2026-08-09T23:36:01.295Z"
+    },
+    {
+      "id": "ast-mm-candy-classic-2026-sacramento",
+      "name": "M&M Candy Classic",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
+      "location": "Sacramento",
+      "division": "12U",
+      "weekendId": "2026-11-07",
+      "role": "alternate",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/mm-candy-classic/",
+      "locationScope": "SACRAMENTO",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:55.366Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:55.366Z",
+      "officialName": "M&M Candy Classic",
+      "registrationStatus": "Event posted; 12U roster section is not published yet",
+      "registrationState": "unknown",
+      "registrationObservedAt": "2026-08-09T23:35:55.366Z"
+    },
+    {
+      "id": "wcp-veterans-day-classic-2026",
+      "name": "Veterans Day Classic",
+      "organizer": "West Coast Premier",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
+      "location": "Stockton",
+      "division": "12U",
+      "weekendId": "2026-11-07",
+      "role": "alternate",
+      "sourceType": "wcp",
+      "sourceUrl": "https://www.westcoastpremier.com/nov-7-8-veterans-day-classic.html",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:35:55.942Z",
+      "lastSuccessfulCheck": "2026-08-09T23:35:55.942Z",
+      "officialName": "Veterans Day Classic",
+      "registrationState": "unknown",
+      "registrationStatus": "Availability not published",
+      "registrationObservedAt": "2026-08-09T23:35:55.942Z"
+    },
+    {
+      "id": "pgf-homerun-hoedown-2026-salinas",
+      "name": "PGF Homerun Hoedown",
+      "organizer": "Premier Girls Fastpitch",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-08",
+      "location": "Salinas",
+      "division": "12U",
+      "weekendId": "2026-11-07",
+      "role": "alternate",
+      "sourceType": "tournamentConnectListing",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/premiergirlsfastpitch",
+      "eventMatch": "2026 PGF Homerun Hoedown",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:36:03.670Z",
+      "lastSuccessfulCheck": "2026-08-09T23:36:03.670Z",
+      "officialName": "2026 PGF Homerun Hoedown",
+      "registrationStatus": "Registration open",
+      "registrationState": "open",
+      "registrationDeadline": "Oct 30, 2026",
+      "registrationObservedAt": "2026-08-09T23:36:03.670Z"
+    },
+    {
+      "id": "first-to-third-harvest-cup-2026",
+      "name": "Harvest Cup ‚Äî Crush for Credit",
+      "organizer": "1st to 3rd Softball Events",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "location": "Stockton",
+      "division": "12U",
+      "sourceType": "tournamentConnect",
+      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
+      "eventMatch": "Harvest Cup - Crush for Credit",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:36:04.937Z",
+      "lastSuccessfulCheck": "2026-08-09T23:36:04.937Z",
+      "officialName": "Harvest Cup - Crush for Credit",
+      "weekendId": "2026-11-21",
+      "role": "primary",
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationDeadline": "Nov 16, 2026",
+      "registrationObservedAt": "2026-08-09T23:36:04.937Z"
+    },
+    {
+      "id": "ast-turkey-bash-2026-sacramento",
+      "name": "Turkey Bash Toys 4 Tots",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "location": "Sacramento",
+      "division": "12U",
+      "weekendId": "2026-11-21",
+      "role": "alternate",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/turkey-bash/",
+      "locationScope": "SACRAMENTO",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:36:02.248Z",
+      "lastSuccessfulCheck": "2026-08-09T23:36:02.248Z",
+      "officialName": "Turkey Bash Toys 4 Tots",
+      "registrationStatus": "Event posted; 12U roster section is not published yet",
+      "registrationState": "unknown",
+      "registrationObservedAt": "2026-08-09T23:36:02.248Z"
+    },
+    {
+      "id": "ast-turkey-bash-2026-salinas",
+      "name": "Turkey Bash Toys 4 Tots",
+      "organizer": "All Star Tournaments",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "location": "Salinas",
+      "division": "12U",
+      "weekendId": "2026-11-21",
+      "role": "alternate",
+      "sourceType": "ast",
+      "sourceUrl": "https://allstartournaments.com/fastpitch/turkey-bash/",
+      "locationScope": "SALINAS",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:36:02.980Z",
+      "lastSuccessfulCheck": "2026-08-09T23:36:02.980Z",
+      "officialName": "Turkey Bash Toys 4 Tots",
+      "registrationStatus": "Event posted; 12U roster section is not published yet",
+      "registrationState": "unknown",
+      "registrationObservedAt": "2026-08-09T23:36:02.980Z"
+    },
+    {
+      "id": "wcp-bay-area-bash-2026",
+      "name": "Bay Area Bash for Cash",
+      "organizer": "West Coast Premier",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-22",
+      "location": "San Jose (12U)",
+      "division": "12U",
+      "weekendId": "2026-11-21",
+      "role": "alternate",
+      "sourceType": "wcp",
+      "sourceUrl": "https://www.westcoastpremier.com/nov-21-22-bay-area-bash-for-cash.html",
+      "status": "active",
+      "outcome": "success",
+      "teams": [],
+      "pendingRemovals": [],
+      "checkedAt": "2026-08-09T23:36:07.215Z",
+      "lastSuccessfulCheck": "2026-08-09T23:36:07.215Z",
+      "officialName": "Bay Area Bash for Cash",
+      "registrationState": "unknown",
+      "registrationStatus": "Registration page available",
+      "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11446",
+      "registrationObservedAt": "2026-08-09T23:36:07.215Z",
+      "registrationDeadline": "September 19th"
+    }
+  ],
+  "changes": [
+    {
+      "id": "2026-08-09t23-26-39-881z-usssa-sandlot-dugout-wars-2026-source-recovered-event",
+      "tournamentId": "usssa-sandlot-dugout-wars-2026",
+      "occurredAt": "2026-08-09T23:26:39.881Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
+    {
+      "id": "2026-08-09t23-25-58-059z-ast-fab-5-2026-sacramento-team-removed-tehama-gold-mcwilliams",
+      "tournamentId": "ast-fab-5-2026-sacramento",
+      "occurredAt": "2026-08-09T23:25:58.059Z",
+      "type": "team_removed",
+      "teamName": "Tehama Gold McWilliams",
+      "detail": "Tehama Gold McWilliams is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-08-09t22-45-55-722z-usssa-sandlot-dugout-wars-2026-source-unhealthy-event",
+      "tournamentId": "usssa-sandlot-dugout-wars-2026",
+      "occurredAt": "2026-08-09T22:45:55.722Z",
+      "type": "source_unhealthy",
+      "detail": "The official source could not be read."
+    },
+    {
+      "id": "2026-08-09t22-43-51-196z-ast-fab-5-2026-sacramento-paid-changed-wolfpac-coffey",
+      "tournamentId": "ast-fab-5-2026-sacramento",
+      "occurredAt": "2026-08-09T22:43:51.196Z",
+      "type": "paid_changed",
+      "teamName": "WolfPAC-Coffey",
+      "detail": "WolfPAC-Coffey payment status changed to yes."
+    },
+    {
+      "id": "2026-08-09t22-43-51-196z-ast-fab-5-2026-sacramento-confirmed-changed-wolfpac-coffey",
+      "tournamentId": "ast-fab-5-2026-sacramento",
+      "occurredAt": "2026-08-09T22:43:51.196Z",
+      "type": "confirmed_changed",
+      "teamName": "WolfPAC-Coffey",
+      "detail": "WolfPAC-Coffey confirmation changed to unknown."
+    },
+    {
+      "id": "2026-08-09t22-43-51-196z-ast-fab-5-2026-sacramento-team-added-tehama-gold-mcwilliams",
+      "tournamentId": "ast-fab-5-2026-sacramento",
+      "occurredAt": "2026-08-09T22:43:51.196Z",
+      "type": "team_added",
+      "teamName": "Tehama Gold-McWilliams",
+      "detail": "Tehama Gold-McWilliams joined the 12U field."
+    }
+  ]
+}

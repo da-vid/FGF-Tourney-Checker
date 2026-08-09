@@ -1,1 +1,17 @@
-m«ëˆ§½©buªàºg§¶×¬¶ÏìŠ×­zËm±KæÚ±î¸Ø[žé¢Šwâ•ê(º×â•æÛ­æ¤n·š‘éÜ¡×¢ëiºÛ©Š{h–)Þ²‡åzx-†{¦×^r‡^uç(uè§¦ëa…éiv+)•¬­†+&zËè¢ž›­Šznµø¥y×Ÿjém~ŠìµØ§¢‹­¦ëhºÚnµø¥y×Ÿjém~ŠìµÚ.
+import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
+import test from "node:test";
+
+test("static dashboard contains core product content and no starter copy", async () => {
+  const html = await readFile("pages-dist/index.html", "utf8");
+  assert.match(html, /12U Field Watch/);
+  assert.doesNotMatch(html, /Whoâ€™s in the field/);
+  assert.match(html, /Weekend board/);
+  assert.match(html, /PGF 12U National Qualifier/);
+  assert.match(html, /Compare 6 alternatives/);
+  assert.match(html, /Primary plan/);
+  assert.match(html, /Sandlot Dugout Wars/);
+  assert.match(html, /Official source/);
+  assert.match(html, /Event-wide|Availability not published|Registration open/);
+  assert.doesNotMatch(html, /Your site is taking shape|codex-preview|react-loading-skeleton/);
+});
