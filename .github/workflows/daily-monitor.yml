@@ -1,6 +1,9 @@
 name: Daily 12U tournament monitor
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: "17 6 * * *"
       timezone: "America/Los_Angeles"
