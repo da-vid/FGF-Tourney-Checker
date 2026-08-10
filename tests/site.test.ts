@@ -4,8 +4,11 @@ import test from "node:test";
 
 test("static dashboard contains core product content and no starter copy", async () => {
   const html = await readFile("pages-dist/index.html", "utf8");
-  assert.match(html, /12U Field Watch/);
+  assert.match(html, /FGF Tourney Tracker/);
+  assert.doesNotMatch(html, /12U Field Watch|FIELD WATCH|Alternate field watch/);
   assert.doesNotMatch(html, /Who’s in the field/);
+  assert.match(html, /apple-touch-icon\.png/);
+  assert.match(html, /manifest\.webmanifest/);
   assert.match(html, /Weekend board/);
   assert.match(html, /PGF 12U National Qualifier/);
   assert.match(html, /Compare 6 alternatives/);

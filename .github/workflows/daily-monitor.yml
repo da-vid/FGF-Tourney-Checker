@@ -1,4 +1,4 @@
-name: Daily 12U tournament monitor
+name: Daily FGF Tourney Tracker update
 
 on:
   push:

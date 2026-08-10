@@ -72,17 +72,12 @@ button, select { font: inherit; }
   font-size: 14px;
 }
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 32px;
-  height: 32px;
-  border: 2px solid var(--lime);
-  color: var(--lime);
-  transform: rotate(45deg);
-  border-radius: 7px;
-  font-size: 11px;
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  object-fit: cover;
 }
-.brand-mark::first-letter { transform: rotate(-45deg); }
 .division-chip {
   color: var(--lime);
   font-size: 12px;
@@ -396,6 +391,8 @@ select {
 @media (max-width: 640px) {
   .hero { padding-bottom: 28px; }
   .topbar { height: 58px; }
+  .brand { gap: 9px; font-size: 12px; letter-spacing: 0.09em; }
+  .brand-mark { width: 32px; height: 32px; border-radius: 8px; }
   .hero-grid { padding-top: 22px; gap: 20px; }
   .hero h1 { font-size: 32px; }
   .scoreboard { grid-template-columns: 1fr 1fr; }

@@ -1,4 +1,4 @@
-# 12U Field Watch
+# FGF Tourney Tracker
 
 A public, coach-friendly dashboard that checks official tournament registration pages every morning and records changes to the 12U field.
 

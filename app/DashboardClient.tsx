@@ -281,7 +281,7 @@ function WeekendGroup({
         <details className="alternate-drawer">
           <summary>
             <div className="alternate-summary-title">
-              <span>Alternate field watch</span>
+              <span>Alternate tournaments</span>
               <strong>Compare {alternatives.length} alternative{alternatives.length === 1 ? "" : "s"}</strong>
             </div>
             <div className="alternate-summary-stats">
@@ -362,9 +362,9 @@ export function DashboardClient({ state }: { state: MonitorState }) {
     <main>
       <section className="hero">
         <nav className="topbar" aria-label="Site identity">
-          <a className="brand" href="#top" aria-label="12U Field Watch home">
-            <span className="brand-mark" aria-hidden="true">12</span>
-            <span>FIELD WATCH</span>
+          <a className="brand" href="#top" aria-label="FGF Tourney Tracker home">
+            <img className="brand-mark" src="./fgf-tourney-tracker-icon.png" alt="" aria-hidden="true" />
+            <span>FGF TOURNEY TRACKER</span>
           </a>
           <span className="division-chip">NORCAL · 12U</span>
         </nav>
@@ -372,7 +372,7 @@ export function DashboardClient({ state }: { state: MonitorState }) {
         <div className="hero-grid" id="top">
           <div className="hero-copy">
             <p className="eyebrow">Fall 2026 tournament intelligence</p>
-            <h1>12U Field Watch</h1>
+            <h1>FGF Tourney Tracker</h1>
             <p className="lede">
               Daily fields, registration availability, and same-weekend alternatives.
             </p>
@@ -497,7 +497,7 @@ export function DashboardClient({ state }: { state: MonitorState }) {
       </section>
 
       <footer className="site-footer">
-        <p>12U Field Watch reflects publicly posted organizer information. Official tournament sources control.</p>
+        <p>FGF Tourney Tracker reflects publicly posted organizer information. Official tournament sources control.</p>
         <a href="#top">Back to top ↑</a>
       </footer>
     </main>
