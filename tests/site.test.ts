@@ -13,5 +13,6 @@ test("static dashboard contains core product content and no starter copy", async
   assert.match(html, /Sandlot Dugout Wars/);
   assert.match(html, /Official source/);
   assert.match(html, /Event-wide|Availability not published|Registration open/);
+  assert.match(html, /font-family:\s*var\(--font-geist-sans, Arial\), Helvetica, sans-serif/);
   assert.doesNotMatch(html, /Your site is taking shape|codex-preview|react-loading-skeleton/);
 });
