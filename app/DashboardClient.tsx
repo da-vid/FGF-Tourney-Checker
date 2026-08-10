@@ -264,7 +264,6 @@ function WeekendGroup({
     <section className="weekend-group" data-weekend-group data-weekend-id={primary.weekendId}>
       <header className="weekend-banner">
         <div>
-          <span>Locked play weekend</span>
           <strong>{formatRange(primary)}</strong>
         </div>
         <p>{allEvents.length} tournament options monitored daily</p>
@@ -408,7 +407,6 @@ export function DashboardClient({ state }: { state: MonitorState }) {
         <aside className="change-panel" aria-labelledby="changes-heading">
           <div className="section-title-row">
             <div>
-              <p className="section-number">01</p>
               <h2 id="changes-heading">Latest movement</h2>
             </div>
             <span className="live-label">Daily log</span>
@@ -438,12 +436,8 @@ export function DashboardClient({ state }: { state: MonitorState }) {
           )}
         </aside>
 
-        <section className="events-section" aria-labelledby="events-heading">
+        <section className="events-section" aria-label="Tournament weekends">
           <div className="events-toolbar">
-            <div>
-              <p className="section-number">02</p>
-              <h2 id="events-heading">Weekend board</h2>
-            </div>
             <div className="filters">
               <label>
                 <span className="sr-only">Filter by organizer</span>

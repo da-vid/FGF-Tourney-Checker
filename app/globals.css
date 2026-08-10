@@ -170,6 +170,7 @@ button, select { font: inherit; }
   padding-bottom: 20px;
   border-bottom: 2px solid var(--ink);
 }
+.events-toolbar { justify-content: flex-end; }
 .section-number { margin: 0 0 8px; color: var(--clay); }
 h2 { font-size: clamp(27px, 3vw, 40px); letter-spacing: -0.04em; margin: 0; }
 .live-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
@@ -383,7 +384,8 @@ select {
   .hero-grid { grid-template-columns: 1fr; padding-top: 26px; gap: 24px; }
   .scoreboard { max-width: 680px; }
   .content-shell { grid-template-columns: 1fr; }
-  .change-panel { position: static; }
+  .events-section { order: 1; }
+  .change-panel { order: 2; position: static; }
   .change-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 24px; }
   .legend-section { grid-template-columns: 1fr; gap: 34px; }
 }

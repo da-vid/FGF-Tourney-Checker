@@ -9,7 +9,10 @@ test("static dashboard contains core product content and no starter copy", async
   assert.doesNotMatch(html, /Who’s in the field/);
   assert.match(html, /apple-touch-icon\.png/);
   assert.match(html, /manifest\.webmanifest/);
-  assert.match(html, /Weekend board/);
+  assert.match(html, /Latest movement/);
+  assert.doesNotMatch(html, /Weekend board|Locked play weekend|class="section-number">0[12]</);
+  assert.match(html, /\.events-section\s*\{\s*order:\s*1;/);
+  assert.match(html, /\.change-panel\s*\{\s*order:\s*2;/);
   assert.match(html, /PGF 12U National Qualifier/);
   assert.match(html, /Compare 6 alternatives/);
   assert.match(html, /Primary plan/);
