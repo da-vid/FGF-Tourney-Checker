@@ -37,13 +37,30 @@ async function inspectLinkedRegistration(
   page: Page,
   linkHref: string | null,
   baseUrl: string,
+  expectedName: string,
 ): Promise<RegistrationSignal & { registrationUrl?: string }> {
-  if (!linkHref || /^javascript:/i.test(linkHref)) return parseRegistrationText("");
+  if (!linkHref) return parseRegistrationText("");
+  if (/^javascript:/i.test(linkHref)) {
+    return { ...parseRegistrationText(""), registrationStatus: "Registration link not active" };
+  }
   const registrationUrl = new URL(linkHref, baseUrl).href;
   try {
     await page.goto(registrationUrl, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
     await page.waitForTimeout(3_000);
-    return { ...parseRegistrationText(await bodyText(page)), registrationUrl };
+    const text = await bodyText(page);
+    const stopWords = new Set(["the", "event", "tournament", "classic", "awareness", "championship", "challenge", "2026"]);
+    const expectedWords = expectedName.toLowerCase().match(/[a-z0-9]+/g)?.filter((word) => word.length > 3 && !stopWords.has(word)) ?? [];
+    const registrationText = text.toLowerCase();
+    const matchingWords = expectedWords.filter((word) => registrationText.includes(word));
+    const requiredMatches = Math.min(2, expectedWords.length);
+    if (requiredMatches > 0 && matchingWords.length < requiredMatches) {
+      return {
+        ...parseRegistrationText(""),
+        registrationStatus: "Registration link points to another event",
+        registrationUrl,
+      };
+    }
+    return { ...parseRegistrationText(text), registrationUrl };
   } catch {
     return { ...parseRegistrationText(""), registrationUrl };
   }
@@ -88,6 +105,8 @@ async function collectLegacy(page: Page, config: TournamentConfig): Promise<Coll
   await teamsHeading.waitFor({ state: "visible", timeout: 20_000 });
   const divisionRow = page.locator("tr").filter({ hasText: /^\s*12U Division\s*$/ }).first();
   await divisionRow.waitFor({ state: "visible", timeout: 20_000 });
+  const availabilityContainer = page.locator("#leftover-text-container");
+  await availabilityContainer.waitFor({ state: "visible", timeout: 20_000 });
   let responseCount = 0;
   let lastResponseAt = 0;
   let responseFailure: Response | undefined;
@@ -99,6 +118,13 @@ async function collectLegacy(page: Page, config: TournamentConfig): Promise<Coll
   };
   page.on("response", observeResponse);
   try {
+    // Legacy lazily calculates event capacity separately from the 12U roster.
+    // Both components must enter the viewport before their Airtable-backed values settle.
+    await availabilityContainer.scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => {
+      const value = document.querySelector("#leftover-text-container")?.textContent?.replace(/\s+/g, " ").trim() ?? "";
+      return /Spots Left:\s*\d+|Spots are Filled|Event Full|waitlist/i.test(value);
+    }, undefined, { timeout: 15_000 }).catch(() => undefined);
     await divisionRow.scrollIntoViewIfNeeded();
     const deadline = Date.now() + 40_000;
     while (Date.now() < deadline) {
@@ -111,6 +137,13 @@ async function collectLegacy(page: Page, config: TournamentConfig): Promise<Coll
     if (responseCount === 0 || Date.now() - lastResponseAt < 2_000) {
       throw new Error("Legacy Airtable team requests did not finish loading");
     }
+    // A second pass covers pages where only the roster scroll started the shared request.
+    await availabilityContainer.scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => {
+      const value = document.querySelector("#leftover-text-container")?.textContent?.replace(/\s+/g, " ").trim() ?? "";
+      return /Spots Left:\s*\d+|Spots are Filled|Event Full|waitlist/i.test(value);
+    }, undefined, { timeout: 15_000 }).catch(() => undefined);
+    await divisionRow.scrollIntoViewIfNeeded();
   } finally {
     page.off("response", observeResponse);
   }
@@ -244,8 +277,8 @@ async function collectWcp(page: Page, config: TournamentConfig): Promise<Collect
   await page.goto(config.sourceUrl, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
   const text = await bodyText(page);
   const registerHref = await page.getByRole("link", { name: /register|pencil in/i }).first().getAttribute("href").catch(() => null);
-  const linked = await inspectLinkedRegistration(page, registerHref, config.sourceUrl);
-  const availability = linked.registrationState === "unknown"
+  const linked = await inspectLinkedRegistration(page, registerHref, config.sourceUrl, config.name);
+  const availability = linked.registrationState === "unknown" && linked.registrationStatus === "Availability not published"
     ? { ...linked, registrationStatus: linked.registrationUrl ? "Registration page available" : "Availability not published" }
     : linked;
   const checkedAt = new Date().toISOString();
@@ -283,8 +316,8 @@ async function collectWcpSchedule(page: Page, config: TournamentConfig): Promise
   const card = candidates.first();
   const registerHref = await card.getByRole("link", { name: /register|pencil in/i }).first().getAttribute("href").catch(() => null);
   const rosterHref = await card.getByText(/who's coming/i).first().getAttribute("href");
-  const linked = await inspectLinkedRegistration(page, registerHref, config.sourceUrl);
-  const availability = linked.registrationState === "unknown"
+  const linked = await inspectLinkedRegistration(page, registerHref, config.sourceUrl, config.name);
+  const availability = linked.registrationState === "unknown" && linked.registrationStatus === "Availability not published"
     ? { ...linked, registrationStatus: linked.registrationUrl ? "Registration page available" : "Availability not published" }
     : linked;
   if (!rosterHref || /^javascript:/i.test(rosterHref)) {

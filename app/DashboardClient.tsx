@@ -52,20 +52,20 @@ function registrationLabel(event: TournamentState): string {
   const scope = effectiveScope === "event" ? "Event-wide" : effectiveScope === "location" ? "Location-wide" : undefined;
   const deadline = event.registrationDeadline ? `Deadline ${event.registrationDeadline}` : undefined;
   let status: string;
-  if (event.spotsRemaining !== undefined) {
-    status = event.spotsRemaining === 0
-      ? event.registrationState === "closed" ? "Registration closed" : "Full"
-      : `${event.spotsRemaining} spot${event.spotsRemaining === 1 ? "" : "s"} left`;
+  let remaining: string | undefined;
+  if (event.registrationState === "closed") {
+    status = "Registration closed";
+    if (event.spotsRemaining && event.spotsRemaining > 0) remaining = `${event.spotsRemaining} spots shown`;
+  } else if (event.registrationState === "waitlist") {
+    status = event.spotsRemaining === 0 ? "Full · Waitlist available" : "Waitlist available";
+  } else if (event.registrationState === "full" || event.spotsRemaining === 0) {
+    status = "Full";
+  } else if (event.spotsRemaining !== undefined) {
+    status = `${event.spotsRemaining} spot${event.spotsRemaining === 1 ? "" : "s"} left`;
   } else if (event.registrationState === "open") {
     status = "Registration open";
   } else if (event.registrationState === "limited") {
     status = "Limited availability";
-  } else if (event.registrationState === "full") {
-    status = "Full";
-  } else if (event.registrationState === "closed") {
-    status = "Registration closed";
-  } else if (event.registrationState === "waitlist") {
-    status = "Waitlist";
   } else if (event.registrationState === "invite_only") {
     status = "Invite only";
   } else if (event.registrationState === "not_public") {
@@ -80,7 +80,7 @@ function registrationLabel(event: TournamentState): string {
   const capacity = event.capacity !== undefined && event.spotsRemaining === undefined
     ? `Max ${event.capacity} team${event.capacity === 1 ? "" : "s"}`
     : undefined;
-  return [status, capacity, deadline, scope].filter(Boolean).join(" · ");
+  return [status, remaining, capacity, deadline, scope].filter(Boolean).join(" · ");
 }
 
 function registrationClass(event: TournamentState): string {

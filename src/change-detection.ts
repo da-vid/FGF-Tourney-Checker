@@ -38,11 +38,16 @@ function blankState(config: TournamentConfig): TournamentState {
   };
 }
 
+function isPageFurniture(value: string): boolean {
+  const normalized = value.replace(/[\u200B-\u200D\uFEFF]/g, "").replace(/\s+/g, " ").trim();
+  return /^(?:10U|12U|14U|16U|18U|16\/18U|All pricing is in USD|Refund Policy|Terms of Service|Privacy Policy|Park Addresses|College Showcases)$/i.test(normalized);
+}
+
 function byName(teams: TeamRecord[]): Map<string, TeamRecord> {
   return new Map(
     teams
       .map((team) => [normalizeTeamName(team.rawName), team] as const)
-      .filter(([name]) => Boolean(name)),
+      .filter(([name, team]) => Boolean(name) && !isPageFurniture(team.rawName)),
   );
 }
 
@@ -59,11 +64,10 @@ export function applyResults(
   const previousById = new Map(previous?.tournaments.map((event) => [event.id, event]) ?? []);
   const resultById = new Map(results.map((result) => [result.tournamentId, result]));
   const changes: ChangeRecord[] = (previous?.changes ?? []).filter((change) => {
+    if (change.teamName && isPageFurniture(change.teamName)) return false;
     if (change.type !== "source_unhealthy") return true;
     return Boolean(previousById.get(change.tournamentId)?.lastSuccessfulCheck);
   });
-  const baselineEstablished = previous?.baselineEstablished ?? false;
-
   const tournaments = configs.map((config): TournamentState => {
     const old = previousById.get(config.id) ?? blankState(config);
     const result = resultById.get(config.id);
@@ -104,7 +108,7 @@ export function applyResults(
     const pending = new Map(
       old.pendingRemovals
         .map((item) => [normalizeTeamName(item.team.rawName), item] as const)
-        .filter(([name]) => Boolean(name)),
+        .filter(([name, item]) => Boolean(name) && !isPageFurniture(item.team.rawName)),
     );
 
     if (old.lastSuccessfulCheck) {
@@ -133,6 +137,7 @@ export function applyResults(
         ));
       }
       for (const team of result.teams) {
+        if (isPageFurniture(team.rawName)) continue;
         const normalizedName = normalizeTeamName(team.rawName);
         const prior = oldTeams.get(normalizedName);
         pending.delete(normalizedName);
@@ -149,6 +154,7 @@ export function applyResults(
       }
 
       for (const team of old.teams) {
+        if (isPageFurniture(team.rawName)) continue;
         const normalizedName = normalizeTeamName(team.rawName);
         if (!normalizedName || newTeams.has(normalizedName)) continue;
         const existing = pending.get(normalizedName);
@@ -169,7 +175,7 @@ export function applyResults(
       changes.filter((change) => change.tournamentId === config.id && change.type === "team_removed").map((change) => change.teamName?.toLocaleLowerCase("en-US")),
     );
     const displayedTeams = [
-      ...result.teams,
+      ...result.teams.filter((team) => !isPageFurniture(team.rawName)),
       ...[...pending.values()]
         .map((item) => item.team)
         .filter((team) => !confirmedRemoved.has(team.rawName.toLocaleLowerCase("en-US"))),

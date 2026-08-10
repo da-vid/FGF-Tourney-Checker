@@ -58,12 +58,19 @@ export function parseRegistrationText(text: string): RegistrationSignal {
     return { registrationState: "invite_only", registrationStatus: "Invite only", registrationDeadline: deadline };
   }
   if (/\bwait\s*list\b|\bwaitlisted\b/i.test(compact)) {
-    return { registrationState: "waitlist", registrationStatus: "Waitlist", registrationDeadline: deadline, spotsRemaining };
+    const fieldIsFull = /spots are filled|\bsold out\b|\bevent full\b|\bdivision full\b|\bat capacity\b/i.test(compact)
+      || spotsRemaining === 0;
+    return {
+      registrationState: "waitlist",
+      registrationStatus: fieldIsFull ? "Full · Waitlist available" : "Waitlist available",
+      registrationDeadline: deadline,
+      spotsRemaining: fieldIsFull ? 0 : spotsRemaining,
+    };
   }
-  if (/registration closed|sign[ -]?ups? closed|entries closed|closed to registration/i.test(compact)) {
+  if (/registration (?:is )?(?:closed|unavailable|not available)|sign[ -]?ups? closed|entries closed|closed to registration|registration has ended|no longer accepting (?:registrations|entries)/i.test(compact)) {
     return { registrationState: "closed", registrationStatus: "Registration closed", registrationDeadline: deadline, spotsRemaining };
   }
-  if (/spots are filled|\bsold out\b|\bevent full\b|\bdivision full\b/i.test(compact) || spotsRemaining === 0) {
+  if (/spots are filled|\bsold out\b|\bevent full\b|\bdivision full\b|\bat capacity\b/i.test(compact) || spotsRemaining === 0) {
     return { registrationState: "full", registrationStatus: "Full", registrationDeadline: deadline, spotsRemaining: 0 };
   }
   if (spotsRemaining !== undefined) {
@@ -93,10 +100,13 @@ export function parseLegacyAvailability(text: string): RegistrationSignal {
   const spotsRemaining = Number((sameLine ?? nextLine)?.[1]);
   const hasSpots = Number.isFinite(spotsRemaining);
   const closed = all.some((line) => /^Event Full\s*-\s*Sign Ups Closed\.?$/i.test(line));
+  const waitlist = all.some((line) => /^Spots are Filled!?(?:\s+If you sign up you will be placed on (?:the )?waitlist\.?)$/i.test(line));
   const full = all.some((line) => /^Spots are Filled!?$/i.test(line)) || (hasSpots && spotsRemaining === 0);
-  const registrationState: RegistrationState = closed ? "closed" : full ? "full" : hasSpots ? "limited" : "unknown";
+  const registrationState: RegistrationState = closed ? "closed" : waitlist ? "waitlist" : full ? "full" : hasSpots ? "limited" : "unknown";
   const registrationStatus = closed
     ? "Registration closed"
+    : waitlist
+      ? "Full · Waitlist available"
     : full
       ? "Full"
       : hasSpots
@@ -105,7 +115,7 @@ export function parseLegacyAvailability(text: string): RegistrationSignal {
   return {
     registrationState,
     registrationStatus,
-    spotsRemaining: hasSpots ? spotsRemaining : undefined,
+    spotsRemaining: waitlist ? 0 : hasSpots ? spotsRemaining : undefined,
     capacity: capacityMatch ? Number(capacityMatch[1]) : undefined,
     capacityScope: "event",
   };
@@ -210,7 +220,7 @@ export function parseWcpText(text: string): TeamRecord[] {
   );
   return all
     .slice(divisionIndex + 1, nextHeading < 0 ? all.length : nextHeading)
-    .filter((value) => !/^(?:register|pencil|who'?s coming|fall tournaments|home page|tournaments)$/i.test(value))
+    .filter((value) => !/^(?:register|pencil|who'?s coming|fall tournaments|home page|tournaments|all pricing is in USD|refund policy|terms of service|privacy policy|park addresses|college showcases)$/i.test(value))
     .map((value) => parseTeamLine(value));
 }
 

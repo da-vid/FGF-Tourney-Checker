@@ -77,6 +77,11 @@ test("registration wording distinguishes full, closed, waitlist, and deadlines",
   assert.equal(parseRegistrationText("Spots are Filled!").registrationState, "full");
   assert.equal(parseRegistrationText("Event Full - Sign Ups Closed").registrationState, "closed");
   assert.equal(parseRegistrationText("Waitlist available").registrationState, "waitlist");
+  const fullWaitlist = parseRegistrationText("Spots are Filled! If you sign up you will be placed on waitlist.");
+  assert.equal(fullWaitlist.registrationState, "waitlist");
+  assert.equal(fullWaitlist.spotsRemaining, 0);
+  assert.equal(parseRegistrationText("Registration is unavailable").registrationState, "closed");
+  assert.equal(parseRegistrationText("This division is at capacity").registrationState, "full");
   assert.equal(parseRegistrationText("Registration Closed. Deadline: Oct 4").registrationDeadline, "Oct 4");
   assert.equal(parseRegistrationText("Entry Deadline: September 19th").registrationDeadline, "September 19th");
 });
@@ -85,6 +90,15 @@ test("Legacy and USSSA preserve capacity scope", () => {
   const legacy = parseLegacyAvailability("Event Spots Available: 40\nSpots Left: 13");
   assert.equal(legacy.spotsRemaining, 13);
   assert.equal(legacy.capacityScope, "event");
+  const legacyWaitlist = parseLegacyAvailability("Event Spots Available: 30\nSpots are Filled! If you sign up you will be placed on waitlist.");
+  assert.equal(legacyWaitlist.registrationState, "waitlist");
+  assert.equal(legacyWaitlist.registrationStatus, "Full · Waitlist available");
+  assert.equal(legacyWaitlist.spotsRemaining, 0);
+  const legacyClosed = parseLegacyAvailability("Event Full - Sign Ups Closed\nEvent Spots Available: 30\nSpots Left: 4");
+  assert.equal(legacyClosed.registrationState, "closed");
+  assert.equal(legacyClosed.spotsRemaining, 4);
+  const legacyBoilerplate = parseLegacyAvailability('*please note: events may be marked "Event Full - Sign Ups Closed".');
+  assert.equal(legacyBoilerplate.registrationState, "unknown");
   const usssa = parseUsssaAvailability("12U Tournament Division Max Entries: 8", true);
   assert.equal(usssa.registrationState, "open");
   assert.equal(usssa.capacity, 8);
@@ -128,7 +142,7 @@ test("TournamentConnect reads 12U and handles explicit zero", () => {
 });
 
 test("West Coast Premier isolates the 12U roster", () => {
-  const teams = parseWcpText("Register\n12u\n\u200BFirecrackers Zeigler\nSwat Turner\n\u200B\n14u\nOlder Team");
+  const teams = parseWcpText("Register\n12u\n\u200BFirecrackers Zeigler\nSwat Turner\nRefund Policy\nPrivacy Policy\n\u200B\n14u\nOlder Team");
   assert.deepEqual(teams.map((team) => team.rawName), ["Firecrackers Zeigler", "Swat Turner"]);
 });
 
@@ -178,6 +192,13 @@ test("a failed source preserves the last successful roster", () => {
   const failed = applyResults([config], previous, [result([], "2026-08-02T10:00:00Z", "failure")]);
   assert.equal(failed.tournaments[0].teams[0].rawName, "Alpha");
   assert.equal(failed.tournaments[0].outcome, "failure");
+});
+
+test("page furniture never becomes a team or a removal alert", () => {
+  const previous = applyResults([config], undefined, [result(["Alpha", "Refund Policy", "\u200B14u"], "2026-08-01T10:00:00Z")]);
+  assert.deepEqual(previous.tournaments[0].teams.map((team) => team.rawName), ["Alpha"]);
+  const next = applyResults([config], previous, [result(["Alpha"], "2026-08-02T10:00:00Z")]);
+  assert.equal(next.changes.some((change) => /Refund Policy|14u/i.test(change.teamName ?? "")), false);
 });
 
 test("published discovery emits an event change", () => {
