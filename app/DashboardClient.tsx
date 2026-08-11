@@ -13,6 +13,14 @@ const PACIFIC_DATE = new Intl.DateTimeFormat("en-US", {
   timeZoneName: "short",
 });
 
+const PACIFIC_DAY = new Intl.DateTimeFormat("en-US", {
+  weekday: "long",
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "America/Los_Angeles",
+});
+
 const EVENT_DATE = new Intl.DateTimeFormat("en-US", {
   month: "short",
   day: "numeric",
@@ -112,6 +120,35 @@ function changeLabel(change: ChangeRecord): string {
   }[change.type];
 }
 
+export function splitChanges(changes: ChangeRecord[]) {
+  return {
+    recent: changes.slice(0, 6),
+    older: changes.slice(6),
+  };
+}
+
+function ChangeItem({
+  change,
+  event,
+  scope,
+}: {
+  change: ChangeRecord;
+  event?: TournamentState;
+  scope: "recent" | "history";
+}) {
+  return (
+    <li data-change-id={change.id} data-change-scope={scope}>
+      <div className="change-label-row">
+        <span className={`change-type change-${change.type}`}>{changeLabel(change)}</span>
+        {event && <span className="change-context">{event.role === "primary" ? "Primary" : "Alternate"} · {formatRange(event)}</span>}
+      </div>
+      {event && <strong className="change-event">{event.name}</strong>}
+      <p>{change.detail}</p>
+      <time>{PACIFIC_DATE.format(new Date(change.occurredAt))}</time>
+    </li>
+  );
+}
+
 function TournamentCard({
   event,
   compact = false,
@@ -190,10 +227,10 @@ function TournamentCard({
           </div>
         ) : (
           <div className="team-grid" aria-label={`${event.teams.length} entered teams`}>
-            {event.teams.map((team) => {
+            {event.teams.map((team, index) => {
               const sharedCount = sharedTeamCounts.get(team.normalizedName) ?? 1;
               return (
-                <div className={`team-row${pendingNames.has(team.normalizedName) ? " team-pending" : ""}`} key={team.normalizedName}>
+                <div className={`team-row${pendingNames.has(team.normalizedName) ? " team-pending" : ""}`} key={`${team.normalizedName}-${index}`}>
                   <span className="team-name">{team.rawName}</span>
                   <span className="team-flags">
                     {team.confirmed === "yes" && <span className="flag flag-confirmed">Confirmed</span>}
@@ -352,7 +389,14 @@ export function DashboardClient({ state }: { state: MonitorState }) {
     return [{ ...group, filteredEvents }];
   });
   const eventById = new Map(state.tournaments.map((event) => [event.id, event]));
-  const recentChanges = state.changes.slice(0, 6);
+  const { recent: recentChanges, older: olderChanges } = splitChanges(state.changes);
+  const olderChangesByDay = new Map<string, ChangeRecord[]>();
+  for (const change of olderChanges) {
+    const day = PACIFIC_DAY.format(new Date(change.occurredAt));
+    const entries = olderChangesByDay.get(day) ?? [];
+    entries.push(change);
+    olderChangesByDay.set(day, entries);
+  }
   const primaryEvents = state.tournaments.filter((event) => event.role === "primary");
   const next = [...primaryEvents].sort((a, b) => a.startDate.localeCompare(b.startDate))[0];
   const knownRegistrationCount = state.tournaments.filter((event) => event.registrationState && !["unknown", "not_published"].includes(event.registrationState)).length;
@@ -362,7 +406,7 @@ export function DashboardClient({ state }: { state: MonitorState }) {
       <section className="hero">
         <nav className="topbar" aria-label="Site identity">
           <a className="brand" href="#top" aria-label="FGF Tourney Tracker home">
-            <img className="brand-mark" src="./fgf-tourney-tracker-icon.png" alt="" aria-hidden="true" />
+            <img className="brand-mark" src="./fgf-tourney-tracker-icon-v2.png" alt="" aria-hidden="true" />
             <span>FGF TOURNEY TRACKER</span>
           </a>
           <span className="division-chip">NORCAL · 12U</span>
@@ -412,22 +456,40 @@ export function DashboardClient({ state }: { state: MonitorState }) {
             <span className="live-label">Daily log</span>
           </div>
           {recentChanges.length ? (
-            <ol className="change-list">
-              {recentChanges.map((change) => {
-                const event = eventById.get(change.tournamentId);
-                return (
-                  <li key={change.id}>
-                    <div className="change-label-row">
-                      <span className={`change-type change-${change.type}`}>{changeLabel(change)}</span>
-                      {event && <span className="change-context">{event.role === "primary" ? "Primary" : "Alternate"} · {formatRange(event)}</span>}
-                    </div>
-                    {event && <strong className="change-event">{event.name}</strong>}
-                    <p>{change.detail}</p>
-                    <time>{PACIFIC_DATE.format(new Date(change.occurredAt))}</time>
-                  </li>
-                );
-              })}
-            </ol>
+            <>
+              <ol className="change-list">
+                {recentChanges.map((change) => (
+                  <ChangeItem
+                    change={change}
+                    event={eventById.get(change.tournamentId)}
+                    key={change.id}
+                    scope="recent"
+                  />
+                ))}
+              </ol>
+              {olderChanges.length > 0 && (
+                <details className="history-expander" data-history-expander>
+                  <summary>View {olderChanges.length} earlier change{olderChanges.length === 1 ? "" : "s"}</summary>
+                  <div className="history-scroll">
+                    {[...olderChangesByDay.entries()].map(([day, changes]) => (
+                      <section className="history-day" key={day}>
+                        <h3>{day}</h3>
+                        <ol className="change-list history-list">
+                          {changes.map((change) => (
+                            <ChangeItem
+                              change={change}
+                              event={eventById.get(change.tournamentId)}
+                              key={change.id}
+                              scope="history"
+                            />
+                          ))}
+                        </ol>
+                      </section>
+                    ))}
+                  </div>
+                </details>
+              )}
+            </>
           ) : (
             <div className="empty-log">
               <span aria-hidden="true">◇</span>

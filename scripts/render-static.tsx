@@ -49,8 +49,8 @@ const html = `<!doctype html>
   <meta property="og:title" content="FGF Tourney Tracker" />
   <meta property="og:description" content="Daily NorCal 12U tournament fields and registration monitoring." />
   <meta property="og:image" content="./og.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32-v2.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon-v2.png" />
   <link rel="manifest" href="./manifest.webmanifest" />
   <style>${css}</style>
 </head>
@@ -64,6 +64,11 @@ await cp("public/apple-touch-icon.png", `${output}/apple-touch-icon.png`);
 await cp("public/icon-192.png", `${output}/icon-192.png`);
 await cp("public/icon-512.png", `${output}/icon-512.png`);
 await cp("public/fgf-tourney-tracker-icon.png", `${output}/fgf-tourney-tracker-icon.png`);
+await cp("public/favicon-32-v2.png", `${output}/favicon-32-v2.png`);
+await cp("public/apple-touch-icon-v2.png", `${output}/apple-touch-icon-v2.png`);
+await cp("public/icon-192-v2.png", `${output}/icon-192-v2.png`);
+await cp("public/icon-512-v2.png", `${output}/icon-512-v2.png`);
+await cp("public/fgf-tourney-tracker-icon-v2.png", `${output}/fgf-tourney-tracker-icon-v2.png`);
 await cp("public/og.png", `${output}/og.png`).catch(() => undefined);
 await writeFile(`${output}/manifest.webmanifest`, JSON.stringify({
   name: "FGF Tourney Tracker",
@@ -74,8 +79,8 @@ await writeFile(`${output}/manifest.webmanifest`, JSON.stringify({
   background_color: "#f4f1e9",
   theme_color: "#071822",
   icons: [
-    { src: "./icon-192.png", sizes: "192x192", type: "image/png" },
-    { src: "./icon-512.png", sizes: "512x512", type: "image/png" },
+    { src: "./icon-192-v2.png", sizes: "192x192", type: "image/png" },
+    { src: "./icon-512-v2.png", sizes: "512x512", type: "image/png" },
   ],
 }, null, 2));
 await cp("data/state.json", `${output}/state.json`);
