@@ -33,6 +33,37 @@ function tournamentConnectSignal(cardText: string, registrationControl: boolean)
   return { ...signal, registrationState: "not_public" as const, registrationStatus: "No public registration" };
 }
 
+async function readTournamentConnect12UDialog(page: Page): Promise<string> {
+  const dialog = page.getByRole("dialog");
+  await dialog.waitFor({ state: "visible", timeout: 15_000 });
+
+  // The dialog shell appears before TournamentConnect finishes loading the event.
+  // Waiting for the event block prevents an incomplete shell from becoming a false zero.
+  await dialog.locator(".entityTitle").waitFor({ state: "visible", timeout: 30_000 });
+  const entityText = await dialog.locator(".entityTitle").innerText();
+  if (!/Date:\s*\w{3}\s+\d{1,2}/i.test(entityText)) {
+    throw new Error("Committed Teams dialog did not finish loading");
+  }
+
+  const division = dialog.locator("a.g-division").filter({ hasText: /^\s*12U\s*-\s*Girls\b/i }).first();
+  const anyDivision = dialog.locator("a.g-division").first();
+  const globalEmpty = dialog.getByText("No team found.", { exact: true });
+  const loadedState = await Promise.race([
+    anyDivision.waitFor({ state: "visible", timeout: 30_000 }).then(() => "divisions" as const),
+    globalEmpty.waitFor({ state: "visible", timeout: 30_000 }).then(() => "empty" as const),
+  ]);
+  if (loadedState === "empty") return "Committed Teams\nNo team found.";
+  if ((await division.count()) === 0) return "12U - Girls\nNo team found.\n14U - Girls";
+
+  await division.click();
+  const expanded = division.locator('xpath=following-sibling::div[contains(@class,"d-well")][1]');
+  await expanded.waitFor({ state: "visible", timeout: 15_000 });
+  const teamRows = expanded.locator('div[ng-repeat^="team in skill.teams."]');
+  const teamNames = (await teamRows.allInnerTexts()).map((name) => name.replace(/\s+/g, " ").trim()).filter(Boolean);
+  if (teamNames.length === 0) return "12U - Girls\nNo team found.\n14U - Girls";
+  return ["12U - Girls", ...teamNames, "14U - Girls"].join("\n");
+}
+
 async function inspectLinkedRegistration(
   page: Page,
   linkHref: string | null,
@@ -188,16 +219,7 @@ async function collectTournamentConnect(page: Page, config: TournamentConfig): P
     || (await card.locator('input[type="checkbox"]:not([disabled])').count()) > 0;
   const availability = tournamentConnectSignal(cardText, hasRegistrationControl);
   await card.getByText("Committed Teams", { exact: true }).click();
-  const dialog = page.getByRole("dialog");
-  await dialog.waitFor({ state: "visible", timeout: 15_000 });
-  await Promise.race([
-    dialog.locator(".entityTitle").waitFor({ state: "visible", timeout: 30_000 }),
-    dialog.getByText("No team found.", { exact: true }).waitFor({ state: "visible", timeout: 30_000 }),
-  ]).catch(() => undefined);
-  const dialogText = await dialog.innerText();
-  if (!/Date:\s*\w{3}\s+\d{1,2}/i.test(dialogText) && !/No team found\.?/i.test(dialogText)) {
-    throw new Error("Committed Teams dialog did not finish loading");
-  }
+  const dialogText = await readTournamentConnect12UDialog(page);
   const checkedAt = new Date().toISOString();
   return {
     tournamentId: config.id,
@@ -254,13 +276,7 @@ async function collectTournamentConnectListing(page: Page, config: TournamentCon
   }
 
   await committed.click();
-  const dialog = page.getByRole("dialog");
-  await dialog.waitFor({ state: "visible", timeout: 15_000 });
-  await Promise.race([
-    dialog.locator(".entityTitle").waitFor({ state: "visible", timeout: 30_000 }),
-    dialog.getByText("No team found.", { exact: true }).waitFor({ state: "visible", timeout: 30_000 }),
-  ]).catch(() => undefined);
-  const dialogText = await dialog.innerText();
+  const dialogText = await readTournamentConnect12UDialog(page);
   const checkedAt = new Date().toISOString();
   return {
     tournamentId: config.id,

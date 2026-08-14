@@ -44,3 +44,12 @@ test("full history control only appears when there are older changes", () => {
   assert.equal(splitChanges(changes.slice(0, 6)).older.length, 0);
   assert.equal(splitChanges(changes).older.length, 1);
 });
+
+test("October 24 tracks Keep Humble as primary and Monster Mash as an alternate", async () => {
+  const configs = JSON.parse(await readFile("config/tournaments.json", "utf8")) as Array<{ id: string; role: string; sourceUrl: string }>;
+  const keepHumble = configs.find((event) => event.id === "legacy-keep-humble-pcfl-qualifier-2026-folsom");
+  const monsterMash = configs.find((event) => event.id === "first-to-third-monster-mash-2026");
+  assert.equal(keepHumble?.role, "primary");
+  assert.match(keepHumble?.sourceUrl ?? "", /keep-humble-fall-pcfl-alliance-qualifier/);
+  assert.equal(monsterMash?.role, "alternate");
+});

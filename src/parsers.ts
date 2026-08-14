@@ -198,16 +198,16 @@ export function parseLegacyRows(rows: string[][]): TeamRecord[] {
 }
 
 export function parseTournamentConnectDialog(text: string): TeamRecord[] {
-  if (/No team found\.?/i.test(text)) return [];
   const all = lines(text).filter((value) => !/^(×|Close|Committed Teams)$/i.test(value));
   const divisionIndex = all.findIndex((value) => /^12U(?:\s*-\s*Girls)?$/i.test(value));
   if (divisionIndex < 0) return [];
   const nextHeading = all.findIndex(
     (value, index) => index > divisionIndex && /^(?:10U|14U|16U|18U)(?:\s*-\s*Girls)?$/i.test(value),
   );
-  return all
-    .slice(divisionIndex + 1, nextHeading < 0 ? all.length : nextHeading)
-    .filter((value) => !/^(Date:|Location:)/i.test(value))
+  const division = all.slice(divisionIndex + 1, nextHeading < 0 ? all.length : nextHeading);
+  if (division.some((value) => /^No team found\.?$/i.test(value))) return [];
+  return division
+    .filter((value) => !/^(Date:|Location:|1st to 3rd)$/i.test(value))
     .map((value) => parseTeamLine(value));
 }
 

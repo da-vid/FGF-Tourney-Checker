@@ -291,6 +291,20 @@
     "status": "active"
   },
   {
+    "id": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
+    "name": "Keep Humble Fall PCFL Alliance Qualifier",
+    "organizer": "Legacy Sports Fastpitch",
+    "startDate": "2026-10-24",
+    "endDate": "2026-10-25",
+    "location": "Folsom",
+    "division": "12U",
+    "weekendId": "2026-10-24",
+    "role": "primary",
+    "sourceType": "legacy",
+    "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/keep-humble-fall-pcfl-alliance-qualifier-recVJkgSbcFKMmmS7",
+    "status": "active"
+  },
+  {
     "id": "first-to-third-monster-mash-2026",
     "name": "Monster Mash for Cash",
     "organizer": "1st to 3rd Softball Events",
@@ -299,7 +313,7 @@
     "location": "Stockton / Tracy",
     "division": "12U",
     "weekendId": "2026-10-24",
-    "role": "primary",
+    "role": "alternate",
     "sourceType": "tournamentConnect",
     "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
     "eventMatch": "Monster Mash for Cash",

@@ -137,8 +137,9 @@ test("Legacy parses structured table rows after the lazy component loads", () =>
 
 test("TournamentConnect reads 12U and handles explicit zero", () => {
   assert.deepEqual(parseTournamentConnectDialog("Close\nNo team found."), []);
-  const teams = parseTournamentConnectDialog("Committed Teams\n10U - Girls\nTiny\n12U - Girls\nFoothill Gold\nYard Sharks\n14U - Girls\nOlder");
+  const teams = parseTournamentConnectDialog("Committed Teams\n10U - Girls\nNo team found.\n12U - Girls\n1st to 3rd\nFoothill Gold\nYard Sharks\n14U - Girls\nOlder");
   assert.deepEqual(teams.map((team) => team.rawName), ["Foothill Gold", "Yard Sharks"]);
+  assert.deepEqual(parseTournamentConnectDialog("12U - Girls\nNo team found.\n14U - Girls"), []);
 });
 
 test("West Coast Premier isolates the 12U roster", () => {
