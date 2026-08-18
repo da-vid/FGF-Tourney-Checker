@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { hasScoutRoster, scoutImportUrl } from "../src/scout-export";
+import { isWaitlistedTeam, pendingRemovalNames } from "../src/team-status";
 import type { ChangeRecord, MonitorState, TournamentState } from "../src/types";
 
 const PACIFIC_DATE = new Intl.DateTimeFormat("en-US", {
@@ -162,7 +164,7 @@ function TournamentCard({
   sharedTeamCounts: Map<string, number>;
   lastChange?: ChangeRecord;
 }) {
-  const pendingNames = new Set(event.pendingRemovals.map((item) => item.team.normalizedName));
+  const pendingNames = pendingRemovalNames(event.pendingRemovals);
   const days = daysUntil(event.startDate);
 
   return (
@@ -235,7 +237,7 @@ function TournamentCard({
                   <span className="team-flags">
                     {team.confirmed === "yes" && <span className="flag flag-confirmed">Confirmed</span>}
                     {team.paid === "yes" && <span className="flag flag-paid">Paid</span>}
-                    {team.note && <span className="flag flag-note">{team.note}</span>}
+                    {team.note && <span className="flag flag-note">{isWaitlistedTeam(team) ? "Waitlist" : team.note}</span>}
                     {sharedCount > 1 && <span className="flag flag-shared">Also in {sharedCount - 1} option{sharedCount === 2 ? "" : "s"}</span>}
                     {pendingNames.has(team.normalizedName) && <span className="flag flag-pending">Verify removal</span>}
                   </span>
@@ -252,9 +254,16 @@ function TournamentCard({
               : "Awaiting first successful check"}
           </span>
           {lastChange && <span>Last change {PACIFIC_DATE.format(new Date(lastChange.occurredAt))}</span>}
-          <a href={event.sourceUrl} target="_blank" rel="noreferrer">
-            Official source <span aria-hidden="true">↗</span>
-          </a>
+          <span className="event-actions">
+            {hasScoutRoster(event) && (
+              <a className="scout-link" href={scoutImportUrl(event.id)} target="_blank" rel="noreferrer">
+                Scout this tournament <span aria-hidden="true">↗</span>
+              </a>
+            )}
+            <a href={event.sourceUrl} target="_blank" rel="noreferrer">
+              Official source <span aria-hidden="true">↗</span>
+            </a>
+          </span>
         </footer>
       </div>
     </article>

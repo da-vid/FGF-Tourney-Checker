@@ -50,3 +50,7 @@ The site intentionally contains only public tournament information and no player
 If a registration site changes its layout, the dashboard marks that source as needing attention while preserving its last successful roster. Use the workflow's diagnostic artifact to update the matching collector and its fixture test.
 
 The historical JSON files are plain data and can later support weekly summaries, team appearance comparisons, notification feeds, or an expanded 2026–27 view without changing the collection model.
+
+## Scout integration
+
+The static build publishes a versioned Scout tournament index at `/scout/v1/tournaments/index.json` and one public export per configured tournament. Tournament cards with a known roster link to Scout for import. See [`docs/scout-export-v1.md`](docs/scout-export-v1.md) for the `ScoutTournamentExportV1` contract, status precedence, and retained-roster behavior.

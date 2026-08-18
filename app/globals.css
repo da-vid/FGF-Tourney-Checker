@@ -392,6 +392,9 @@ select {
 .event-footer { display: flex; justify-content: space-between; gap: 18px; padding: 13px 24px; border-top: 1px solid var(--line); font-size: 10px; color: var(--muted); }
 .event-footer a { color: var(--ink); font-weight: 700; text-decoration: none; }
 .event-footer a:hover { color: var(--clay); }
+.event-actions { display: flex; align-items: center; justify-content: flex-end; gap: 14px; }
+.event-footer .scout-link { padding: 5px 8px; border: 1px solid rgba(8,112,128,0.28); border-radius: 999px; background: rgba(8,112,128,0.07); color: #087080; }
+.event-footer .scout-link:hover { color: var(--clay); }
 .alternate-drawer { background: rgba(16,39,53,0.035); }
 .alternate-drawer > summary {
   min-height: 82px;
@@ -486,6 +489,7 @@ select {
   .source-message { margin-left: 18px; margin-right: 18px; }
   .registration-row { padding-left: 18px; padding-right: 18px; }
   .event-footer { padding: 12px 18px; flex-direction: column; }
+  .event-actions { align-items: flex-start; flex-direction: column; gap: 10px; }
   .legend-grid { grid-template-columns: 1fr; }
   .site-footer { flex-direction: column; }
 }

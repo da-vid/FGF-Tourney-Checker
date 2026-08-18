@@ -39,4 +39,6 @@ yarn-error.log*
 /outputs/
 /work/
 /pages-dist/
+/public/scout/
+/tsconfig.tsbuildinfo
 /.artifacts/

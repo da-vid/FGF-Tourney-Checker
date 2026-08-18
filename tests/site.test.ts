@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import { splitChanges } from "../app/DashboardClient";
 import type { MonitorState } from "../src/types";
@@ -23,6 +23,8 @@ test("static dashboard contains core product content and no starter copy", async
   assert.match(html, /Primary plan/);
   assert.match(html, /Sandlot Dugout Wars/);
   assert.match(html, /Official source/);
+  assert.match(html, /Scout this tournament/);
+  assert.match(html, /https:\/\/scout\.lineuphelper\.com\/import\/tourneys\?tournament=/);
   assert.match(html, /Event-wide|Availability not published|Registration open/);
   assert.match(html, /font-family:\s*var\(--font-geist-sans, Arial\), Helvetica, sans-serif/);
   assert.doesNotMatch(html, /Your site is taking shape|codex-preview|react-loading-skeleton/);
@@ -37,6 +39,30 @@ test("static dashboard contains core product content and no starter copy", async
     assert.match(html, new RegExp(`View ${state.changes.length - 6} earlier changes?`));
     assert.match(html, /data-history-expander/);
   }
+});
+
+test("static export emits the Scout v1 index and per-tournament JSON", async () => {
+  const indexPath = "pages-dist/scout/v1/tournaments/index.json";
+  await access(indexPath);
+  const index = JSON.parse(await readFile(indexPath, "utf8")) as {
+    schemaVersion: number;
+    tournaments: Array<{ id: string; exportUrl: string }>;
+  };
+  const state = JSON.parse(await readFile("data/state.json", "utf8")) as MonitorState;
+  assert.equal(index.schemaVersion, 1);
+  assert.equal(index.tournaments.length, state.tournaments.length);
+
+  const representative = index.tournaments.find((entry) => entry.id === "first-to-third-phil-mumma-2026");
+  assert.equal(representative?.exportUrl, "/scout/v1/tournaments/first-to-third-phil-mumma-2026.json");
+  const exported = JSON.parse(await readFile(`pages-dist${representative?.exportUrl}`, "utf8")) as {
+    schemaVersion: number;
+    tournament: { id: string };
+    teams: unknown[];
+  };
+  assert.equal(exported.schemaVersion, 1);
+  assert.equal(exported.tournament.id, representative?.id);
+  assert.ok(exported.teams.length > 0);
+  assert.doesNotMatch(JSON.stringify(exported), /diagnostic|github/i);
 });
 
 test("full history control only appears when there are older changes", () => {

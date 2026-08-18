@@ -2,10 +2,12 @@ import { cp, mkdir, readFile, writeFile } from "node:fs/promises";
 import { renderToStaticMarkup } from "react-dom/server";
 import { DashboardClient } from "../app/DashboardClient";
 import { dashboardState } from "../app/page";
+import { writeScoutExports } from "./scout-static";
 
 const output = "pages-dist";
 const css = await readFile("app/globals.css", "utf8");
-const markup = renderToStaticMarkup(<DashboardClient state={dashboardState()} />);
+const state = dashboardState();
+const markup = renderToStaticMarkup(<DashboardClient state={state} />);
 const script = `
 (() => {
   const organizer = document.querySelector('[data-organizer-filter]');
@@ -84,3 +86,4 @@ await writeFile(`${output}/manifest.webmanifest`, JSON.stringify({
   ],
 }, null, 2));
 await cp("data/state.json", `${output}/state.json`);
+await writeScoutExports(output, state);
