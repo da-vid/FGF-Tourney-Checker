@@ -459,10 +459,13 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
     await page.goto(eventUrl, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
     await page.waitForTimeout(2_000);
   }
-  const controlContainer = eventUrl ? page.locator("body") : matchedRow;
-  const registrationControl = await findPgfControl(controlContainer, /register|registration/i);
+  const eventModule = page.locator(".CM_Registration").first();
+  const controlContainer = eventUrl && await eventModule.count() > 0 ? eventModule : matchedRow;
+  const registrationControl = await findPgfControl(controlContainer, /register now|registration/i);
   const approvedTeamsControl = await findPgfControl(controlContainer, /approved teams?|committed teams?/i);
-  if (config.registrationExpected && (registrationControl === null || approvedTeamsControl === null)) {
+  const approvedTeamsTable = controlContainer.locator(".teams .approved-teams table").first();
+  const hasApprovedTeamsTable = await approvedTeamsTable.count() > 0;
+  if (config.registrationExpected && (registrationControl === null || (!hasApprovedTeamsTable && approvedTeamsControl === null))) {
     throw new Error("PGF qualifier is expected to be open, but its registration or approved-team control was not found");
   }
   const hasRegistration = registrationControl !== null && await registrationControl.isEnabled().catch(() => false);
@@ -485,7 +488,12 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
     : hasRegistration ? eventUrl ?? config.sourceUrl : undefined;
 
   let teams: CollectionResult["teams"] = [];
-  if (approvedTeamsControl !== null) {
+  if (hasApprovedTeamsTable) {
+    const approvedRows = await approvedTeamsTable.locator("tr").evaluateAll((tableRows) =>
+      tableRows.map((row) => Array.from(row.querySelectorAll("th,td")).map((cell) => cell.textContent?.trim() ?? "")),
+    );
+    teams = parsePgfApprovedTeamRows(approvedRows, config.entireEventIs12U);
+  } else if (approvedTeamsControl !== null) {
     const approvedHref = await approvedTeamsControl.evaluate((element) => {
       const anchor = element.closest("a") ?? element.querySelector("a");
       const form = element.closest("form");
