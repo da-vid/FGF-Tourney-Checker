@@ -453,8 +453,15 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
   const matchedIndex = rows.findIndex((row) => row === candidates[0]);
   if (matchedIndex < 0) throw new Error("Matched PGF qualifier row could not be located");
   const matchedRow = rowLocator.nth(matchedIndex);
-  const registrationControl = await findPgfControl(matchedRow, /register|registration/i);
-  const approvedTeamsControl = await findPgfControl(matchedRow, /approved teams?|committed teams?/i);
+  const eventHref = await matchedRow.locator("a[href]").first().getAttribute("href");
+  const eventUrl = eventHref ? new URL(eventHref, config.sourceUrl).href : undefined;
+  if (eventUrl) {
+    await page.goto(eventUrl, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
+    await page.waitForTimeout(2_000);
+  }
+  const controlContainer = eventUrl ? page.locator("body") : matchedRow;
+  const registrationControl = await findPgfControl(controlContainer, /register|registration/i);
+  const approvedTeamsControl = await findPgfControl(controlContainer, /approved teams?|committed teams?/i);
   if (config.registrationExpected && (registrationControl === null || approvedTeamsControl === null)) {
     throw new Error("PGF qualifier is expected to be open, but its registration or approved-team control was not found");
   }
@@ -474,8 +481,8 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
       }).catch(() => null)
     : null;
   const registrationUrl = registrationHref && !/^javascript:/i.test(registrationHref)
-    ? new URL(registrationHref, config.sourceUrl).href
-    : hasRegistration ? config.sourceUrl : undefined;
+    ? new URL(registrationHref, eventUrl ?? config.sourceUrl).href
+    : hasRegistration ? eventUrl ?? config.sourceUrl : undefined;
 
   let teams: CollectionResult["teams"] = [];
   if (approvedTeamsControl !== null) {
@@ -493,7 +500,7 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
     }).catch(() => null);
     let approvedPage = page;
     if (approvedHref && !/^javascript:/i.test(approvedHref)) {
-      await page.goto(new URL(approvedHref, config.sourceUrl).href, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
+      await page.goto(new URL(approvedHref, eventUrl ?? config.sourceUrl).href, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
     } else {
       const popupPromise = page.waitForEvent("popup", { timeout: 5_000 }).catch(() => null);
       await approvedTeamsControl.click();
