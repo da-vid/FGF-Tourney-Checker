@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T06:31:27.966Z",
+  "generatedAt": "2026-08-21T06:38:33.941Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -60,15 +60,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:29:57.221Z",
-      "lastSuccessfulCheck": "2026-08-21T06:29:57.221Z",
+      "checkedAt": "2026-08-21T06:35:47.621Z",
+      "lastSuccessfulCheck": "2026-08-21T06:35:47.621Z",
       "officialName": "Fab 5",
       "weekendId": "2026-08-15",
       "role": "primary",
       "capacityScope": "12U",
       "registrationState": "unknown",
       "registrationStatus": "12U availability not published",
-      "registrationObservedAt": "2026-08-21T06:29:57.221Z"
+      "registrationObservedAt": "2026-08-21T06:35:47.621Z"
     },
     {
       "id": "legacy-stay-humble-2026-08",
@@ -81,7 +81,7 @@
       "sourceType": "legacy",
       "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/stay-humble-summer-event-rec5y1LmaYTRvNQpw",
       "status": "active",
-      "outcome": "failure",
+      "outcome": "success",
       "teams": [
         {
           "rawName": "OC Batbusters Murillo 12u",
@@ -145,8 +145,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:00.995Z",
-      "lastSuccessfulCheck": "2026-08-21T06:25:21.313Z",
+      "checkedAt": "2026-08-21T06:35:54.504Z",
+      "lastSuccessfulCheck": "2026-08-21T06:35:54.504Z",
       "officialName": "Stay Humble Summer Event",
       "capacity": 30,
       "weekendId": "2026-08-29",
@@ -154,9 +154,8 @@
       "capacityScope": "event",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
-      "registrationObservedAt": "2026-08-21T06:25:21.313Z",
-      "spotsRemaining": 1,
-      "diagnostic": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.legacysportsfastpitch.com/single-event-info/stay-humble-summer-event-rec5y1LmaYTRvNQpw\nCall log:\n  - navigating to \"https://play.legacysportsfastpitch.com/single-event-info/stay-humble-summer-event-rec5y1LmaYTRvNQpw\", waiting until \"domcontentloaded\"\n"
+      "registrationObservedAt": "2026-08-21T06:35:54.504Z",
+      "spotsRemaining": 1
     },
     {
       "id": "legacy-freedom-rings-2026",
@@ -169,7 +168,7 @@
       "sourceType": "legacy",
       "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/9/11-freedom-rings-rec06Ar0KnM4KR32T",
       "status": "active",
-      "outcome": "failure",
+      "outcome": "success",
       "teams": [
         {
           "rawName": "Athletics Mercado Cole 2032",
@@ -245,8 +244,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:01.109Z",
-      "lastSuccessfulCheck": "2026-08-21T06:25:21.130Z",
+      "checkedAt": "2026-08-21T06:35:54.775Z",
+      "lastSuccessfulCheck": "2026-08-21T06:35:54.775Z",
       "officialName": "9/11 Freedom Rings",
       "capacity": 40,
       "weekendId": "2026-09-12",
@@ -254,9 +253,8 @@
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-21T06:25:21.130Z",
-      "spotsRemaining": 0,
-      "diagnostic": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.legacysportsfastpitch.com/single-event-info/9/11-freedom-rings-rec06Ar0KnM4KR32T\nCall log:\n  - navigating to \"https://play.legacysportsfastpitch.com/single-event-info/9/11-freedom-rings-rec06Ar0KnM4KR32T\", waiting until \"domcontentloaded\"\n"
+      "registrationObservedAt": "2026-08-21T06:35:54.775Z",
+      "spotsRemaining": 0
     },
     {
       "id": "first-to-third-phil-mumma-2026",
@@ -334,15 +332,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:44.767Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:44.767Z",
+      "checkedAt": "2026-08-21T06:35:56.632Z",
+      "lastSuccessfulCheck": "2026-08-21T06:35:56.632Z",
       "officialName": "11th Annual Sorcerer/Phil Mumma Memorial",
       "weekendId": "2026-09-26",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Sep 18, 2026",
-      "registrationObservedAt": "2026-08-21T06:30:44.767Z"
+      "registrationObservedAt": "2026-08-21T06:35:56.632Z"
     },
     {
       "id": "ast-pink-panther-2026-sacramento",
@@ -404,13 +402,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:29:58.862Z",
-      "lastSuccessfulCheck": "2026-08-21T06:29:58.862Z",
+      "checkedAt": "2026-08-21T06:35:49.131Z",
+      "lastSuccessfulCheck": "2026-08-21T06:35:49.131Z",
       "officialName": "Pink Panther",
       "capacityScope": "12U",
       "registrationState": "unknown",
       "registrationStatus": "12U availability not published",
-      "registrationObservedAt": "2026-08-21T06:29:58.862Z"
+      "registrationObservedAt": "2026-08-21T06:35:49.131Z"
     },
     {
       "id": "ast-pink-panther-2026-salinas",
@@ -484,13 +482,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:00.208Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:00.208Z",
+      "checkedAt": "2026-08-21T06:35:50.460Z",
+      "lastSuccessfulCheck": "2026-08-21T06:35:50.460Z",
       "officialName": "Pink Panther",
       "capacityScope": "12U",
       "registrationState": "unknown",
       "registrationStatus": "12U availability not published",
-      "registrationObservedAt": "2026-08-21T06:30:00.208Z"
+      "registrationObservedAt": "2026-08-21T06:35:50.460Z"
     },
     {
       "id": "legacy-stay-humble-fall-pcfl-2026-folsom",
@@ -505,7 +503,7 @@
       "sourceType": "legacy",
       "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/stay-humble-fall-pcfl-alliance-qualifier-folsom%2C%20ca-recEJ8C2lfpM6UGY4",
       "status": "active",
-      "outcome": "failure",
+      "outcome": "success",
       "teams": [
         {
           "rawName": "PowerSurge Reis 12u",
@@ -613,16 +611,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:06.326Z",
-      "lastSuccessfulCheck": "2026-08-21T06:25:25.997Z",
+      "checkedAt": "2026-08-21T06:35:59.399Z",
+      "lastSuccessfulCheck": "2026-08-21T06:35:59.399Z",
       "officialName": "Stay Humble Fall PCFL Alliance Qualifier",
       "capacity": 50,
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-21T06:25:25.997Z",
-      "spotsRemaining": 0,
-      "diagnostic": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.legacysportsfastpitch.com/single-event-info/stay-humble-fall-pcfl-alliance-qualifier-folsom%2C%20ca-recEJ8C2lfpM6UGY4\nCall log:\n  - navigating to \"https://play.legacysportsfastpitch.com/single-event-info/stay-humble-fall-pcfl-alliance-qualifier-folsom%2C%20ca-recEJ8C2lfpM6UGY4\", waiting until \"domcontentloaded\"\n"
+      "registrationObservedAt": "2026-08-21T06:35:59.399Z",
+      "spotsRemaining": 0
     },
     {
       "id": "legacy-stay-humble-fall-2026-fernley",
@@ -637,7 +634,7 @@
       "sourceType": "legacy",
       "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/stay-humble-fall-event-recNxYWJSPKRjeNUH",
       "status": "active",
-      "outcome": "failure",
+      "outcome": "success",
       "teams": [
         {
           "rawName": "Nevada Dream Fastpitch",
@@ -653,16 +650,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:06.954Z",
-      "lastSuccessfulCheck": "2026-08-21T06:25:33.045Z",
+      "checkedAt": "2026-08-21T06:36:03.480Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:03.480Z",
       "officialName": "Stay Humble Fall Event",
       "capacity": 30,
       "capacityScope": "event",
       "registrationState": "limited",
       "registrationStatus": "3 spots left",
-      "registrationObservedAt": "2026-08-21T06:25:33.045Z",
-      "spotsRemaining": 3,
-      "diagnostic": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.legacysportsfastpitch.com/single-event-info/stay-humble-fall-event-recNxYWJSPKRjeNUH\nCall log:\n  - navigating to \"https://play.legacysportsfastpitch.com/single-event-info/stay-humble-fall-event-recNxYWJSPKRjeNUH\", waiting until \"domcontentloaded\"\n"
+      "registrationObservedAt": "2026-08-21T06:36:03.480Z",
+      "spotsRemaining": 3
     },
     {
       "id": "wcp-bart-magellan-2026-stockton",
@@ -679,16 +675,16 @@
       "eventMatch": "Sept 26-27, 2026",
       "locationScope": "Stockton",
       "status": "active",
-      "outcome": "success",
+      "outcome": "not_published",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:05.500Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:05.500Z",
+      "checkedAt": "2026-08-21T06:35:55.095Z",
+      "lastSuccessfulCheck": "2026-08-21T06:35:55.095Z",
       "officialName": "Bart Magellan Cancer Awareness Classic",
-      "registrationStatus": "Registration page available",
-      "registrationState": "unknown",
+      "registrationStatus": "Event is not currently published by West Coast Premier",
+      "registrationState": "not_published",
       "registrationUrl": "https://form.fillout.com/t/r6dKpw35hLus",
-      "registrationObservedAt": "2026-08-21T06:30:05.500Z"
+      "registrationObservedAt": "2026-08-21T06:35:55.095Z"
     },
     {
       "id": "pgf-stockton-tracy-qualifier-2026-10",
@@ -704,7 +700,7 @@
       "outcome": "failure",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:13.541Z",
+      "checkedAt": "2026-08-21T06:36:11.326Z",
       "lastSuccessfulCheck": "2026-08-21T06:14:20.581Z",
       "weekendId": "2026-10-10",
       "role": "primary",
@@ -727,7 +723,7 @@
       "sourceType": "legacy",
       "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/fight-the-fight-bc-awareness-series-recSSvaBPNI9IhQLw",
       "status": "active",
-      "outcome": "failure",
+      "outcome": "success",
       "teams": [
         {
           "rawName": "Foothill Gold Fowler",
@@ -797,8 +793,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:12.459Z",
-      "lastSuccessfulCheck": "2026-08-21T06:25:38.875Z",
+      "checkedAt": "2026-08-21T06:36:05.267Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:05.267Z",
       "officialName": "Fight the Fight BC Awareness Series",
       "capacity": 30,
       "weekendId": "2026-10-10",
@@ -806,9 +802,8 @@
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-21T06:25:38.875Z",
-      "spotsRemaining": 0,
-      "diagnostic": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.legacysportsfastpitch.com/single-event-info/fight-the-fight-bc-awareness-series-recSSvaBPNI9IhQLw\nCall log:\n  - navigating to \"https://play.legacysportsfastpitch.com/single-event-info/fight-the-fight-bc-awareness-series-recSSvaBPNI9IhQLw\", waiting until \"domcontentloaded\"\n"
+      "registrationObservedAt": "2026-08-21T06:36:05.267Z",
+      "spotsRemaining": 0
     },
     {
       "id": "legacy-fight-the-fight-2026-fernley",
@@ -823,7 +818,7 @@
       "sourceType": "legacy",
       "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/fight-the-fight-bc-awareness-series-recBdtydE4T63J2yd",
       "status": "active",
-      "outcome": "failure",
+      "outcome": "success",
       "teams": [
         {
           "rawName": "Nevada Dream Fastpitch",
@@ -863,16 +858,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:13.026Z",
-      "lastSuccessfulCheck": "2026-08-21T06:25:38.958Z",
+      "checkedAt": "2026-08-21T06:36:08.282Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:08.282Z",
       "officialName": "Fight the Fight BC Awareness Series",
       "capacity": 24,
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-21T06:25:38.958Z",
-      "spotsRemaining": 0,
-      "diagnostic": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.legacysportsfastpitch.com/single-event-info/fight-the-fight-bc-awareness-series-recBdtydE4T63J2yd\nCall log:\n  - navigating to \"https://play.legacysportsfastpitch.com/single-event-info/fight-the-fight-bc-awareness-series-recBdtydE4T63J2yd\", waiting until \"domcontentloaded\"\n"
+      "registrationObservedAt": "2026-08-21T06:36:08.282Z",
+      "spotsRemaining": 0
     },
     {
       "id": "ast-black-widow-2026-sacramento",
@@ -922,12 +916,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:14.176Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:14.176Z",
+      "checkedAt": "2026-08-21T06:36:04.824Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:04.824Z",
       "officialName": "Black Widow",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-21T06:30:14.176Z",
+      "registrationObservedAt": "2026-08-21T06:36:04.824Z",
       "capacityScope": "12U"
     },
     {
@@ -943,7 +937,7 @@
       "sourceType": "wcp",
       "sourceUrl": "https://www.westcoastpremier.com/oct-10-11-the-golden-ticket.html",
       "status": "active",
-      "outcome": "success",
+      "outcome": "failure",
       "teams": [
         {
           "rawName": "Firecrackers Zeigler",
@@ -977,14 +971,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:18.208Z",
+      "checkedAt": "2026-08-21T06:37:39.998Z",
       "lastSuccessfulCheck": "2026-08-21T06:30:18.208Z",
       "officialName": "The Golden Ticket",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11440",
       "registrationObservedAt": "2026-08-21T06:30:18.208Z",
-      "registrationDeadline": "September 19th"
+      "registrationDeadline": "September 19th",
+      "diagnostic": "West Coast Premier 12U section was not found"
     },
     {
       "id": "first-to-third-quest-best-2026",
@@ -1034,13 +1029,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:26.088Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:26.088Z",
+      "checkedAt": "2026-08-21T06:36:16.552Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:16.552Z",
       "officialName": "Quest for the Best",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Oct 4, 2026",
-      "registrationObservedAt": "2026-08-21T06:30:26.088Z"
+      "registrationObservedAt": "2026-08-21T06:36:16.552Z"
     },
     {
       "id": "pgf-futures-ultimate-challenge-2026-salinas",
@@ -1059,13 +1054,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:21.190Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:21.190Z",
+      "checkedAt": "2026-08-21T06:36:13.382Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:13.382Z",
       "officialName": "2026 PGF Futures Ultimate Challenge (INVITE ONLY)",
       "registrationStatus": "Invite only",
       "registrationState": "invite_only",
       "registrationDeadline": "Sep 4, 2026",
-      "registrationObservedAt": "2026-08-21T06:30:21.190Z"
+      "registrationObservedAt": "2026-08-21T06:36:13.382Z"
     },
     {
       "id": "legacy-finish-the-fight-2026",
@@ -1078,7 +1073,7 @@
       "sourceType": "legacy",
       "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/finish-the-fight-bc-awareness-series-recsqr8yWi46XXFTN",
       "status": "active",
-      "outcome": "failure",
+      "outcome": "success",
       "teams": [
         {
           "rawName": "Natomas Lady Tigers",
@@ -1130,8 +1125,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:24.061Z",
-      "lastSuccessfulCheck": "2026-08-21T06:25:50.959Z",
+      "checkedAt": "2026-08-21T06:36:20.015Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:20.015Z",
       "officialName": "Finish the Fight BC Awareness Series",
       "capacity": 30,
       "weekendId": "2026-10-17",
@@ -1139,9 +1134,8 @@
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-21T06:25:50.959Z",
-      "spotsRemaining": 0,
-      "diagnostic": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.legacysportsfastpitch.com/single-event-info/finish-the-fight-bc-awareness-series-recsqr8yWi46XXFTN\nCall log:\n  - navigating to \"https://play.legacysportsfastpitch.com/single-event-info/finish-the-fight-bc-awareness-series-recsqr8yWi46XXFTN\", waiting until \"domcontentloaded\"\n"
+      "registrationObservedAt": "2026-08-21T06:36:20.015Z",
+      "spotsRemaining": 0
     },
     {
       "id": "ast-monster-mash-2026-sacramento",
@@ -1191,12 +1185,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:22.824Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:22.824Z",
+      "checkedAt": "2026-08-21T06:36:14.593Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:14.593Z",
       "officialName": "Monster Mash",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-21T06:30:22.824Z",
+      "registrationObservedAt": "2026-08-21T06:36:14.593Z",
       "capacityScope": "12U"
     },
     {
@@ -1212,16 +1206,17 @@
       "sourceType": "wcp",
       "sourceUrl": "https://www.westcoastpremier.com/bay-area-premier-754260.html",
       "status": "active",
-      "outcome": "success",
+      "outcome": "failure",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:27.573Z",
+      "checkedAt": "2026-08-21T06:37:49.596Z",
       "lastSuccessfulCheck": "2026-08-21T06:30:27.573Z",
       "officialName": "Power in Pink",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11441",
-      "registrationObservedAt": "2026-08-21T06:30:27.573Z"
+      "registrationObservedAt": "2026-08-21T06:30:27.573Z",
+      "diagnostic": "West Coast Premier 12U section was not found"
     },
     {
       "id": "first-to-third-pink-out-parks-2026",
@@ -1277,13 +1272,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:37.797Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:37.797Z",
+      "checkedAt": "2026-08-21T06:36:28.008Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:28.008Z",
       "officialName": "Pink out the Parks",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Oct 12, 2026",
-      "registrationObservedAt": "2026-08-21T06:30:37.797Z"
+      "registrationObservedAt": "2026-08-21T06:36:28.008Z"
     },
     {
       "id": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
@@ -1298,7 +1293,7 @@
       "sourceType": "legacy",
       "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/keep-humble-fall-pcfl-alliance-qualifier-recVJkgSbcFKMmmS7",
       "status": "active",
-      "outcome": "failure",
+      "outcome": "success",
       "teams": [
         {
           "rawName": "Foothill Gold Fowler",
@@ -1338,16 +1333,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:31.874Z",
-      "lastSuccessfulCheck": "2026-08-21T06:25:57.710Z",
+      "checkedAt": "2026-08-21T06:36:28.464Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:28.464Z",
       "officialName": "Keep Humble Fall PCFL Alliance Qualifier",
       "capacity": 40,
       "spotsRemaining": 12,
       "capacityScope": "event",
       "registrationState": "limited",
       "registrationStatus": "12 spots left",
-      "registrationObservedAt": "2026-08-21T06:25:57.710Z",
-      "diagnostic": "page.goto: net::ERR_CONNECTION_CLOSED at https://play.legacysportsfastpitch.com/single-event-info/keep-humble-fall-pcfl-alliance-qualifier-recVJkgSbcFKMmmS7\nCall log:\n  - navigating to \"https://play.legacysportsfastpitch.com/single-event-info/keep-humble-fall-pcfl-alliance-qualifier-recVJkgSbcFKMmmS7\", waiting until \"domcontentloaded\"\n"
+      "registrationObservedAt": "2026-08-21T06:36:28.464Z"
     },
     {
       "id": "first-to-third-monster-mash-2026",
@@ -1407,15 +1401,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:41.563Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:41.563Z",
+      "checkedAt": "2026-08-21T06:36:39.537Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:39.537Z",
       "officialName": "Monster Mash for Cash",
       "weekendId": "2026-10-24",
       "role": "alternate",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Oct 19, 2026",
-      "registrationObservedAt": "2026-08-21T06:30:41.563Z"
+      "registrationObservedAt": "2026-08-21T06:36:39.537Z"
     },
     {
       "id": "ast-jack-ball-2026-sacramento",
@@ -1471,12 +1465,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:33.344Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:33.344Z",
+      "checkedAt": "2026-08-21T06:36:29.934Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:29.934Z",
       "officialName": "Jack Ball",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-21T06:30:33.344Z",
+      "registrationObservedAt": "2026-08-21T06:36:29.934Z",
       "capacityScope": "12U"
     },
     {
@@ -1495,13 +1489,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:38.258Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:38.258Z",
+      "checkedAt": "2026-08-21T06:36:34.754Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:34.754Z",
       "officialName": "NorCal Championship Challenge",
       "registrationState": "unknown",
       "registrationStatus": "Registration link points to another event",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11441",
-      "registrationObservedAt": "2026-08-21T06:30:38.258Z"
+      "registrationObservedAt": "2026-08-21T06:36:34.754Z"
     },
     {
       "id": "usssa-sandlot-dugout-wars-2026",
@@ -1519,7 +1513,7 @@
       "outcome": "failure",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:31:27.938Z",
+      "checkedAt": "2026-08-21T06:37:24.917Z",
       "lastSuccessfulCheck": "2026-08-14T16:30:12.833Z",
       "officialName": "Sandlot Dugout Wars",
       "capacityScope": "12U",
@@ -1546,13 +1540,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:46.292Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:46.292Z",
+      "checkedAt": "2026-08-21T06:36:45.598Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:45.598Z",
       "officialName": "2026 PGF Halloween Bash",
       "registrationStatus": "No public registration",
       "registrationState": "not_public",
       "registrationDeadline": "Oct 16, 2026",
-      "registrationObservedAt": "2026-08-21T06:30:46.292Z"
+      "registrationObservedAt": "2026-08-21T06:36:45.598Z"
     },
     {
       "id": "first-to-third-south-bay-showdown-2026",
@@ -1654,15 +1648,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:55.651Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:55.651Z",
+      "checkedAt": "2026-08-21T06:36:57.226Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:57.226Z",
       "officialName": "South Bay Showdown",
       "weekendId": "2026-11-07",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Oct 5, 2026",
-      "registrationObservedAt": "2026-08-21T06:30:55.651Z"
+      "registrationObservedAt": "2026-08-21T06:36:57.226Z"
     },
     {
       "id": "ast-mm-candy-classic-2026-sacramento",
@@ -1730,12 +1724,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:46.129Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:46.129Z",
+      "checkedAt": "2026-08-21T06:36:58.840Z",
+      "lastSuccessfulCheck": "2026-08-21T06:36:58.840Z",
       "officialName": "M&M Candy Classic",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-21T06:30:46.129Z",
+      "registrationObservedAt": "2026-08-21T06:36:58.840Z",
       "capacityScope": "12U"
     },
     {
@@ -1751,15 +1745,16 @@
       "sourceType": "wcp",
       "sourceUrl": "https://www.westcoastpremier.com/nov-7-8-veterans-day-classic.html",
       "status": "active",
-      "outcome": "success",
+      "outcome": "failure",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:46.618Z",
+      "checkedAt": "2026-08-21T06:38:33.895Z",
       "lastSuccessfulCheck": "2026-08-21T06:30:46.618Z",
       "officialName": "Veterans Day Classic",
       "registrationState": "unknown",
       "registrationStatus": "Registration link not active",
-      "registrationObservedAt": "2026-08-21T06:30:46.618Z"
+      "registrationObservedAt": "2026-08-21T06:30:46.618Z",
+      "diagnostic": "West Coast Premier 12U section was not found"
     },
     {
       "id": "pgf-homerun-hoedown-2026-salinas",
@@ -1778,13 +1773,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:54.784Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:54.784Z",
+      "checkedAt": "2026-08-21T06:37:31.606Z",
+      "lastSuccessfulCheck": "2026-08-21T06:37:31.606Z",
       "officialName": "2026 PGF Homerun Hoedown",
       "registrationStatus": "Registration open",
       "registrationState": "open",
       "registrationDeadline": "Oct 30, 2026",
-      "registrationObservedAt": "2026-08-21T06:30:54.784Z"
+      "registrationObservedAt": "2026-08-21T06:37:31.606Z"
     },
     {
       "id": "first-to-third-harvest-cup-2026",
@@ -1826,15 +1821,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:31:00.714Z",
-      "lastSuccessfulCheck": "2026-08-21T06:31:00.714Z",
+      "checkedAt": "2026-08-21T06:37:43.719Z",
+      "lastSuccessfulCheck": "2026-08-21T06:37:43.719Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-08-21T06:31:00.714Z"
+      "registrationObservedAt": "2026-08-21T06:37:43.719Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -1878,12 +1873,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:56.089Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:56.089Z",
+      "checkedAt": "2026-08-21T06:37:42.013Z",
+      "lastSuccessfulCheck": "2026-08-21T06:37:42.013Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-21T06:30:56.089Z",
+      "registrationObservedAt": "2026-08-21T06:37:42.013Z",
       "capacityScope": "12U"
     },
     {
@@ -1903,12 +1898,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:56.856Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:56.856Z",
+      "checkedAt": "2026-08-21T06:37:43.289Z",
+      "lastSuccessfulCheck": "2026-08-21T06:37:43.289Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-21T06:30:56.856Z",
+      "registrationObservedAt": "2026-08-21T06:37:43.289Z",
       "capacityScope": "12U"
     },
     {
@@ -1927,13 +1922,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:31:00.949Z",
-      "lastSuccessfulCheck": "2026-08-21T06:31:00.949Z",
+      "checkedAt": "2026-08-21T06:38:19.794Z",
+      "lastSuccessfulCheck": "2026-08-21T06:38:19.794Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11446",
-      "registrationObservedAt": "2026-08-21T06:31:00.949Z",
+      "registrationObservedAt": "2026-08-21T06:38:19.794Z",
       "registrationDeadline": "September 19th"
     },
     {
@@ -1953,12 +1948,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:57.650Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:57.650Z",
+      "checkedAt": "2026-08-21T06:37:47.795Z",
+      "lastSuccessfulCheck": "2026-08-21T06:37:47.795Z",
       "officialName": "STOCKTON 02/20/2027 02/21/2027 12U CA Western",
-      "registrationState": "unknown",
-      "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-08-21T06:30:57.650Z"
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationObservedAt": "2026-08-21T06:37:47.795Z",
+      "registrationUrl": "https://www.premiergirlsfastpitch.com/become_a_member"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -1977,15 +1973,107 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-21T06:30:58.533Z",
-      "lastSuccessfulCheck": "2026-08-21T06:30:58.533Z",
+      "checkedAt": "2026-08-21T06:37:51.305Z",
+      "lastSuccessfulCheck": "2026-08-21T06:37:51.305Z",
       "officialName": "STOCKTON 04/24/2027 04/25/2027 12U CA Western",
-      "registrationState": "unknown",
-      "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-08-21T06:30:58.533Z"
+      "registrationState": "open",
+      "registrationStatus": "Registration open",
+      "registrationObservedAt": "2026-08-21T06:37:51.305Z",
+      "registrationUrl": "https://www.premiergirlsfastpitch.com/become_a_member"
     }
   ],
   "changes": [
+    {
+      "id": "2026-08-21t06-37-51-305z-pgf-stockton-qualifier-2027-04-registration-status-changed-event",
+      "tournamentId": "pgf-stockton-qualifier-2027-04",
+      "occurredAt": "2026-08-21T06:37:51.305Z",
+      "type": "registration_status_changed",
+      "detail": "Registration changed from unknown to open."
+    },
+    {
+      "id": "2026-08-21t06-37-47-795z-pgf-stockton-qualifier-2027-02-registration-status-changed-event",
+      "tournamentId": "pgf-stockton-qualifier-2027-02",
+      "occurredAt": "2026-08-21T06:37:47.795Z",
+      "type": "registration_status_changed",
+      "detail": "Registration changed from unknown to open."
+    },
+    {
+      "id": "2026-08-21t06-38-33-895z-wcp-veterans-day-classic-2026-source-unhealthy-event",
+      "tournamentId": "wcp-veterans-day-classic-2026",
+      "occurredAt": "2026-08-21T06:38:33.895Z",
+      "type": "source_unhealthy",
+      "detail": "The official source could not be read."
+    },
+    {
+      "id": "2026-08-21t06-36-28-464z-legacy-keep-humble-pcfl-qualifier-2026-folsom-source-recovered-event",
+      "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
+      "occurredAt": "2026-08-21T06:36:28.464Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
+    {
+      "id": "2026-08-21t06-37-49-596z-wcp-power-in-pink-2026-source-unhealthy-event",
+      "tournamentId": "wcp-power-in-pink-2026",
+      "occurredAt": "2026-08-21T06:37:49.596Z",
+      "type": "source_unhealthy",
+      "detail": "The official source could not be read."
+    },
+    {
+      "id": "2026-08-21t06-36-20-015z-legacy-finish-the-fight-2026-source-recovered-event",
+      "tournamentId": "legacy-finish-the-fight-2026",
+      "occurredAt": "2026-08-21T06:36:20.015Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
+    {
+      "id": "2026-08-21t06-37-39-998z-wcp-golden-ticket-2026-source-unhealthy-event",
+      "tournamentId": "wcp-golden-ticket-2026",
+      "occurredAt": "2026-08-21T06:37:39.998Z",
+      "type": "source_unhealthy",
+      "detail": "The official source could not be read."
+    },
+    {
+      "id": "2026-08-21t06-36-08-282z-legacy-fight-the-fight-2026-fernley-source-recovered-event",
+      "tournamentId": "legacy-fight-the-fight-2026-fernley",
+      "occurredAt": "2026-08-21T06:36:08.282Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
+    {
+      "id": "2026-08-21t06-36-05-267z-legacy-fight-the-fight-2026-source-recovered-event",
+      "tournamentId": "legacy-fight-the-fight-2026",
+      "occurredAt": "2026-08-21T06:36:05.267Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
+    {
+      "id": "2026-08-21t06-36-03-480z-legacy-stay-humble-fall-2026-fernley-source-recovered-event",
+      "tournamentId": "legacy-stay-humble-fall-2026-fernley",
+      "occurredAt": "2026-08-21T06:36:03.480Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
+    {
+      "id": "2026-08-21t06-35-59-399z-legacy-stay-humble-fall-pcfl-2026-folsom-source-recovered-event",
+      "tournamentId": "legacy-stay-humble-fall-pcfl-2026-folsom",
+      "occurredAt": "2026-08-21T06:35:59.399Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
+    {
+      "id": "2026-08-21t06-35-54-775z-legacy-freedom-rings-2026-source-recovered-event",
+      "tournamentId": "legacy-freedom-rings-2026",
+      "occurredAt": "2026-08-21T06:35:54.775Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
+    {
+      "id": "2026-08-21t06-35-54-504z-legacy-stay-humble-2026-08-source-recovered-event",
+      "tournamentId": "legacy-stay-humble-2026-08",
+      "occurredAt": "2026-08-21T06:35:54.504Z",
+      "type": "source_recovered",
+      "detail": "The official source is healthy again."
+    },
     {
       "id": "2026-08-21t06-30-31-874z-legacy-keep-humble-pcfl-qualifier-2026-folsom-source-unhealthy-event",
       "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
