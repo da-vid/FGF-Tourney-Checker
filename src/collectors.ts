@@ -18,7 +18,7 @@ import {
 import type { CollectionResult, TournamentConfig } from "./types";
 
 const NAVIGATION_TIMEOUT = 35_000;
-const PGF_CONTROL_SELECTOR = 'a,button,input[type="button"],input[type="submit"],[role="button"]';
+const PGF_CONTROL_SELECTOR = 'a,button,input[type="button"],input[type="submit"],input[type="image"],[role="button"],[onclick]';
 
 async function bodyText(page: Page): Promise<string> {
   return page.locator("body").innerText({ timeout: 15_000 });
@@ -32,6 +32,8 @@ async function findPgfControl(container: Locator, label: RegExp): Promise<Locato
     element.getAttribute("aria-label"),
     element.getAttribute("title"),
     element.getAttribute("alt"),
+    element.querySelector("img[alt]")?.getAttribute("alt"),
+    element.querySelector("img[title]")?.getAttribute("title"),
   ].filter(Boolean).join(" ").replace(/\s+/g, " ").trim()));
   const index = labels.findIndex((controlLabel) => label.test(controlLabel));
   return index >= 0 ? controls.nth(index) : null;
