@@ -455,6 +455,9 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
   const matchedRow = rowLocator.nth(matchedIndex);
   const registrationControl = await findPgfControl(matchedRow, /register|registration/i);
   const approvedTeamsControl = await findPgfControl(matchedRow, /approved teams?|committed teams?/i);
+  if (config.registrationExpected && (registrationControl === null || approvedTeamsControl === null)) {
+    throw new Error("PGF qualifier is expected to be open, but its registration or approved-team control was not found");
+  }
   const hasRegistration = registrationControl !== null && await registrationControl.isEnabled().catch(() => false);
   const registrationHref = hasRegistration
     ? await registrationControl?.evaluate((element) => {

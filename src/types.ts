@@ -37,6 +37,7 @@ export interface TournamentConfig {
   locationScope?: string;
   eventMatch?: string;
   entireEventIs12U?: boolean;
+  registrationExpected?: boolean;
   status: "active" | "discovery";
 }
 
