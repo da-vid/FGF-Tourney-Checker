@@ -60,3 +60,4 @@ jobs:
           path: .artifacts
           retention-days: 7
           if-no-files-found: ignore
+          include-hidden-files: true
