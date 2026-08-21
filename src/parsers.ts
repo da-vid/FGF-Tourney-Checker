@@ -233,14 +233,54 @@ export function parseUsssaRows(rows: string[][]): TeamRecord[] {
   });
 }
 
-export function findPgfQualifierRows(rows: string[], expectedStartDate: string): string[] {
+export function findPgfQualifierRows(rows: string[], expectedStartDate: string, entireEventIs12U = false): string[] {
   const expected = new Date(`${expectedStartDate}T12:00:00Z`).getTime();
   return rows.filter((row) => {
-    if (!/\b(STOCKTON|TRACY)\b/i.test(row) || !/\b12U\b/i.test(row)) return false;
-    const match = row.match(/(\d{1,2}\/\d{1,2}\/2026)/);
+    if (!/\b(STOCKTON|TRACY)\b/i.test(row) || (!entireEventIs12U && !/\b12U\b/i.test(row))) return false;
+    const match = row.match(/(\d{1,2}\/\d{1,2}\/20\d{2})/);
     if (!match) return false;
     const [month, day, year] = match[1].split("/").map(Number);
     const candidate = Date.UTC(year, month - 1, day, 12);
     return Math.abs(candidate - expected) <= 14 * 24 * 60 * 60 * 1000;
   });
+}
+
+export function parsePgfApprovedTeamRows(rows: string[][], entireEventIs12U = false): TeamRecord[] {
+  let teamColumn = -1;
+  let divisionColumn = -1;
+  let activeDivision = "";
+  const teams = new Map<string, TeamRecord>();
+
+  for (const cells of rows) {
+    const values = cells.map((value) => value.replace(/\s+/g, " ").trim());
+    if (values.every((value) => !value)) continue;
+
+    const headerTeamColumn = values.findIndex((value) => /^(?:approved )?teams?(?: name)?$/i.test(value));
+    if (headerTeamColumn >= 0) {
+      teamColumn = headerTeamColumn;
+      divisionColumn = values.findIndex((value) => /^(?:age|division|age division)$/i.test(value));
+      continue;
+    }
+
+    const ageHeading = values.find((value) => /^(?:8U|10U|12U|14U|16U|18U)(?:\s*-\s*Girls)?$/i.test(value));
+    if (ageHeading) activeDivision = ageHeading;
+    if (teamColumn < 0 && !activeDivision) continue;
+    const rowDivision = divisionColumn >= 0 ? values[divisionColumn] : ageHeading;
+    const division = rowDivision ?? activeDivision;
+    if (division && !/^12U(?:\s*-\s*Girls)?$/i.test(division)) continue;
+    if (!division && !entireEventIs12U) continue;
+
+    let teamName = teamColumn >= 0 ? values[teamColumn] : undefined;
+    if (!teamName || /^(?:12U|approved|pending)$/i.test(teamName)) {
+      teamName = values.find((value) =>
+        value.length > 0 && !/^(?:8U|10U|12U|14U|16U|18U)(?:\s*-\s*Girls)?$|^(?:approved|pending|team|team name|city|state|status)$/i.test(value),
+      );
+    }
+    if (!teamName) continue;
+
+    const team = parseTeamLine(teamName, "yes");
+    teams.set(team.normalizedName, team);
+  }
+
+  return [...teams.values()];
 }

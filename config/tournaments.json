@@ -143,6 +143,7 @@
     "role": "primary",
     "sourceType": "pgfDiscovery",
     "sourceUrl": "https://www.premiergirlsfastpitch.com/home.php?layout=923173",
+    "entireEventIs12U": true,
     "status": "discovery"
   },
   {
@@ -494,5 +495,35 @@
     "sourceType": "wcp",
     "sourceUrl": "https://www.westcoastpremier.com/nov-21-22-bay-area-bash-for-cash.html",
     "status": "active"
+  },
+  {
+    "id": "pgf-stockton-qualifier-2027-02",
+    "name": "PGF 12U National Qualifier — Stockton",
+    "organizer": "Premier Girls Fastpitch",
+    "startDate": "2027-02-20",
+    "endDate": "2027-02-21",
+    "location": "Stockton",
+    "division": "12U",
+    "weekendId": "2027-02-20",
+    "role": "primary",
+    "sourceType": "pgfDiscovery",
+    "sourceUrl": "https://www.premiergirlsfastpitch.com/home.php?layout=923173",
+    "entireEventIs12U": true,
+    "status": "discovery"
+  },
+  {
+    "id": "pgf-stockton-qualifier-2027-04",
+    "name": "PGF 12U National Qualifier — Stockton",
+    "organizer": "Premier Girls Fastpitch",
+    "startDate": "2027-04-24",
+    "endDate": "2027-04-25",
+    "location": "Stockton",
+    "division": "12U",
+    "weekendId": "2027-04-24",
+    "role": "primary",
+    "sourceType": "pgfDiscovery",
+    "sourceUrl": "https://www.premiergirlsfastpitch.com/home.php?layout=923173",
+    "entireEventIs12U": true,
+    "status": "discovery"
   }
 ]

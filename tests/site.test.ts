@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import { splitChanges } from "../app/DashboardClient";
+import configsJson from "../config/tournaments.json" with { type: "json" };
 import type { MonitorState } from "../src/types";
 
 test("static dashboard contains core product content and no starter copy", async () => {
@@ -50,7 +51,7 @@ test("static export emits the Scout v1 index and per-tournament JSON", async () 
   };
   const state = JSON.parse(await readFile("data/state.json", "utf8")) as MonitorState;
   assert.equal(index.schemaVersion, 1);
-  assert.equal(index.tournaments.length, state.tournaments.length);
+  assert.equal(index.tournaments.length, configsJson.length);
 
   const representative = index.tournaments.find((entry) => entry.id === "first-to-third-phil-mumma-2026");
   assert.equal(representative?.exportUrl, "/scout/v1/tournaments/first-to-third-phil-mumma-2026.json");

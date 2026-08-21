@@ -7,6 +7,7 @@ import {
   parseAstText,
   parseLegacyAvailability,
   parseLegacyRows,
+  parsePgfApprovedTeamRows,
   parseRegistrationText,
   parseTournamentConnectDialog,
   parseUsssaAvailability,
@@ -407,8 +408,9 @@ async function collectUsssa(page: Page, config: TournamentConfig): Promise<Colle
 async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promise<CollectionResult> {
   await page.goto(config.sourceUrl, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
   await page.getByText("National Qualifiers", { exact: true }).first().waitFor({ state: "visible", timeout: 20_000 });
-  const rows = await page.locator("tr").allInnerTexts();
-  const candidates = findPgfQualifierRows(rows, config.startDate);
+  const rowLocator = page.locator("tr");
+  const rows = await rowLocator.allInnerTexts();
+  const candidates = findPgfQualifierRows(rows, config.startDate, config.entireEventIs12U);
   if (candidates.length === 0) {
     const checkedAt = new Date().toISOString();
     return {
@@ -423,6 +425,49 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
     };
   }
   if (candidates.length > 1) throw new Error(`Ambiguous PGF qualifier match: ${candidates.join(" | ")}`);
+
+  const matchedIndex = rows.findIndex((row) => row === candidates[0]);
+  if (matchedIndex < 0) throw new Error("Matched PGF qualifier row could not be located");
+  const matchedRow = rowLocator.nth(matchedIndex);
+  const registrationControl = matchedRow.locator("a,button").filter({ hasText: /register|registration/i }).first();
+  const approvedTeamsControl = matchedRow.locator("a,button").filter({ hasText: /approved teams?|committed teams?/i }).first();
+  const hasRegistration = (await registrationControl.count()) > 0 && await registrationControl.isEnabled().catch(() => false);
+  const registrationHref = hasRegistration
+    ? await registrationControl.evaluate((element) => {
+        const anchor = element.closest("a") ?? element.querySelector("a");
+        return anchor?.getAttribute("href") ?? element.getAttribute("data-href") ?? element.getAttribute("data-url");
+      }).catch(() => null)
+    : null;
+  const registrationUrl = registrationHref && !/^javascript:/i.test(registrationHref)
+    ? new URL(registrationHref, config.sourceUrl).href
+    : hasRegistration ? config.sourceUrl : undefined;
+
+  let teams: CollectionResult["teams"] = [];
+  if ((await approvedTeamsControl.count()) > 0) {
+    const approvedHref = await approvedTeamsControl.evaluate((element) => {
+      const anchor = element.closest("a") ?? element.querySelector("a");
+      return anchor?.getAttribute("href") ?? element.getAttribute("data-href") ?? element.getAttribute("data-url");
+    }).catch(() => null);
+    if (approvedHref && !/^javascript:/i.test(approvedHref)) {
+      await page.goto(new URL(approvedHref, config.sourceUrl).href, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
+    } else {
+      await approvedTeamsControl.click();
+    }
+    const deadline = Date.now() + 20_000;
+    let approvedText = "";
+    while (Date.now() < deadline) {
+      await page.waitForTimeout(500);
+      const teamRows = await page.locator("table tr").evaluateAll((tableRows) =>
+        tableRows.map((row) => Array.from(row.querySelectorAll("th,td")).map((cell) => cell.textContent?.trim() ?? "")),
+      );
+      teams = parsePgfApprovedTeamRows(teamRows, config.entireEventIs12U);
+      approvedText = await bodyText(page);
+      if (teams.length > 0 || /no (?:approved )?teams?|no team found/i.test(approvedText)) break;
+    }
+    if (teams.length === 0 && !/no (?:approved )?teams?|no team found/i.test(approvedText)) {
+      throw new Error("PGF approved-team list did not finish loading or expose its 12U rows");
+    }
+  }
   const checkedAt = new Date().toISOString();
   return {
     tournamentId: config.id,
@@ -430,9 +475,10 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
     outcome: "success",
     officialName: candidates[0].replace(/\s+/g, " ").trim(),
     sourceUrl: config.sourceUrl,
-    teams: [],
-    registrationState: "unknown",
-    registrationStatus: "Published by PGF; committed-team source pending",
+    teams,
+    registrationState: hasRegistration ? "open" : "unknown",
+    registrationStatus: hasRegistration ? "Registration open" : "Published by PGF; registration not yet open",
+    registrationUrl,
     registrationObservedAt: checkedAt,
   };
 }

@@ -10,6 +10,7 @@ import {
   parseLegacyAvailability,
   parseLegacyRows,
   parseLegacyText,
+  parsePgfApprovedTeamRows,
   parseRegistrationText,
   parseTournamentConnectDialog,
   parseUsssaAvailability,
@@ -158,6 +159,25 @@ test("USSSA parses team-name cells from the 12U table", () => {
 test("PGF discovery accepts only a nearby Stockton or Tracy 12U row", () => {
   assert.deepEqual(findPgfQualifierRows(["STOCKTON 12U 10/10/2026 10/11/2026 12U CA Western"], "2026-10-10").length, 1);
   assert.deepEqual(findPgfQualifierRows(["STOCKTON 14U 10/10/2026", "TRACY 12U 01/24/2026"], "2026-10-10"), []);
+  assert.deepEqual(findPgfQualifierRows(["STOCKTON 2/20/2027 2/21/2027 CA Western"], "2027-02-20", true).length, 1);
+});
+
+test("PGF approved teams parser keeps only 12U and marks them confirmed", () => {
+  const teams = parsePgfApprovedTeamRows([
+    ["Division", "Team Name", "State", "Status"],
+    ["10U", "Younger Club", "CA", "Approved"],
+    ["12U", "Foothill Gold Fowler", "CA", "Approved"],
+    ["12U", "Yard Sharks", "NV", "Approved"],
+    ["14U", "Older Club", "CA", "Approved"],
+  ]);
+  assert.deepEqual(teams.map((team) => team.rawName), ["Foothill Gold Fowler", "Yard Sharks"]);
+  assert.equal(teams.every((team) => team.confirmed === "yes"), true);
+  const eventWideTeams = parsePgfApprovedTeamRows([
+    ["Team Name", "State", "Status"],
+    ["Foothill Gold Fowler", "CA", "Approved"],
+    ["Yard Sharks", "NV", "Approved"],
+  ], true);
+  assert.deepEqual(eventWideTeams.map((team) => team.rawName), ["Foothill Gold Fowler", "Yard Sharks"]);
 });
 
 test("normalization removes status suffixes without collapsing teams", () => {
