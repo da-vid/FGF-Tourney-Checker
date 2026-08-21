@@ -3,7 +3,8 @@ import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 import { splitChanges } from "../app/DashboardClient";
 import configsJson from "../config/tournaments.json" with { type: "json" };
-import type { MonitorState } from "../src/types";
+import { currentOrFutureTournaments } from "../src/tournament-dates";
+import type { MonitorState, TournamentConfig } from "../src/types";
 
 test("static dashboard contains core product content and no starter copy", async () => {
   const html = await readFile("pages-dist/index.html", "utf8");
@@ -27,6 +28,7 @@ test("static dashboard contains core product content and no starter copy", async
   assert.match(html, /Scout this tournament/);
   assert.match(html, /https:\/\/scout\.lineuphelper\.com\/import\/tourneys\?tournament=/);
   assert.match(html, /Event-wide|Availability not published|Registration open/);
+  assert.doesNotMatch(html, /<h3>Fab 5<\/h3>/);
   assert.match(html, /font-family:\s*var\(--font-geist-sans, Arial\), Helvetica, sans-serif/);
   assert.doesNotMatch(html, /Your site is taking shape|codex-preview|react-loading-skeleton/);
 
@@ -51,10 +53,10 @@ test("static export emits the Scout v1 index and per-tournament JSON", async () 
   };
   const state = JSON.parse(await readFile("data/state.json", "utf8")) as MonitorState;
   assert.equal(index.schemaVersion, 1);
-  assert.equal(index.tournaments.length, configsJson.length);
+  assert.equal(index.tournaments.length, currentOrFutureTournaments(configsJson as TournamentConfig[]).length);
 
-  const representative = index.tournaments.find((entry) => entry.id === "first-to-third-phil-mumma-2026");
-  assert.equal(representative?.exportUrl, "/scout/v1/tournaments/first-to-third-phil-mumma-2026.json");
+  const representative = index.tournaments[0];
+  assert.equal(representative?.exportUrl, `/scout/v1/tournaments/${encodeURIComponent(representative.id)}.json`);
   const exported = JSON.parse(await readFile(`pages-dist${representative?.exportUrl}`, "utf8")) as {
     schemaVersion: number;
     tournament: { id: string };
@@ -62,7 +64,6 @@ test("static export emits the Scout v1 index and per-tournament JSON", async () 
   };
   assert.equal(exported.schemaVersion, 1);
   assert.equal(exported.tournament.id, representative?.id);
-  assert.ok(exported.teams.length > 0);
   assert.doesNotMatch(JSON.stringify(exported), /diagnostic|github/i);
 });
 

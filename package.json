@@ -14,7 +14,7 @@
     "check:source": "tsx scripts/check-source.ts",
     "export:pages": "tsx scripts/render-static.tsx",
     "export:scout": "tsx scripts/export-scout.ts public",
-    "test:unit": "tsx --test tests/parsers.test.ts tests/scout-export.test.ts",
+    "test:unit": "tsx --test tests/parsers.test.ts tests/scout-export.test.ts tests/tournament-dates.test.ts",
     "test:site": "tsx --test tests/site.test.ts",
     "test": "npm run test:unit && npm run export:pages && npm run test:site && npm run build",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",

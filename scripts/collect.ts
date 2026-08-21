@@ -3,9 +3,11 @@ import { dirname, resolve } from "node:path";
 import configsJson from "../config/tournaments.json" with { type: "json" };
 import { applyResults } from "../src/change-detection";
 import { collectAll } from "../src/collectors";
+import { currentOrFutureTournaments } from "../src/tournament-dates";
 import type { MonitorState, TournamentConfig } from "../src/types";
 
 const configs = configsJson as TournamentConfig[];
+const activeConfigs = currentOrFutureTournaments(configs);
 const statePath = resolve("data/state.json");
 
 async function readPrevious(): Promise<MonitorState | undefined> {
@@ -17,9 +19,9 @@ async function readPrevious(): Promise<MonitorState | undefined> {
 }
 
 const previous = await readPrevious();
-const results = await collectAll(configs);
+const results = await collectAll(activeConfigs);
 const generatedAt = new Date().toISOString();
-const next = applyResults(configs, previous, results, generatedAt);
+const next = applyResults(activeConfigs, previous, results, generatedAt);
 const dateKey = generatedAt.slice(0, 10);
 
 await mkdir(dirname(statePath), { recursive: true });

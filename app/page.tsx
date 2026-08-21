@@ -1,10 +1,11 @@
 import configsJson from "../config/tournaments.json";
 import stateJson from "../data/state.json";
+import { currentOrFutureTournaments } from "../src/tournament-dates";
 import type { MonitorState, TournamentConfig, TournamentState } from "../src/types";
 import { DashboardClient } from "./DashboardClient";
 
 export function dashboardState(): MonitorState {
-  const configs = configsJson as TournamentConfig[];
+  const configs = currentOrFutureTournaments(configsJson as TournamentConfig[]);
   const state = stateJson as MonitorState;
   const stateById = new Map(state.tournaments.map((event) => [event.id, event]));
   const tournaments = configs.map((config): TournamentState => {
