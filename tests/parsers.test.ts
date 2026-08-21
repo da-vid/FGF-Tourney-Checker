@@ -188,6 +188,19 @@ test("first success is baseline, additions log, removals require two successes",
   assert.equal(missingTwice.tournaments[0].teams.length, 2);
 });
 
+test("normalized duplicate roster rows produce one team and one change", () => {
+  const previous = applyResults([config], undefined, [result(["Alpha"], "2026-08-01T10:00:00Z")]);
+  const duplicate = result(["Alpha", "Davis Dynamite-Carreira", "Davis Dynamite – Carreira"], "2026-08-02T10:00:00Z");
+  duplicate.teams[1].paid = "yes";
+
+  const next = applyResults([config], previous, [duplicate]);
+
+  assert.deepEqual(next.tournaments[0].teams.map((team) => team.rawName), ["Alpha", "Davis Dynamite-Carreira"]);
+  assert.equal(next.tournaments[0].teams[1].paid, "yes");
+  assert.equal(next.changes.filter((change) => change.type === "team_added").length, 1);
+  assert.equal(new Set(next.changes.map((change) => change.id)).size, next.changes.length);
+});
+
 test("a failed source preserves the last successful roster", () => {
   const previous = applyResults([config], undefined, [result(["Alpha"], "2026-08-01T10:00:00Z")]);
   const failed = applyResults([config], previous, [result([], "2026-08-02T10:00:00Z", "failure")]);

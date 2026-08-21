@@ -5,6 +5,7 @@ import type {
   TeamRecord,
   TournamentConfig,
   TournamentState,
+  TriState,
 } from "./types";
 import { normalizeTeamName } from "./normalize";
 
@@ -43,12 +44,31 @@ function isPageFurniture(value: string): boolean {
   return /^(?:10U|12U|14U|16U|18U|16\/18U|All pricing is in USD|Refund Policy|Terms of Service|Privacy Policy|Park Addresses|College Showcases)$/i.test(normalized);
 }
 
+function strongestStatus(first: TriState, second: TriState): TriState {
+  if (first === "yes" || second === "yes") return "yes";
+  if (first === "no" || second === "no") return "no";
+  return "unknown";
+}
+
 function byName(teams: TeamRecord[]): Map<string, TeamRecord> {
-  return new Map(
-    teams
-      .map((team) => [normalizeTeamName(team.rawName), team] as const)
-      .filter(([name, team]) => Boolean(name) && !isPageFurniture(team.rawName)),
-  );
+  const uniqueTeams = new Map<string, TeamRecord>();
+  for (const team of teams) {
+    const name = normalizeTeamName(team.rawName);
+    if (!name || isPageFurniture(team.rawName)) continue;
+    const existing = uniqueTeams.get(name);
+    if (!existing) {
+      uniqueTeams.set(name, team);
+      continue;
+    }
+    uniqueTeams.set(name, {
+      ...existing,
+      normalizedName: name,
+      confirmed: strongestStatus(existing.confirmed, team.confirmed),
+      paid: strongestStatus(existing.paid, team.paid),
+      note: existing.note ?? team.note,
+    });
+  }
+  return uniqueTeams;
 }
 
 function readableRegistrationState(value: CollectionResult["registrationState"]): string {
@@ -136,8 +156,7 @@ export function applyResults(
           `Registration deadline changed from ${old.registrationDeadline} to ${result.registrationDeadline}.`,
         ));
       }
-      for (const team of result.teams) {
-        if (isPageFurniture(team.rawName)) continue;
+      for (const team of newTeams.values()) {
         const normalizedName = normalizeTeamName(team.rawName);
         const prior = oldTeams.get(normalizedName);
         pending.delete(normalizedName);
@@ -153,8 +172,7 @@ export function applyResults(
         }
       }
 
-      for (const team of old.teams) {
-        if (isPageFurniture(team.rawName)) continue;
+      for (const team of oldTeams.values()) {
         const normalizedName = normalizeTeamName(team.rawName);
         if (!normalizedName || newTeams.has(normalizedName)) continue;
         const existing = pending.get(normalizedName);
@@ -175,7 +193,7 @@ export function applyResults(
       changes.filter((change) => change.tournamentId === config.id && change.type === "team_removed").map((change) => change.teamName?.toLocaleLowerCase("en-US")),
     );
     const displayedTeams = [
-      ...result.teams.filter((team) => !isPageFurniture(team.rawName)),
+      ...newTeams.values(),
       ...[...pending.values()]
         .map((item) => item.team)
         .filter((team) => !confirmedRemoved.has(team.rawName.toLocaleLowerCase("en-US"))),
