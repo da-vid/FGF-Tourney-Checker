@@ -1,5 +1,5 @@
 import { mkdir, writeFile } from "node:fs/promises";
-import { chromium, type Browser, type Page, type Response } from "playwright";
+import { chromium, type Browser, type Locator, type Page, type Response } from "playwright";
 import {
   findPgfQualifierRows,
   isLegacyTeamResponseUrl,
@@ -18,9 +18,31 @@ import {
 import type { CollectionResult, TournamentConfig } from "./types";
 
 const NAVIGATION_TIMEOUT = 35_000;
+const PGF_CONTROL_SELECTOR = 'a,button,input[type="button"],input[type="submit"],[role="button"]';
 
 async function bodyText(page: Page): Promise<string> {
   return page.locator("body").innerText({ timeout: 15_000 });
+}
+
+async function findPgfControl(container: Locator, label: RegExp): Promise<Locator | null> {
+  const controls = container.locator(PGF_CONTROL_SELECTOR);
+  const labels = await controls.evaluateAll((elements) => elements.map((element) => [
+    element.textContent,
+    element.getAttribute("value"),
+    element.getAttribute("aria-label"),
+    element.getAttribute("title"),
+    element.getAttribute("alt"),
+  ].filter(Boolean).join(" ").replace(/\s+/g, " ").trim()));
+  const index = labels.findIndex((controlLabel) => label.test(controlLabel));
+  return index >= 0 ? controls.nth(index) : null;
+}
+
+async function readPgfApprovedTeams(page: Page, entireEventIs12U = false) {
+  const rows = (await Promise.all(page.frames().map(async (frame) => frame.locator("table tr").evaluateAll((tableRows) =>
+    tableRows.map((row) => Array.from(row.querySelectorAll("th,td")).map((cell) => cell.textContent?.trim() ?? "")),
+  ).catch(() => [])))).flat();
+  const text = (await Promise.all(page.frames().map((frame) => frame.locator("body").innerText({ timeout: 2_000 }).catch(() => "")))).join("\n");
+  return { teams: parsePgfApprovedTeamRows(rows, entireEventIs12U), text };
 }
 
 function observed(signal: ReturnType<typeof parseRegistrationText>, checkedAt: string) {
@@ -429,13 +451,21 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
   const matchedIndex = rows.findIndex((row) => row === candidates[0]);
   if (matchedIndex < 0) throw new Error("Matched PGF qualifier row could not be located");
   const matchedRow = rowLocator.nth(matchedIndex);
-  const registrationControl = matchedRow.locator("a,button").filter({ hasText: /register|registration/i }).first();
-  const approvedTeamsControl = matchedRow.locator("a,button").filter({ hasText: /approved teams?|committed teams?/i }).first();
-  const hasRegistration = (await registrationControl.count()) > 0 && await registrationControl.isEnabled().catch(() => false);
+  const registrationControl = await findPgfControl(matchedRow, /register|registration/i);
+  const approvedTeamsControl = await findPgfControl(matchedRow, /approved teams?|committed teams?/i);
+  const hasRegistration = registrationControl !== null && await registrationControl.isEnabled().catch(() => false);
   const registrationHref = hasRegistration
-    ? await registrationControl.evaluate((element) => {
+    ? await registrationControl?.evaluate((element) => {
         const anchor = element.closest("a") ?? element.querySelector("a");
-        return anchor?.getAttribute("href") ?? element.getAttribute("data-href") ?? element.getAttribute("data-url");
+        const form = element.closest("form");
+        const directTarget = anchor?.getAttribute("href")
+          ?? element.getAttribute("data-href")
+          ?? element.getAttribute("data-url")
+          ?? element.getAttribute("formaction")
+          ?? form?.getAttribute("action");
+        if (directTarget) return directTarget;
+        const onclick = element.getAttribute("onclick") ?? "";
+        return onclick.match(/["']((?:https?:\/\/|\/)[^"']+)["']/)?.[1] ?? null;
       }).catch(() => null)
     : null;
   const registrationUrl = registrationHref && !/^javascript:/i.test(registrationHref)
@@ -443,28 +473,42 @@ async function collectPgfDiscovery(page: Page, config: TournamentConfig): Promis
     : hasRegistration ? config.sourceUrl : undefined;
 
   let teams: CollectionResult["teams"] = [];
-  if ((await approvedTeamsControl.count()) > 0) {
+  if (approvedTeamsControl !== null) {
     const approvedHref = await approvedTeamsControl.evaluate((element) => {
       const anchor = element.closest("a") ?? element.querySelector("a");
-      return anchor?.getAttribute("href") ?? element.getAttribute("data-href") ?? element.getAttribute("data-url");
+      const form = element.closest("form");
+      const directTarget = anchor?.getAttribute("href")
+        ?? element.getAttribute("data-href")
+        ?? element.getAttribute("data-url")
+        ?? element.getAttribute("formaction")
+        ?? form?.getAttribute("action");
+      if (directTarget) return directTarget;
+      const onclick = element.getAttribute("onclick") ?? "";
+      return onclick.match(/["']((?:https?:\/\/|\/)[^"']+)["']/)?.[1] ?? null;
     }).catch(() => null);
+    let approvedPage = page;
     if (approvedHref && !/^javascript:/i.test(approvedHref)) {
       await page.goto(new URL(approvedHref, config.sourceUrl).href, { waitUntil: "domcontentloaded", timeout: NAVIGATION_TIMEOUT });
     } else {
+      const popupPromise = page.waitForEvent("popup", { timeout: 5_000 }).catch(() => null);
       await approvedTeamsControl.click();
+      const popup = await popupPromise;
+      if (popup) {
+        approvedPage = popup;
+        await popup.waitForLoadState("domcontentloaded", { timeout: NAVIGATION_TIMEOUT }).catch(() => undefined);
+      }
     }
     const deadline = Date.now() + 20_000;
     let approvedText = "";
     while (Date.now() < deadline) {
-      await page.waitForTimeout(500);
-      const teamRows = await page.locator("table tr").evaluateAll((tableRows) =>
-        tableRows.map((row) => Array.from(row.querySelectorAll("th,td")).map((cell) => cell.textContent?.trim() ?? "")),
-      );
-      teams = parsePgfApprovedTeamRows(teamRows, config.entireEventIs12U);
-      approvedText = await bodyText(page);
-      if (teams.length > 0 || /no (?:approved )?teams?|no team found/i.test(approvedText)) break;
+      await approvedPage.waitForTimeout(500);
+      const approved = await readPgfApprovedTeams(approvedPage, config.entireEventIs12U);
+      teams = approved.teams;
+      approvedText = approved.text;
+      if (teams.length > 0 || /no (?:approved )?teams?|no team found|0 approved teams?/i.test(approvedText)) break;
     }
-    if (teams.length === 0 && !/no (?:approved )?teams?|no team found/i.test(approvedText)) {
+    if (approvedPage !== page) await approvedPage.close().catch(() => undefined);
+    if (teams.length === 0 && !/no (?:approved )?teams?|no team found|0 approved teams?/i.test(approvedText)) {
       throw new Error("PGF approved-team list did not finish loading or expose its 12U rows");
     }
   }
