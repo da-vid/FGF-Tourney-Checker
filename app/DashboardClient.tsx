@@ -29,6 +29,8 @@ const EVENT_DATE = new Intl.DateTimeFormat("en-US", {
   timeZone: "UTC",
 });
 
+const DEFERRED_WEEKEND_IDS = new Set(["2026-10-17"]);
+
 function formatRange(event: TournamentState): string {
   const start = EVENT_DATE.format(new Date(`${event.startDate}T12:00:00Z`));
   const end = EVENT_DATE.format(new Date(`${event.endDate}T12:00:00Z`));
@@ -356,6 +358,36 @@ function WeekendGroup({
   );
 }
 
+function DeferredWeekendGroup({
+  events,
+  allEvents,
+  changes,
+}: {
+  events: TournamentState[];
+  allEvents: TournamentState[];
+  changes: ChangeRecord[];
+}) {
+  const primary = allEvents.find((event) => event.role === "primary") ?? allEvents[0];
+
+  return (
+    <details className="deferred-weekend" data-deferred-weekend data-weekend-id={primary.weekendId}>
+      <summary>
+        <div className="deferred-weekend-title">
+          <strong>{formatRange(primary)}</strong>
+          <span>Deferred weekend</span>
+        </div>
+        <span className="deferred-weekend-count">
+          {allEvents.length} tracked tournament option{allEvents.length === 1 ? "" : "s"}
+        </span>
+        <span className="drawer-icon" aria-hidden="true">+</span>
+      </summary>
+      <div className="deferred-weekend-content">
+        <WeekendGroup events={events} allEvents={allEvents} changes={changes} />
+      </div>
+    </details>
+  );
+}
+
 export function DashboardClient({ state }: { state: MonitorState }) {
   const [organizer, setOrganizer] = useState("All organizers");
   const [view, setView] = useState("All statuses");
@@ -539,7 +571,14 @@ export function DashboardClient({ state }: { state: MonitorState }) {
           </div>
 
           <div className="event-list">
-            {visibleGroups.map((group) => (
+            {visibleGroups.map((group) => DEFERRED_WEEKEND_IDS.has(group.id) ? (
+              <DeferredWeekendGroup
+                key={group.id}
+                events={group.filteredEvents}
+                allEvents={group.events}
+                changes={state.changes}
+              />
+            ) : (
               <WeekendGroup key={group.id} events={group.filteredEvents} allEvents={group.events} changes={state.changes} />
             ))}
           </div>

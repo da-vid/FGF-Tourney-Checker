@@ -273,6 +273,35 @@ select {
 }
 .event-list { display: grid; gap: 26px; padding-top: 22px; }
 .standalone-weekend { display: grid; }
+.deferred-weekend {
+  border: 1px solid rgba(16, 39, 53, 0.18);
+  background: rgba(16, 39, 53, 0.035);
+}
+.deferred-weekend > summary {
+  min-height: 70px;
+  padding: 15px 18px;
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) auto 28px;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  list-style: none;
+}
+.deferred-weekend > summary::-webkit-details-marker { display: none; }
+.deferred-weekend > summary:hover { background: rgba(128,216,236,0.07); }
+.deferred-weekend > summary:focus-visible { outline: 3px solid var(--sky); outline-offset: -3px; }
+.deferred-weekend-title { display: flex; align-items: baseline; gap: 11px; }
+.deferred-weekend-title strong { color: var(--ink); font-size: 17px; letter-spacing: -0.02em; }
+.deferred-weekend-title span,
+.deferred-weekend-count {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.deferred-weekend[open] > summary { border-bottom: 1px solid var(--line); }
+.deferred-weekend[open] > summary .drawer-icon { transform: rotate(45deg); }
+.deferred-weekend-content { padding: 14px; }
 .weekend-group {
   border: 1px solid rgba(16, 39, 53, 0.24);
   background: rgba(255, 253, 248, 0.44);
@@ -478,6 +507,9 @@ select {
   .event-card-alternate { grid-template-columns: 1fr; }
   .weekend-banner { align-items: start; flex-direction: column; gap: 7px; }
   .weekend-banner div { flex-wrap: wrap; }
+  .deferred-weekend > summary { grid-template-columns: 1fr 28px; gap: 8px 12px; }
+  .deferred-weekend-title { align-items: flex-start; flex-direction: column; gap: 4px; }
+  .deferred-weekend-count { grid-column: 1 / -1; grid-row: 2; }
   .alternate-drawer > summary { grid-template-columns: 1fr 28px; gap: 12px; }
   .alternate-summary-stats { grid-column: 1 / -1; grid-row: 2; }
   .event-date-block { padding: 16px 8px; }

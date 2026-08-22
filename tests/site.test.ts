@@ -22,6 +22,10 @@ test("static dashboard contains core product content and no starter copy", async
   assert.match(html, /\.change-panel\s*\{\s*order:\s*2;/);
   assert.match(html, /PGF 12U National Qualifier/);
   assert.match(html, /Compare 6 alternatives/);
+  assert.match(html, /<details class="deferred-weekend"[^>]*data-weekend-id="2026-10-17"/);
+  assert.match(html, /Oct 17–Oct 18/);
+  assert.match(html, /Deferred weekend/);
+  assert.match(html, /4 tracked tournament options/);
   assert.match(html, /Primary plan/);
   assert.match(html, /Sandlot Dugout Wars/);
   assert.match(html, /Official source/);
