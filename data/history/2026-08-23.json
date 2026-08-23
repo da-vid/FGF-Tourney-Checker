@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T13:23:04.850Z",
+  "generatedAt": "2026-08-23T13:48:51.311Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -77,8 +77,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:40.570Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:40.570Z",
+      "checkedAt": "2026-08-23T13:47:31.596Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:31.596Z",
       "officialName": "Stay Humble Summer Event",
       "capacity": 30,
       "weekendId": "2026-08-29",
@@ -86,7 +86,7 @@
       "capacityScope": "event",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
-      "registrationObservedAt": "2026-08-23T13:21:40.570Z",
+      "registrationObservedAt": "2026-08-23T13:47:31.596Z",
       "spotsRemaining": 1
     },
     {
@@ -176,8 +176,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:40.769Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:40.769Z",
+      "checkedAt": "2026-08-23T13:47:31.597Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:31.597Z",
       "officialName": "9/11 Freedom Rings",
       "capacity": 40,
       "weekendId": "2026-09-12",
@@ -185,7 +185,7 @@
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-23T13:21:40.769Z",
+      "registrationObservedAt": "2026-08-23T13:47:31.597Z",
       "spotsRemaining": 0
     },
     {
@@ -264,15 +264,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:38.060Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:38.060Z",
+      "checkedAt": "2026-08-23T13:47:18.150Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:18.150Z",
       "officialName": "11th Annual Sorcerer/Phil Mumma Memorial",
       "weekendId": "2026-09-26",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Sep 18, 2026",
-      "registrationObservedAt": "2026-08-23T13:21:38.060Z"
+      "registrationObservedAt": "2026-08-23T13:47:18.150Z"
     },
     {
       "id": "ast-pink-panther-2026-sacramento",
@@ -346,13 +346,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:29.195Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:29.195Z",
+      "checkedAt": "2026-08-23T13:47:09.427Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:09.427Z",
       "officialName": "Pink Panther",
       "capacityScope": "12U",
       "registrationState": "unknown",
       "registrationStatus": "12U availability not published",
-      "registrationObservedAt": "2026-08-23T13:21:29.195Z"
+      "registrationObservedAt": "2026-08-23T13:47:09.427Z"
     },
     {
       "id": "ast-pink-panther-2026-salinas",
@@ -438,13 +438,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:31.463Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:31.463Z",
+      "checkedAt": "2026-08-23T13:47:11.143Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:11.143Z",
       "officialName": "Pink Panther",
       "capacityScope": "12U",
       "registrationState": "unknown",
       "registrationStatus": "12U availability not published",
-      "registrationObservedAt": "2026-08-23T13:21:31.463Z"
+      "registrationObservedAt": "2026-08-23T13:47:11.143Z"
     },
     {
       "id": "legacy-stay-humble-fall-pcfl-2026-folsom",
@@ -567,14 +567,14 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:46.758Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:46.758Z",
+      "checkedAt": "2026-08-23T13:47:32.027Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:32.027Z",
       "officialName": "Stay Humble Fall PCFL Alliance Qualifier",
       "capacity": 50,
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-23T13:21:46.758Z",
+      "registrationObservedAt": "2026-08-23T13:47:32.027Z",
       "spotsRemaining": 0
     },
     {
@@ -619,14 +619,14 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:52.610Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:52.610Z",
+      "checkedAt": "2026-08-23T13:47:32.251Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:32.251Z",
       "officialName": "Stay Humble Fall Event",
       "capacity": 30,
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-23T13:21:52.610Z",
+      "registrationObservedAt": "2026-08-23T13:47:32.251Z",
       "spotsRemaining": 0
     },
     {
@@ -647,13 +647,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:45.369Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:45.369Z",
+      "checkedAt": "2026-08-23T13:47:36.555Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:36.555Z",
       "officialName": "Bart Magellan Cancer Awareness Classic",
       "registrationStatus": "Registration page available",
       "registrationState": "unknown",
       "registrationUrl": "https://form.fillout.com/t/r6dKpw35hLus",
-      "registrationObservedAt": "2026-08-23T13:21:45.369Z"
+      "registrationObservedAt": "2026-08-23T13:47:36.555Z"
     },
     {
       "id": "pgf-stockton-tracy-qualifier-2026-10",
@@ -688,13 +688,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:44.198Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:44.198Z",
+      "checkedAt": "2026-08-23T13:47:35.519Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:35.519Z",
       "weekendId": "2026-10-10",
       "role": "primary",
       "registrationStatus": "Registration open",
       "registrationState": "open",
-      "registrationObservedAt": "2026-08-23T13:21:44.198Z",
+      "registrationObservedAt": "2026-08-23T13:47:35.519Z",
       "officialName": "TRACY 10/10/2026 10/11/2026 12U CA Western",
       "entireEventIs12U": true,
       "registrationExpected": true,
@@ -781,8 +781,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:58.486Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:58.486Z",
+      "checkedAt": "2026-08-23T13:47:46.242Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:46.242Z",
       "officialName": "Fight the Fight BC Awareness Series",
       "capacity": 30,
       "weekendId": "2026-10-10",
@@ -790,7 +790,7 @@
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-23T13:21:58.486Z",
+      "registrationObservedAt": "2026-08-23T13:47:46.242Z",
       "spotsRemaining": 0
     },
     {
@@ -846,14 +846,14 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:59.652Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:59.652Z",
+      "checkedAt": "2026-08-23T13:47:46.494Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:46.494Z",
       "officialName": "Fight the Fight BC Awareness Series",
       "capacity": 24,
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-23T13:21:59.652Z",
+      "registrationObservedAt": "2026-08-23T13:47:46.494Z",
       "spotsRemaining": 0
     },
     {
@@ -922,12 +922,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:49.479Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:49.479Z",
+      "checkedAt": "2026-08-23T13:47:38.338Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:38.338Z",
       "officialName": "Black Widow",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-23T13:21:49.479Z",
+      "registrationObservedAt": "2026-08-23T13:47:38.338Z",
       "capacityScope": "12U"
     },
     {
@@ -977,13 +977,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:21:54.291Z",
-      "lastSuccessfulCheck": "2026-08-23T13:21:54.291Z",
+      "checkedAt": "2026-08-23T13:47:41.397Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:41.397Z",
       "officialName": "The Golden Ticket",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11440",
-      "registrationObservedAt": "2026-08-23T13:21:54.291Z",
+      "registrationObservedAt": "2026-08-23T13:47:41.397Z",
       "registrationDeadline": "September 19th"
     },
     {
@@ -1034,13 +1034,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:05.407Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:05.407Z",
+      "checkedAt": "2026-08-23T13:47:50.681Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:50.681Z",
       "officialName": "Quest for the Best",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Oct 4, 2026",
-      "registrationObservedAt": "2026-08-23T13:22:05.407Z"
+      "registrationObservedAt": "2026-08-23T13:47:50.681Z"
     },
     {
       "id": "pgf-futures-ultimate-challenge-2026-salinas",
@@ -1059,13 +1059,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:00.638Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:00.638Z",
+      "checkedAt": "2026-08-23T13:47:47.325Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:47.325Z",
       "officialName": "2026 PGF Futures Ultimate Challenge (INVITE ONLY)",
       "registrationStatus": "Invite only",
       "registrationState": "invite_only",
       "registrationDeadline": "Sep 4, 2026",
-      "registrationObservedAt": "2026-08-23T13:22:00.638Z"
+      "registrationObservedAt": "2026-08-23T13:47:47.325Z"
     },
     {
       "id": "legacy-finish-the-fight-2026",
@@ -1144,8 +1144,8 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:12.551Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:12.551Z",
+      "checkedAt": "2026-08-23T13:47:59.127Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:59.127Z",
       "officialName": "Finish the Fight BC Awareness Series",
       "capacity": 30,
       "weekendId": "2026-10-17",
@@ -1153,7 +1153,7 @@
       "capacityScope": "event",
       "registrationState": "waitlist",
       "registrationStatus": "Full · Waitlist available",
-      "registrationObservedAt": "2026-08-23T13:22:12.551Z",
+      "registrationObservedAt": "2026-08-23T13:47:59.127Z",
       "spotsRemaining": 0
     },
     {
@@ -1222,12 +1222,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:01.407Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:01.407Z",
+      "checkedAt": "2026-08-23T13:47:48.249Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:48.249Z",
       "officialName": "Monster Mash",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-23T13:22:01.407Z",
+      "registrationObservedAt": "2026-08-23T13:47:48.249Z",
       "capacityScope": "12U"
     },
     {
@@ -1246,13 +1246,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:05.299Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:05.299Z",
+      "checkedAt": "2026-08-23T13:47:52.203Z",
+      "lastSuccessfulCheck": "2026-08-23T13:47:52.203Z",
       "officialName": "Power in Pink",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11441",
-      "registrationObservedAt": "2026-08-23T13:22:05.299Z"
+      "registrationObservedAt": "2026-08-23T13:47:52.203Z"
     },
     {
       "id": "first-to-third-pink-out-parks-2026",
@@ -1314,13 +1314,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:14.754Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:14.754Z",
+      "checkedAt": "2026-08-23T13:48:01.092Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:01.092Z",
       "officialName": "Pink out the Parks",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Oct 12, 2026",
-      "registrationObservedAt": "2026-08-23T13:22:14.754Z"
+      "registrationObservedAt": "2026-08-23T13:48:01.092Z"
     },
     {
       "id": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
@@ -1381,15 +1381,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:19.367Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:19.367Z",
+      "checkedAt": "2026-08-23T13:48:03.557Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:03.557Z",
       "officialName": "Keep Humble Fall PCFL Alliance Qualifier",
       "capacity": 40,
       "spotsRemaining": 9,
       "capacityScope": "event",
       "registrationState": "limited",
       "registrationStatus": "9 spots left",
-      "registrationObservedAt": "2026-08-23T13:22:19.367Z"
+      "registrationObservedAt": "2026-08-23T13:48:03.557Z"
     },
     {
       "id": "first-to-third-monster-mash-2026",
@@ -1455,15 +1455,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:18.614Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:18.614Z",
+      "checkedAt": "2026-08-23T13:48:05.148Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:05.148Z",
       "officialName": "Monster Mash for Cash",
       "weekendId": "2026-10-24",
       "role": "alternate",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Oct 19, 2026",
-      "registrationObservedAt": "2026-08-23T13:22:18.614Z"
+      "registrationObservedAt": "2026-08-23T13:48:05.148Z"
     },
     {
       "id": "ast-jack-ball-2026-sacramento",
@@ -1519,12 +1519,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:14.513Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:14.513Z",
+      "checkedAt": "2026-08-23T13:48:00.870Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:00.870Z",
       "officialName": "Jack Ball",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-23T13:22:14.513Z",
+      "registrationObservedAt": "2026-08-23T13:48:00.870Z",
       "capacityScope": "12U"
     },
     {
@@ -1543,13 +1543,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:19.286Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:19.286Z",
+      "checkedAt": "2026-08-23T13:48:05.719Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:05.719Z",
       "officialName": "NorCal Championship Challenge",
       "registrationState": "unknown",
       "registrationStatus": "Registration link points to another event",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11441",
-      "registrationObservedAt": "2026-08-23T13:22:19.286Z"
+      "registrationObservedAt": "2026-08-23T13:48:05.719Z"
     },
     {
       "id": "usssa-sandlot-dugout-wars-2026",
@@ -1567,7 +1567,7 @@
       "outcome": "failure",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:23:04.820Z",
+      "checkedAt": "2026-08-23T13:48:51.288Z",
       "lastSuccessfulCheck": "2026-08-23T13:18:48.775Z",
       "officialName": "Sandlot Dugout Wars",
       "capacityScope": "12U",
@@ -1594,13 +1594,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:26.671Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:26.671Z",
+      "checkedAt": "2026-08-23T13:48:11.094Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:11.094Z",
       "officialName": "2026 PGF Halloween Bash",
       "registrationStatus": "No public registration",
       "registrationState": "not_public",
       "registrationDeadline": "Oct 16, 2026",
-      "registrationObservedAt": "2026-08-23T13:22:26.671Z"
+      "registrationObservedAt": "2026-08-23T13:48:11.094Z"
     },
     {
       "id": "first-to-third-south-bay-showdown-2026",
@@ -1702,15 +1702,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:32.820Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:32.820Z",
+      "checkedAt": "2026-08-23T13:48:18.218Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:18.218Z",
       "officialName": "South Bay Showdown",
       "weekendId": "2026-11-07",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Oct 5, 2026",
-      "registrationObservedAt": "2026-08-23T13:22:32.820Z"
+      "registrationObservedAt": "2026-08-23T13:48:18.218Z"
     },
     {
       "id": "ast-mm-candy-classic-2026-sacramento",
@@ -1778,12 +1778,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:21.233Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:21.233Z",
+      "checkedAt": "2026-08-23T13:48:07.068Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:07.068Z",
       "officialName": "M&M Candy Classic",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-23T13:22:21.233Z",
+      "registrationObservedAt": "2026-08-23T13:48:07.068Z",
       "capacityScope": "12U"
     },
     {
@@ -1802,12 +1802,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:21.764Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:21.764Z",
+      "checkedAt": "2026-08-23T13:48:07.528Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:07.528Z",
       "officialName": "Veterans Day Classic",
       "registrationState": "unknown",
       "registrationStatus": "Registration link not active",
-      "registrationObservedAt": "2026-08-23T13:22:21.764Z"
+      "registrationObservedAt": "2026-08-23T13:48:07.528Z"
     },
     {
       "id": "pgf-homerun-hoedown-2026-salinas",
@@ -1826,13 +1826,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:30.519Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:30.519Z",
+      "checkedAt": "2026-08-23T13:48:15.085Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:15.085Z",
       "officialName": "2026 PGF Homerun Hoedown",
       "registrationStatus": "Registration open",
       "registrationState": "open",
       "registrationDeadline": "Oct 30, 2026",
-      "registrationObservedAt": "2026-08-23T13:22:30.519Z"
+      "registrationObservedAt": "2026-08-23T13:48:15.085Z"
     },
     {
       "id": "first-to-third-harvest-cup-2026",
@@ -1874,15 +1874,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:39.493Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:39.493Z",
+      "checkedAt": "2026-08-23T13:48:23.914Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:23.914Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-08-23T13:22:39.493Z"
+      "registrationObservedAt": "2026-08-23T13:48:23.914Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -1926,12 +1926,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:32.950Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:32.950Z",
+      "checkedAt": "2026-08-23T13:48:16.570Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:16.570Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-23T13:22:32.950Z",
+      "registrationObservedAt": "2026-08-23T13:48:16.570Z",
       "capacityScope": "12U"
     },
     {
@@ -1951,12 +1951,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:35.284Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:35.284Z",
+      "checkedAt": "2026-08-23T13:48:18.368Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:18.368Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-08-23T13:22:35.284Z",
+      "registrationObservedAt": "2026-08-23T13:48:18.368Z",
       "capacityScope": "12U"
     },
     {
@@ -1975,13 +1975,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:37.782Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:37.782Z",
+      "checkedAt": "2026-08-23T13:48:23.038Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:23.038Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11446",
-      "registrationObservedAt": "2026-08-23T13:22:37.782Z",
+      "registrationObservedAt": "2026-08-23T13:48:23.038Z",
       "registrationDeadline": "September 19th"
     },
     {
@@ -2001,12 +2001,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:38.381Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:38.381Z",
+      "checkedAt": "2026-08-23T13:48:21.601Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:21.601Z",
       "officialName": "STOCKTON 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-08-23T13:22:38.381Z"
+      "registrationObservedAt": "2026-08-23T13:48:21.601Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -2025,12 +2025,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-08-23T13:22:40.938Z",
-      "lastSuccessfulCheck": "2026-08-23T13:22:40.938Z",
+      "checkedAt": "2026-08-23T13:48:24.754Z",
+      "lastSuccessfulCheck": "2026-08-23T13:48:24.754Z",
       "officialName": "STOCKTON 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-08-23T13:22:40.938Z"
+      "registrationObservedAt": "2026-08-23T13:48:24.754Z"
     }
   ],
   "changes": [
