@@ -27,6 +27,10 @@ test("static dashboard contains core product content and no starter copy", async
   assert.match(html, /Deferred weekend/);
   assert.match(html, /4 tracked tournament options/);
   assert.match(html, /Primary plan/);
+  assert.match(html, /Considering/);
+  assert.match(html, /Young Guns Bash for Cash/);
+  assert.match(html, /Fall Bat Wars/);
+  assert.match(html, /The Original Legacy Cup/);
   assert.match(html, /Sandlot Dugout Wars/);
   assert.match(html, /Official source/);
   assert.match(html, /Scout this tournament/);
@@ -84,4 +88,21 @@ test("October 24 tracks Keep Humble as primary and Monster Mash as an alternate"
   assert.equal(keepHumble?.role, "primary");
   assert.match(keepHumble?.sourceUrl ?? "", /keep-humble-fall-pcfl-alliance-qualifier/);
   assert.equal(monsterMash?.role, "alternate");
+});
+
+test("November 14 tracks Young Guns as considering with same-weekend alternatives", async () => {
+  const configs = JSON.parse(await readFile("config/tournaments.json", "utf8")) as Array<{
+    id: string;
+    weekendId: string;
+    role: string;
+  }>;
+  const weekend = configs.filter((event) => event.weekendId === "2026-11-14");
+  assert.deepEqual(
+    weekend.map((event) => [event.id, event.role]),
+    [
+      ["first-to-third-young-guns-bash-2026", "considering"],
+      ["ast-fall-bat-wars-2026-sacramento", "alternate"],
+      ["wcp-original-legacy-cup-2026", "alternate"],
+    ],
+  );
 });

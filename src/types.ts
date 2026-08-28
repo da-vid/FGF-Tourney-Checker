@@ -9,7 +9,7 @@ export type SourceType =
   | "usssa";
 export type CheckOutcome = "success" | "not_published" | "failure" | "not_checked";
 export type TriState = "yes" | "no" | "unknown";
-export type TournamentRole = "primary" | "alternate";
+export type TournamentRole = "primary" | "considering" | "alternate";
 export type RegistrationState =
   | "open"
   | "limited"

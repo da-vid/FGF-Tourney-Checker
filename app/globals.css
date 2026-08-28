@@ -348,6 +348,7 @@ select {
   border: 1px solid;
 }
 .role-primary { color: #4f5f10; background: rgba(215,248,102,0.42); border-color: rgba(115,139,24,0.35); }
+.role-considering { color: #7b4a11; background: rgba(240,174,92,0.18); border-color: rgba(160,96,28,0.3); }
 .role-alternate { color: #176376; background: rgba(128,216,236,0.16); border-color: rgba(23,99,118,0.24); }
 .event-card:hover { transform: translateY(-2px); box-shadow: 0 16px 40px rgba(16,39,53,0.08); }
 .event-date-block {

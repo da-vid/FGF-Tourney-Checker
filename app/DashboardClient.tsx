@@ -124,6 +124,18 @@ function changeLabel(change: ChangeRecord): string {
   }[change.type];
 }
 
+function roleLabel(role: TournamentState["role"], card = false): string {
+  if (role === "primary") return card ? "Primary plan" : "Primary";
+  if (role === "considering") return "Considering";
+  return card ? "Alternative" : "Alternate";
+}
+
+function featuredEvent(events: TournamentState[]): TournamentState {
+  return events.find((event) => event.role === "primary")
+    ?? events.find((event) => event.role === "considering")
+    ?? events[0];
+}
+
 export function splitChanges(changes: ChangeRecord[]) {
   return {
     recent: changes.slice(0, 6),
@@ -144,7 +156,7 @@ function ChangeItem({
     <li data-change-id={change.id} data-change-scope={scope}>
       <div className="change-label-row">
         <span className={`change-type change-${change.type}`}>{changeLabel(change)}</span>
-        {event && <span className="change-context">{event.role === "primary" ? "Primary" : "Alternate"} · {formatRange(event)}</span>}
+        {event && <span className="change-context">{roleLabel(event.role)} · {formatRange(event)}</span>}
       </div>
       {event && <strong className="change-event">{event.name}</strong>}
       <p>{change.detail}</p>
@@ -189,7 +201,7 @@ function TournamentCard({
         <div className="event-heading">
           <div>
             <div className="event-heading-meta">
-              {showRole && <span className={`role-badge role-${event.role}`}>{event.role === "primary" ? "Primary plan" : "Alternative"}</span>}
+              {showRole && <span className={`role-badge role-${event.role}`}>{roleLabel(event.role, true)}</span>}
               <p className="event-kicker">{event.organizer} · {formatRange(event)}</p>
             </div>
             <h3>{event.name}</h3>
@@ -281,7 +293,7 @@ function WeekendGroup({
   allEvents: TournamentState[];
   changes: ChangeRecord[];
 }) {
-  const primary = allEvents.find((event) => event.role === "primary") ?? allEvents[0];
+  const featured = featuredEvent(allEvents);
   const alternatives = events.filter((event) => event.role === "alternate");
   const hasAlternatives = allEvents.some((event) => event.role === "alternate");
   const sharedTeamCounts = new Map<string, number>();
@@ -294,7 +306,7 @@ function WeekendGroup({
   if (!hasAlternatives) {
     return (
       <div className="standalone-weekend" data-weekend-group>
-        <TournamentCard event={primary} sharedTeamCounts={sharedTeamCounts} lastChange={lastChangeByEvent.get(primary.id)} />
+        <TournamentCard event={featured} sharedTeamCounts={sharedTeamCounts} lastChange={lastChangeByEvent.get(featured.id)} />
       </div>
     );
   }
@@ -309,19 +321,19 @@ function WeekendGroup({
   );
 
   return (
-    <section className="weekend-group" data-weekend-group data-weekend-id={primary.weekendId}>
+    <section className="weekend-group" data-weekend-group data-weekend-id={featured.weekendId}>
       <header className="weekend-banner">
         <div>
-          <strong>{formatRange(primary)}</strong>
+          <strong>{formatRange(featured)}</strong>
         </div>
         <p>{allEvents.length} tournament options monitored daily</p>
       </header>
 
       <TournamentCard
-        event={primary}
+        event={featured}
         showRole
         sharedTeamCounts={sharedTeamCounts}
-        lastChange={lastChangeByEvent.get(primary.id)}
+        lastChange={lastChangeByEvent.get(featured.id)}
       />
 
       {alternatives.length > 0 && (
@@ -425,8 +437,8 @@ export function DashboardClient({ state }: { state: MonitorState }) {
   const visibleGroups = groups.flatMap((group) => {
     const matching = group.events.filter(matches);
     if (matching.length === 0) return [];
-    const primary = group.events.find((event) => event.role === "primary") ?? group.events[0];
-    const filteredEvents = [primary, ...matching.filter((event) => event.id !== primary.id)];
+    const featured = featuredEvent(group.events);
+    const filteredEvents = [featured, ...matching.filter((event) => event.id !== featured.id)];
     return [{ ...group, filteredEvents }];
   });
   const eventById = new Map(state.tournaments.map((event) => [event.id, event]));

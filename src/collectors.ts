@@ -355,12 +355,18 @@ async function collectWcpSchedule(page: Page, config: TournamentConfig): Promise
     };
   }
   const card = candidates.first();
+  const scheduleText = await bodyText(page);
+  const dateIndex = scheduleText.indexOf(dateText);
+  const cardSignal = parseRegistrationText(dateIndex >= 0 ? scheduleText.slice(dateIndex, dateIndex + 600) : "");
   const registerHref = await card.getByRole("link", { name: /register|pencil in/i }).first().getAttribute("href").catch(() => null);
-  const rosterHref = await card.getByText(/who's coming/i).first().getAttribute("href");
+  const rosterHref = await card.getByRole("link", { name: /who's coming|teams attending/i }).first().getAttribute("href").catch(() => null);
   const linked = await inspectLinkedRegistration(page, registerHref, config.sourceUrl, config.name);
-  const availability = linked.registrationState === "unknown" && linked.registrationStatus === "Availability not published"
-    ? { ...linked, registrationStatus: linked.registrationUrl ? "Registration page available" : "Availability not published" }
-    : linked;
+  const availability = {
+    ...(linked.registrationState === "unknown" && linked.registrationStatus === "Availability not published"
+      ? { ...linked, registrationStatus: linked.registrationUrl ? "Registration page available" : "Availability not published" }
+      : linked),
+    registrationDeadline: cardSignal.registrationDeadline,
+  };
   if (!rosterHref || /^javascript:/i.test(rosterHref)) {
     const checkedAt = new Date().toISOString();
     return {
