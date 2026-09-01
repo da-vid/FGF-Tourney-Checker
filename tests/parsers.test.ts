@@ -208,6 +208,28 @@ test("first success is baseline, additions log, removals require two successes",
   assert.equal(missingTwice.tournaments[0].teams.length, 2);
 });
 
+test("a team returning during removal verification is not logged as a new addition", () => {
+  const first = applyResults([config], undefined, [result(["Alpha", "Bravo"], "2026-08-01T10:00:00Z")]);
+  const missingOnce = applyResults([config], first, [result(["Alpha"], "2026-08-02T10:00:00Z")]);
+  const recovered = applyResults([config], missingOnce, [result(["Alpha", "Bravo"], "2026-08-03T10:00:00Z")]);
+
+  assert.equal(recovered.tournaments[0].pendingRemovals.length, 0);
+  assert.equal(recovered.changes.some((change) => change.type === "team_added" && change.teamName === "Bravo"), false);
+});
+
+test("a previously removed and re-added team remains visible during a later removal check", () => {
+  const first = applyResults([config], undefined, [result(["Alpha"], "2026-08-01T10:00:00Z")]);
+  const missingOnce = applyResults([config], first, [result([], "2026-08-02T10:00:00Z")]);
+  const removed = applyResults([config], missingOnce, [result([], "2026-08-03T10:00:00Z")]);
+  const readded = applyResults([config], removed, [result(["Alpha"], "2026-08-04T10:00:00Z")]);
+  const missingAgain = applyResults([config], readded, [result([], "2026-08-05T10:00:00Z")]);
+  const recovered = applyResults([config], missingAgain, [result(["Alpha"], "2026-08-06T10:00:00Z")]);
+
+  assert.deepEqual(missingAgain.tournaments[0].teams.map((team) => team.rawName), ["Alpha"]);
+  assert.equal(missingAgain.tournaments[0].pendingRemovals.length, 1);
+  assert.equal(recovered.changes.filter((change) => change.type === "team_added" && change.teamName === "Alpha").length, 1);
+});
+
 test("normalized duplicate roster rows produce one team and one change", () => {
   const previous = applyResults([config], undefined, [result(["Alpha"], "2026-08-01T10:00:00Z")]);
   const duplicate = result(["Alpha", "Davis Dynamite-Carreira", "Davis Dynamite – Carreira"], "2026-08-02T10:00:00Z");
