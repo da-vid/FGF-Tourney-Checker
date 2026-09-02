@@ -181,7 +181,8 @@ test("PGF approved teams parser keeps only 12U and marks them confirmed", () => 
 });
 
 test("normalization removes status suffixes without collapsing teams", () => {
-  assert.equal(normalizeTeamName("  OC Batbusters – Murillo Pd "), "oc batbusters-murillo");
+  assert.equal(normalizeTeamName("  OC Batbusters – Murillo Pd "), "oc batbusters murillo");
+  assert.equal(normalizeTeamName("Natomas Lady Tigers-Stoll"), normalizeTeamName("Natomas Lady Tigers Stoll"));
   assert.notEqual(normalizeTeamName("Foothill Gold Fowler"), normalizeTeamName("Foothill Gold Wong"));
 });
 
