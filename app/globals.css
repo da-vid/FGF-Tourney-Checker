@@ -538,3 +538,5 @@ select {
 .event-latest-change { max-width: 100%; }
 .legend-section > summary { cursor: pointer; font-weight: 700; }
 .legend-section:not([open]) { display: block; }
+
+[hidden] { display: none !important; }

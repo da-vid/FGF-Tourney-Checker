@@ -184,6 +184,10 @@ function TournamentCard({
       data-organizer={event.organizer}
       data-outcome={event.outcome}
       data-role={event.role}
+      data-weekend-id={event.weekendId}
+      data-registration={event.registrationState ?? "unknown"}
+      data-start-date={event.startDate}
+      data-search={[event.name, event.location, event.organizer, ...event.teams.map(team => team.rawName)].join(" ")}
     >
       {!compact && (
         <div className="event-date-block" aria-label={`${days} days until the tournament`}>
@@ -553,8 +557,8 @@ export function DashboardClient({ state }: { state: MonitorState }) {
         <section className="events-section" aria-label="Tournament weekends">
           <div className="events-toolbar">
             <div className="filters">
-              <label className="tournament-search"><span className="sr-only">Search tournaments or teams</span><input type="search" placeholder="Search teams, tournaments, locations" value={query} onChange={event=>setQuery(event.target.value)} /></label>
-              <label><span className="sr-only">Filter by weekend</span><select value={weekend} onChange={event=>setWeekend(event.target.value)}><option value="">All weekends</option>{groups.map(group=><option key={group.id} value={group.id}>{formatRange(group.events[0])}</option>)}</select></label>
+              <label className="tournament-search"><span className="sr-only">Search tournaments or teams</span><input data-search-filter type="search" placeholder="Search teams, tournaments, locations" value={query} onChange={event=>setQuery(event.target.value)} /></label>
+              <label><span className="sr-only">Filter by weekend</span><select data-weekend-filter value={weekend} onChange={event=>setWeekend(event.target.value)}><option value="">All weekends</option>{groups.map(group=><option key={group.id} value={group.id}>{formatRange(group.events[0])}</option>)}</select></label>
               <a className="changes-shortcut" href="#changes-heading">Recent changes</a>
               <label>
                 <span className="sr-only">Filter by organizer</span>
