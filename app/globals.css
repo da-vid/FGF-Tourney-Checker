@@ -530,3 +530,11 @@ select {
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
 }
+
+.filters { flex-wrap: wrap; }
+.tournament-search { flex: 1 1 250px; }
+.tournament-search input { width: 100%; min-height: 42px; padding: 10px 12px; border: 1px solid var(--line, #d8ddd8); border-radius: 8px; background: white; color: #18271f; font: inherit; }
+.changes-shortcut { padding: 10px 4px; font-size: 13px; }
+.event-latest-change { max-width: 100%; }
+.legend-section > summary { cursor: pointer; font-weight: 700; }
+.legend-section:not([open]) { display: block; }

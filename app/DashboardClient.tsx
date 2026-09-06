@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { pacificDaysUntil } from "../src/tournament-dates";
 import { hasScoutRoster, scoutImportUrl } from "../src/scout-export";
 import { isWaitlistedTeam, pendingRemovalNames } from "../src/team-status";
 import type { ChangeRecord, MonitorState, TournamentState } from "../src/types";
@@ -35,11 +36,6 @@ function formatRange(event: TournamentState): string {
   const start = EVENT_DATE.format(new Date(`${event.startDate}T12:00:00Z`));
   const end = EVENT_DATE.format(new Date(`${event.endDate}T12:00:00Z`));
   return start === end ? start : `${start}–${end}`;
-}
-
-function daysUntil(date: string): number {
-  const target = new Date(`${date}T12:00:00-07:00`).getTime();
-  return Math.max(0, Math.ceil((target - Date.now()) / 86_400_000));
 }
 
 function outcomeLabel(event: TournamentState): string {
@@ -179,7 +175,7 @@ function TournamentCard({
   lastChange?: ChangeRecord;
 }) {
   const pendingNames = pendingRemovalNames(event.pendingRemovals);
-  const days = daysUntil(event.startDate);
+  const days = pacificDaysUntil(event.startDate);
 
   return (
     <article
@@ -193,7 +189,7 @@ function TournamentCard({
         <div className="event-date-block" aria-label={`${days} days until the tournament`}>
           <span>{new Date(`${event.startDate}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", timeZone: "UTC" })}</span>
           <strong>{new Date(`${event.startDate}T12:00:00Z`).getUTCDate()}</strong>
-          <small>{days === 0 ? "Game day" : `${days}d`}</small>
+          <small>{days === 0 ? "Today" : days === 1 ? "Tomorrow" : `${days}d`}</small>
         </div>
       )}
 
@@ -222,8 +218,8 @@ function TournamentCard({
             {registrationLabel(event)}
             <span aria-hidden="true">↗</span>
           </a>
-          {event.registrationObservedAt && (
-            <span className="registration-observed">Observed {PACIFIC_DATE.format(new Date(event.registrationObservedAt))}</span>
+          {event.registrationObservedAt && event.registrationObservedAt !== event.lastSuccessfulCheck && (
+            <span className="registration-observed">Registration checked {PACIFIC_DATE.format(new Date(event.registrationObservedAt))}</span>
           )}
         </div>
 
@@ -241,7 +237,8 @@ function TournamentCard({
           <div className="source-message neutral-message">
             {rosterMessage(event)}
           </div>
-        ) : (
+        ) : null}
+        {event.teams.length > 0 && (
           <div className="team-grid" aria-label={`${event.teams.length} entered teams`}>
             {event.teams.map((team, index) => {
               const sharedCount = sharedTeamCounts.get(team.normalizedName) ?? 1;
@@ -264,10 +261,10 @@ function TournamentCard({
         <footer className="event-footer">
           <span>
             {event.lastSuccessfulCheck
-              ? `Checked ${PACIFIC_DATE.format(new Date(event.lastSuccessfulCheck))}`
+              ? `Last checked ${PACIFIC_DATE.format(new Date(event.lastSuccessfulCheck))}`
               : "Awaiting first successful check"}
           </span>
-          {lastChange && <span>Last change {PACIFIC_DATE.format(new Date(lastChange.occurredAt))}</span>}
+          {lastChange && <span className="event-latest-change">{lastChange.detail} · {PACIFIC_DATE.format(new Date(lastChange.occurredAt))}</span>}
           <span className="event-actions">
             {hasScoutRoster(event) && (
               <a className="scout-link" href={scoutImportUrl(event.id)} target="_blank" rel="noreferrer">
@@ -293,9 +290,9 @@ function WeekendGroup({
   allEvents: TournamentState[];
   changes: ChangeRecord[];
 }) {
-  const featured = featuredEvent(allEvents);
-  const alternatives = events.filter((event) => event.role === "alternate");
-  const hasAlternatives = allEvents.some((event) => event.role === "alternate");
+  const featured = featuredEvent(events);
+  const alternatives = events.filter((event) => event.id !== featured.id);
+  const hasAlternatives = alternatives.length > 0;
   const sharedTeamCounts = new Map<string, number>();
   for (const event of allEvents) {
     for (const team of event.teams) sharedTeamCounts.set(team.normalizedName, (sharedTeamCounts.get(team.normalizedName) ?? 0) + 1);
@@ -401,6 +398,8 @@ function DeferredWeekendGroup({
 }
 
 export function DashboardClient({ state }: { state: MonitorState }) {
+  const [query, setQuery] = useState("");
+  const [weekend, setWeekend] = useState("");
   const [organizer, setOrganizer] = useState("All organizers");
   const [view, setView] = useState("All statuses");
   const [registrationView, setRegistrationView] = useState("All registration");
@@ -421,7 +420,9 @@ export function DashboardClient({ state }: { state: MonitorState }) {
       (registrationView === "Full, closed, or waitlist" && ["full", "closed", "waitlist"].includes(event.registrationState ?? "")) ||
       (registrationView === "Invite or not public" && ["invite_only", "not_public"].includes(event.registrationState ?? "")) ||
       (registrationView === "Unknown" && [undefined, "unknown", "not_published"].includes(event.registrationState));
-    return organizerMatch && statusMatch && registrationMatch;
+    const search = query.trim().toLocaleLowerCase("en-US");
+    const textMatch = !search || [event.name,event.location,event.organizer,...event.teams.map(team=>team.rawName)].some(value=>value.toLocaleLowerCase("en-US").includes(search));
+    return organizerMatch && statusMatch && registrationMatch && textMatch && (!weekend || event.weekendId === weekend);
   };
   const groups = useMemo(() => {
     const map = new Map<string, TournamentState[]>();
@@ -437,7 +438,7 @@ export function DashboardClient({ state }: { state: MonitorState }) {
   const visibleGroups = groups.flatMap((group) => {
     const matching = group.events.filter(matches);
     if (matching.length === 0) return [];
-    const featured = featuredEvent(group.events);
+    const featured = featuredEvent(matching);
     const filteredEvents = [featured, ...matching.filter((event) => event.id !== featured.id)];
     return [{ ...group, filteredEvents }];
   });
@@ -467,11 +468,9 @@ export function DashboardClient({ state }: { state: MonitorState }) {
 
         <div className="hero-grid" id="top">
           <div className="hero-copy">
-            <p className="eyebrow">Fall 2026 tournament intelligence</p>
+            <p className="eyebrow">Fall 2026</p>
             <h1>FGF Tourney Tracker</h1>
-            <p className="lede">
-              Daily fields, registration availability, and same-weekend alternatives.
-            </p>
+
             <p className="freshness">
               <span className="pulse" aria-hidden="true" />
               Updated {PACIFIC_DATE.format(new Date(state.generatedAt))}
@@ -488,7 +487,7 @@ export function DashboardClient({ state }: { state: MonitorState }) {
               <strong>{state.tournaments.length}</strong>
             </div>
             <div className="score-cell">
-              <span>Registration signals</span>
+              <span>Registration known</span>
               <strong>{knownRegistrationCount}<small>/{state.tournaments.length}</small></strong>
             </div>
             <div className="score-cell score-next">
@@ -554,6 +553,9 @@ export function DashboardClient({ state }: { state: MonitorState }) {
         <section className="events-section" aria-label="Tournament weekends">
           <div className="events-toolbar">
             <div className="filters">
+              <label className="tournament-search"><span className="sr-only">Search tournaments or teams</span><input type="search" placeholder="Search teams, tournaments, locations" value={query} onChange={event=>setQuery(event.target.value)} /></label>
+              <label><span className="sr-only">Filter by weekend</span><select value={weekend} onChange={event=>setWeekend(event.target.value)}><option value="">All weekends</option>{groups.map(group=><option key={group.id} value={group.id}>{formatRange(group.events[0])}</option>)}</select></label>
+              <a className="changes-shortcut" href="#changes-heading">Recent changes</a>
               <label>
                 <span className="sr-only">Filter by organizer</span>
                 <select value={organizer} onChange={(event) => setOrganizer(event.target.value)} data-organizer-filter>
@@ -598,11 +600,8 @@ export function DashboardClient({ state }: { state: MonitorState }) {
         </section>
       </section>
 
-      <section className="legend-section" aria-labelledby="legend-heading">
-        <div>
-          <p className="section-number">03</p>
-          <h2 id="legend-heading">How to read the board</h2>
-        </div>
+      <details className="legend-section"><summary id="legend-heading">Status definitions</summary>
+
         <div className="legend-grid">
           <p><span className="legend-dot good" /> <strong>Healthy</strong> means the official source loaded successfully—even when it lists zero teams.</p>
           <p><span className="legend-dot watch" /> <strong>Watching</strong> includes unpublished events and events whose organizers have not exposed a public roster.</p>
@@ -610,7 +609,7 @@ export function DashboardClient({ state }: { state: MonitorState }) {
           <p><span className="legend-dot pending" /> <strong>Verify removal</strong> requires a second successful observation before a team is removed.</p>
           <p><span className="legend-dot registration-key" /> <strong>Registration</strong> reflects only wording or controls visible on the official source. Event-wide numbers are labeled and never treated as 12U-specific.</p>
         </div>
-      </section>
+      </details>
 
       <footer className="site-footer">
         <p>FGF Tourney Tracker reflects publicly posted organizer information. Official tournament sources control.</p>

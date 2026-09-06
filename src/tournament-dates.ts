@@ -18,3 +18,8 @@ export function currentOrFutureTournaments<T extends { endDate: string }>(
 ): T[] {
   return tournaments.filter((tournament) => tournament.endDate >= today);
 }
+
+/** Calendar days in Pacific time, independent of time of day and DST. */
+export function pacificDaysUntil(date: string, now = new Date()): number {
+  return Math.max(0, Math.round((Date.parse(`${date}T00:00:00Z`) - Date.parse(`${pacificDateKey(now)}T00:00:00Z`)) / 86_400_000));
+}
