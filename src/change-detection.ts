@@ -130,6 +130,11 @@ export function applyResults(
         .map((item) => [normalizeTeamName(item.team.rawName), item] as const)
         .filter(([name, item]) => Boolean(name) && !isPageFurniture(item.team.rawName)),
     );
+    const priorTeams = new Map(oldTeams);
+    for (const [name, item] of pending) {
+      if (!priorTeams.has(name)) priorTeams.set(name, item.team);
+    }
+    const removedThisRun = new Set<string>();
 
     if (old.lastSuccessfulCheck) {
       if (old.registrationState && result.registrationState && old.registrationState !== result.registrationState) {
@@ -158,7 +163,7 @@ export function applyResults(
       }
       for (const team of newTeams.values()) {
         const normalizedName = normalizeTeamName(team.rawName);
-        const prior = oldTeams.get(normalizedName);
+        const prior = priorTeams.get(normalizedName);
         pending.delete(normalizedName);
         if (!prior) {
           changes.unshift(makeChange(config.id, result.checkedAt, "team_added", `${team.rawName} joined the 12U field.`, team.rawName));
@@ -172,12 +177,13 @@ export function applyResults(
         }
       }
 
-      for (const team of oldTeams.values()) {
+      for (const team of priorTeams.values()) {
         const normalizedName = normalizeTeamName(team.rawName);
         if (!normalizedName || newTeams.has(normalizedName)) continue;
         const existing = pending.get(normalizedName);
         if (existing && existing.observations >= 1) {
           pending.delete(normalizedName);
+          removedThisRun.add(normalizedName);
           changes.unshift(makeChange(config.id, result.checkedAt, "team_removed", `${team.rawName} is no longer listed in the 12U field.`, team.rawName));
         } else {
           pending.set(normalizedName, {
@@ -189,14 +195,11 @@ export function applyResults(
       }
     }
 
-    const confirmedRemoved = new Set(
-      changes.filter((change) => change.tournamentId === config.id && change.type === "team_removed").map((change) => change.teamName?.toLocaleLowerCase("en-US")),
-    );
     const displayedTeams = [
       ...newTeams.values(),
       ...[...pending.values()]
         .map((item) => item.team)
-        .filter((team) => !confirmedRemoved.has(team.rawName.toLocaleLowerCase("en-US"))),
+        .filter((team) => !removedThisRun.has(normalizeTeamName(team.rawName))),
     ];
 
     return {

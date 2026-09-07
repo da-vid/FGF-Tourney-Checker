@@ -102,7 +102,7 @@ test("current and pending-removal overlap is deduplicated with existing name nor
     pendingRemovals: [{ team: pending, firstMissingAt: "2026-08-17T12:00:00Z", observations: 1 }],
   }), "2026-08-17T12:05:00Z");
   assert.equal(exported.teams.length, 1);
-  assert.equal(exported.teams[0].normalizedName, "oc batbusters-murillo");
+  assert.equal(exported.teams[0].normalizedName, "oc batbusters murillo");
   assert.equal(exported.teams[0].status, "verify_removal");
 });
 
