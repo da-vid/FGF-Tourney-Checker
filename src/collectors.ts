@@ -58,34 +58,34 @@ function tournamentConnectSignal(cardText: string, registrationControl: boolean)
   return { ...signal, registrationState: "not_public" as const, registrationStatus: "No public registration" };
 }
 
-async function readTournamentConnect12UDialog(page: Page): Promise<string> {
+export async function readTournamentConnect12UDialog(page: Page, timeout = 30_000): Promise<string> {
   const dialog = page.getByRole("dialog");
-  await dialog.waitFor({ state: "visible", timeout: 15_000 });
+  await dialog.waitFor({ state: "visible", timeout });
 
   // The dialog shell appears before TournamentConnect finishes loading the event.
   // Waiting for the event block prevents an incomplete shell from becoming a false zero.
-  await dialog.locator(".entityTitle").waitFor({ state: "visible", timeout: 30_000 });
+  await dialog.locator(".entityTitle").waitFor({ state: "visible", timeout });
   const entityText = await dialog.locator(".entityTitle").innerText();
   if (!/Date:\s*\w{3}\s+\d{1,2}/i.test(entityText)) {
     throw new Error("Committed Teams dialog did not finish loading");
   }
 
   const division = dialog.locator("a.g-division").filter({ hasText: /^\s*12U\s*-\s*Girls\b/i }).first();
-  const anyDivision = dialog.locator("a.g-division").first();
-  const globalEmpty = dialog.getByText("No team found.", { exact: true });
-  const loadedState = await Promise.race([
-    anyDivision.waitFor({ state: "visible", timeout: 30_000 }).then(() => "divisions" as const),
-    globalEmpty.waitFor({ state: "visible", timeout: 30_000 }).then(() => "empty" as const),
-  ]);
-  if (loadedState === "empty") return "Committed Teams\nNo team found.";
-  if ((await division.count()) === 0) return "12U - Girls\nNo team found.\n14U - Girls";
+  // Other divisions can appear before 12U. A missing division is not a zero roster.
+  await division.waitFor({ state: "visible", timeout });
 
   await division.click();
   const expanded = division.locator('xpath=following-sibling::div[contains(@class,"d-well")][1]');
-  await expanded.waitFor({ state: "visible", timeout: 15_000 });
-  const teamRows = expanded.locator('div[ng-repeat^="team in skill.teams."]');
+  await expanded.waitFor({ state: "visible", timeout });
+  // Current TournamentConnect markup no longer carries Angular ng-repeat attributes.
+  const teamRows = expanded.locator('.p-text > div');
+  const explicitEmpty = expanded.getByText("No team found.", { exact: true });
+  await teamRows.first().or(explicitEmpty).first().waitFor({ state: "visible", timeout });
   const teamNames = (await teamRows.allInnerTexts()).map((name) => name.replace(/\s+/g, " ").trim()).filter(Boolean);
-  if (teamNames.length === 0) return "12U - Girls\nNo team found.\n14U - Girls";
+  if (teamNames.length === 0) {
+    if (await explicitEmpty.isVisible()) return "12U - Girls\nNo team found.\n14U - Girls";
+    throw new Error("Committed Teams 12U roster did not finish loading");
+  }
   return ["12U - Girls", ...teamNames, "14U - Girls"].join("\n");
 }
 
@@ -164,13 +164,19 @@ async function collectLegacy(page: Page, config: TournamentConfig): Promise<Coll
   const availabilityContainer = page.locator("#leftover-text-container");
   await availabilityContainer.waitFor({ state: "visible", timeout: 20_000 });
   let responseCount = 0;
+  let pendingResponses = 0;
   let lastResponseAt = 0;
   let responseFailure: Response | undefined;
-  const observeResponse = (response: Response) => {
+  const observeResponse = async (response: Response) => {
     if (!isLegacyTeamResponseUrl(response.url())) return;
     responseCount += 1;
-    lastResponseAt = Date.now();
+    pendingResponses += 1;
     if (!response.ok()) responseFailure = response;
+    // The response event fires at headers, before Airtable's body has loaded.
+    const error = await response.finished().catch(() => new Error("Response failed"));
+    if (error) responseFailure = response;
+    pendingResponses -= 1;
+    lastResponseAt = Date.now();
   };
   page.on("response", observeResponse);
   try {
@@ -188,9 +194,9 @@ async function collectLegacy(page: Page, config: TournamentConfig): Promise<Coll
       if (responseFailure) {
         throw new Error(`Legacy Airtable request returned HTTP ${responseFailure.status()}`);
       }
-      if (responseCount > 0 && Date.now() - lastResponseAt >= 2_000) break;
+      if (responseCount > 0 && pendingResponses === 0 && Date.now() - lastResponseAt >= 2_000) break;
     }
-    if (responseCount === 0 || Date.now() - lastResponseAt < 2_000) {
+    if (responseCount === 0 || pendingResponses > 0 || Date.now() - lastResponseAt < 2_000) {
       throw new Error("Legacy Airtable team requests did not finish loading");
     }
     // A second pass covers pages where only the roster scroll started the shared request.

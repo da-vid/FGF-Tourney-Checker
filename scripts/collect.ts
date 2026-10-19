@@ -29,7 +29,8 @@ await mkdir("data/history", { recursive: true });
 await writeFile(statePath, `${JSON.stringify(next, null, 2)}\n`, "utf8");
 await writeFile(`data/history/${dateKey}.json`, `${JSON.stringify(next, null, 2)}\n`, "utf8");
 
-const failures = results.filter((result) => result.outcome === "failure");
+// Include roster-integrity failures detected while merging observations.
+const failures = next.tournaments.filter((event) => event.outcome === "failure");
 for (const result of results) {
   console.log(`${result.tournamentId}: ${result.outcome} (${result.teams.length} teams)`);
 }

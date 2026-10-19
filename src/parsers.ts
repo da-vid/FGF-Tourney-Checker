@@ -185,9 +185,7 @@ export function isLegacyTeamResponseUrl(value: string): boolean {
 }
 
 export function parseLegacyRows(rows: string[][]): TeamRecord[] {
-  if (rows.some((cells) => cells.some((value) => /^No Teams Found\.?$/i.test(value.trim())))) return [];
-
-  return rows.flatMap((cells) => {
+  const teams = rows.flatMap((cells) => {
     const values = cells.map((value) => value.replace(/\s+/g, " ").trim());
     const teamName = values[1];
     if (!teamName || !/^\d+$/.test(values[0] ?? "")) return [];
@@ -195,6 +193,9 @@ export function parseLegacyRows(rows: string[][]): TeamRecord[] {
     if (/waitlist/i.test(values[2] ?? "")) record.note = "Waitlist";
     return [record];
   });
+  if (teams.length) return teams;
+  if (rows.some((cells) => cells.some((value) => /^No Teams Found\.?$/i.test(value.trim())))) return [];
+  throw new Error("Legacy 12U roster has neither recognized team rows nor an explicit empty state");
 }
 
 export function parseTournamentConnectDialog(text: string): TeamRecord[] {

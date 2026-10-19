@@ -23,6 +23,8 @@ The GitHub Actions workflow runs at 6:17 a.m. Pacific every day and can also be 
 
 Team removals require two consecutive successful checks, reducing false alerts when a source briefly renders incomplete data. A failed source never replaces a previously known roster with an empty list. Diagnostic screenshots and page captures are retained in the failed workflow run for seven days.
 
+If an entire previously known roster disappears, the check is treated as a source failure, even on repeated empty reads. The retained roster requires source verification rather than automatically marking every team removed. Missing divisions, loading shells, and unrecognized table rows are not evidence of zero entrants.
+
 ## Local setup
 
 Requirements: Node.js 22.13 or newer.

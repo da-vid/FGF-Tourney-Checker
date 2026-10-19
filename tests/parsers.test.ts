@@ -219,14 +219,14 @@ test("a team returning during removal verification is not logged as a new additi
 });
 
 test("a previously removed and re-added team remains visible during a later removal check", () => {
-  const first = applyResults([config], undefined, [result(["Alpha"], "2026-08-01T10:00:00Z")]);
-  const missingOnce = applyResults([config], first, [result([], "2026-08-02T10:00:00Z")]);
-  const removed = applyResults([config], missingOnce, [result([], "2026-08-03T10:00:00Z")]);
-  const readded = applyResults([config], removed, [result(["Alpha"], "2026-08-04T10:00:00Z")]);
-  const missingAgain = applyResults([config], readded, [result([], "2026-08-05T10:00:00Z")]);
-  const recovered = applyResults([config], missingAgain, [result(["Alpha"], "2026-08-06T10:00:00Z")]);
+  const first = applyResults([config], undefined, [result(["Alpha", "Bravo"], "2026-08-01T10:00:00Z")]);
+  const missingOnce = applyResults([config], first, [result(["Bravo"], "2026-08-02T10:00:00Z")]);
+  const removed = applyResults([config], missingOnce, [result(["Bravo"], "2026-08-03T10:00:00Z")]);
+  const readded = applyResults([config], removed, [result(["Alpha", "Bravo"], "2026-08-04T10:00:00Z")]);
+  const missingAgain = applyResults([config], readded, [result(["Bravo"], "2026-08-05T10:00:00Z")]);
+  const recovered = applyResults([config], missingAgain, [result(["Alpha", "Bravo"], "2026-08-06T10:00:00Z")]);
 
-  assert.deepEqual(missingAgain.tournaments[0].teams.map((team) => team.rawName), ["Alpha"]);
+  assert.deepEqual(missingAgain.tournaments[0].teams.map((team) => team.rawName).sort(), ["Alpha", "Bravo"]);
   assert.equal(missingAgain.tournaments[0].pendingRemovals.length, 1);
   assert.equal(recovered.changes.filter((change) => change.type === "team_added" && change.teamName === "Alpha").length, 1);
 });
@@ -277,4 +277,36 @@ test("registration changes are logged after a structured baseline", () => {
   const next = applyResults([config], first, [nextResult]);
   assert.equal(next.changes.some((change) => change.type === "registration_status_changed"), true);
   assert.equal(next.changes.some((change) => change.type === "spots_remaining_changed"), true);
+});
+
+test("ambiguous Legacy rows are not a successful empty roster", () => {
+  assert.throws(() => parseLegacyRows([]), /neither recognized/);
+  assert.throws(() => parseLegacyRows([["Loading..."]]), /neither recognized/);
+  assert.throws(() => parseLegacyRows([["Team name", "Foothill Gold"]]), /neither recognized/);
+  assert.deepEqual(parseLegacyRows([["No Teams Found."]]), []);
+  assert.equal(parseLegacyRows([["No Teams Found."], ["1", "Alpha", "Yes", "Paid"]]).length, 1);
+});
+
+test("repeated empty reads preserve a known roster without starting or confirming removals", () => {
+  const initial = applyResults([config], undefined, [result(["Alpha", "Bravo"], "2026-10-11T10:00:00Z")]);
+  const first = applyResults([config], initial, [result([], "2026-10-19T10:00:00Z")]);
+  const second = applyResults([config], first, [result([], "2026-10-20T10:00:00Z")]);
+  for (const state of [first, second]) {
+    assert.deepEqual(state.tournaments[0].teams, initial.tournaments[0].teams);
+    assert.equal(state.tournaments[0].pendingRemovals.length, 0);
+    assert.equal(state.tournaments[0].outcome, "failure");
+    assert.equal(state.tournaments[0].lastSuccessfulCheck, initial.tournaments[0].lastSuccessfulCheck);
+    assert.equal(state.changes.some(change => change.type === "team_removed"), false);
+  }
+  const recovered = applyResults([config], second, [result(["Alpha", "Bravo", "Charlie"], "2026-10-21T10:00:00Z")]);
+  assert.equal(recovered.tournaments[0].outcome, "success");
+  assert.equal(recovered.tournaments[0].teams.length, 3);
+});
+
+test("empty source reads do not advance an existing partial removal", () => {
+  const initial = applyResults([config], undefined, [result(["Alpha", "Bravo"], "2026-10-11T10:00:00Z")]);
+  const partial = applyResults([config], initial, [result(["Alpha"], "2026-10-12T10:00:00Z")]);
+  const empty = applyResults([config], partial, [result([], "2026-10-19T10:00:00Z")]);
+  assert.deepEqual(empty.tournaments[0].pendingRemovals, partial.tournaments[0].pendingRemovals);
+  assert.equal(empty.tournaments[0].teams.length, 2);
 });

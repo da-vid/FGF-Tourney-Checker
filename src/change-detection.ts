@@ -90,8 +90,19 @@ export function applyResults(
   });
   const tournaments = configs.map((config): TournamentState => {
     const old = previousById.get(config.id) ?? blankState(config);
-    const result = resultById.get(config.id);
+    let result = resultById.get(config.id);
     if (!result) return old;
+
+    // An entire known roster disappearing is a source anomaly, not evidence
+    // that every team withdrew. Repeated empty reads must never erase it.
+    if (result.outcome === "success" && byName(result.teams).size === 0
+      && byName([...old.teams, ...old.pendingRemovals.map(item => item.team)]).size > 0) {
+      result = {
+        ...result,
+        outcome: "failure",
+        diagnostic: "The source returned an empty 12U roster after previously listing teams; the last known roster is retained pending source verification.",
+      };
+    }
 
     if (result.outcome === "failure") {
       if (old.outcome !== "failure" && old.lastSuccessfulCheck) {
