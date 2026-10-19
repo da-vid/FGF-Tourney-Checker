@@ -3,10 +3,12 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { DashboardClient } from "../app/DashboardClient";
 import { dashboardState } from "../app/page";
 import { writeScoutExports } from "./scout-static";
+import { pacificDateKey } from "../src/tournament-dates";
 
 const output = "pages-dist";
 const css = await readFile("app/globals.css", "utf8");
-const state = dashboardState();
+const dashboardDate = pacificDateKey();
+const state = dashboardState(dashboardDate);
 const markup = renderToStaticMarkup(<DashboardClient state={state} />);
 const script = `
 (() => {
@@ -83,6 +85,7 @@ const html = `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="dashboard-date" content="${dashboardDate}" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FGF Tourney Tracker | NorCal Softball Tournament Monitor</title>
   <meta name="description" content="Daily 12U tournament entry lists and change history for Northern California softball coaches." />

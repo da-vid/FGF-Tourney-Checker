@@ -1,10 +1,15 @@
 import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
+import { createElement } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import { DashboardClient, splitChanges } from "../app/DashboardClient";
+import { dashboardState } from "../app/page";
+import { hasScoutRoster, createScoutTournamentIndex } from "../src/scout-export";
 import { splitChanges } from "../app/DashboardClient";
 import configsJson from "../config/tournaments.json" with { type: "json" };
-import { currentOrFutureTournaments } from "../src/tournament-dates";
-import type { MonitorState, TournamentConfig } from "../src/types";
+import { currentOrFutureTournaments, pacificDateKey } from "../src/tournament-dates";
+import type { MonitorState, TournamentConfig, TournamentState } from "../src/types";
 
 test("static dashboard contains core product content and no starter copy", async () => {
   const html = await readFile("pages-dist/index.html", "utf8");
@@ -20,23 +25,20 @@ test("static dashboard contains core product content and no starter copy", async
   assert.doesNotMatch(html, /Weekend board|Locked play weekend|class="section-number">0[12]</);
   assert.match(html, /\.events-section\s*\{\s*order:\s*1;/);
   assert.match(html, /\.change-panel\s*\{\s*order:\s*2;/);
-  assert.match(html, /PGF 12U National Qualifier/);
-  assert.match(html, /Compare 6 alternatives/);
-  assert.match(html, /<details class="deferred-weekend"[^>]*data-weekend-id="2026-10-17"/);
-  assert.match(html, /Oct 17–Oct 18/);
-  assert.match(html, /Deferred weekend/);
-  assert.match(html, /4 tracked tournament options/);
-  assert.match(html, /Primary plan/);
-  assert.match(html, /Considering/);
-  assert.match(html, /Young Guns Bash for Cash/);
-  assert.match(html, /Fall Bat Wars/);
-  assert.match(html, /The Original Legacy Cup/);
-  assert.match(html, /Sandlot Dugout Wars/);
-  assert.match(html, /Official source/);
-  assert.match(html, /Scout this tournament/);
-  assert.match(html, /https:\/\/scout\.lineuphelper\.com\/import\/tourneys\?tournament=/);
-  assert.match(html, /Event-wide|Availability not published|Registration open/);
-  assert.doesNotMatch(html, /<h3>Fab 5<\/h3>/);
+  // Use the build's date: Pacific midnight can pass before this test runs.
+  const date = html.match(/<meta name="dashboard-date" content="(\d{4}-\d{2}-\d{2})"/);
+  assert.ok(date, "export records its Pacific filtering date");
+  const expected = dashboardState(date[1]);
+  const escapeText = (text: string) => renderToStaticMarkup(createElement("h3", null, text)).slice(4, -5);
+  assert.deepEqual([...html.matchAll(/<article\b[^>]*>[\s\S]*?<h3>(.*?)<\/h3>/g)].map(match => match[1]).sort(),
+    expected.tournaments.map(event => escapeText(event.name)).sort());
+  const counts = new Map<string, number>();
+  for (const event of expected.tournaments) counts.set(event.weekendId, (counts.get(event.weekendId) ?? 0) + 1);
+  assert.deepEqual([...html.matchAll(/<strong>Compare (\d+) alternatives?<\/strong>/g)].map(match => Number(match[1])).sort(),
+    [...counts.values()].filter(count => count > 1).map(count => count - 1).sort());
+  assert.equal((html.match(/>Official source </g) ?? []).length, expected.tournaments.length);
+  assert.equal((html.match(/>Scout this tournament </g) ?? []).length, expected.tournaments.filter(hasScoutRoster).length);
+  if (!expected.tournaments.length) assert.match(html, /No tournament weekends match these filters/);
   assert.match(html, /font-family:\s*var\(--font-geist-sans, Arial\), Helvetica, sans-serif/);
   assert.doesNotMatch(html, /Your site is taking shape|codex-preview|react-loading-skeleton/);
 
@@ -59,20 +61,25 @@ test("static export emits the Scout v1 index and per-tournament JSON", async () 
     schemaVersion: number;
     tournaments: Array<{ id: string; exportUrl: string }>;
   };
-  const state = JSON.parse(await readFile("data/state.json", "utf8")) as MonitorState;
+  const html = await readFile("pages-dist/index.html", "utf8");
+  const date = html.match(/name="dashboard-date" content="([^"]+)"/);
+  assert.ok(date);
   assert.equal(index.schemaVersion, 1);
-  assert.equal(index.tournaments.length, currentOrFutureTournaments(configsJson as TournamentConfig[]).length);
+  assert.deepEqual(index.tournaments.map(event => event.id).sort(),
+    currentOrFutureTournaments(configsJson as TournamentConfig[], date[1]).map(event => event.id).sort());
 
-  const representative = index.tournaments[0];
-  assert.equal(representative?.exportUrl, `/scout/v1/tournaments/${encodeURIComponent(representative.id)}.json`);
-  const exported = JSON.parse(await readFile(`pages-dist${representative?.exportUrl}`, "utf8")) as {
-    schemaVersion: number;
-    tournament: { id: string };
-    teams: unknown[];
+  // Check every export, including the valid case of no upcoming tournaments.
+  for (const representative of index.tournaments) {
+    assert.equal(representative.exportUrl, `/scout/v1/tournaments/${encodeURIComponent(representative.id)}.json`);
+    const exported = JSON.parse(await readFile(`pages-dist${representative.exportUrl}`, "utf8")) as {
+      schemaVersion: number;
+      tournament: { id: string };
+      teams: unknown[];
   };
   assert.equal(exported.schemaVersion, 1);
-  assert.equal(exported.tournament.id, representative?.id);
+  assert.equal(exported.tournament.id, representative.id);
   assert.doesNotMatch(JSON.stringify(exported), /diagnostic|github/i);
+  }
 });
 
 test("full history control only appears when there are older changes", () => {
@@ -105,4 +112,63 @@ test("November 14 tracks Young Guns as considering with same-weekend alternative
       ["wcp-original-legacy-cup-2026", "alternate"],
     ],
   );
+});
+
+function fixtureEvent(id: string, weekendId: string, role: TournamentState["role"] = "alternate"): TournamentState {
+  return {
+    id, name: `Fixture ${id}`, organizer: "Fixture organizer", location: "Sacramento",
+    startDate: weekendId, endDate: weekendId === "2026-10-10" ? "2026-10-11" : "2026-10-18",
+    weekendId, role, division: "12U", sourceType: "ast", sourceUrl: `https://example.com/${id}`,
+    status: "active", outcome: "success", teams: [], pendingRemovals: [], registrationState: "open",
+  };
+}
+
+const fixture: MonitorState = {
+  generatedAt: "2026-10-10T18:00:00Z", baselineEstablished: true, changes: [],
+  tournaments: [
+    ...Array.from({ length: 7 }, (_, i) => fixtureEvent(`first-${i}`, "2026-10-10", i === 0 ? "primary" : "alternate")),
+    ...Array.from({ length: 4 }, (_, i) => fixtureEvent(`deferred-${i}`, "2026-10-17", i === 0 ? "considering" : "alternate")),
+  ],
+};
+
+for (const [instant, count, alternatives] of [
+  ["2026-10-12T06:59:59Z", 11, [6, 3]],
+  ["2026-10-12T07:00:00Z", 4, [3]],
+  ["2026-10-19T06:59:59Z", 4, [3]],
+  ["2026-10-19T07:00:00Z", 0, []],
+] as const) {
+  test(`dashboard and Scout fixtures at Pacific rollover ${instant}`, () => {
+    const date = pacificDateKey(new Date(instant));
+    const state = { ...fixture, tournaments: currentOrFutureTournaments(fixture.tournaments, date) };
+    const html = renderToStaticMarkup(createElement(DashboardClient, { state }));
+    assert.equal((html.match(/data-event-card="true"/g) ?? []).length, count);
+    assert.deepEqual([...html.matchAll(/<strong>Compare (\d+) alternatives?<\/strong>/g)].map(match => Number(match[1])), alternatives);
+    if (count) {
+      assert.match(html, /<details class="deferred-weekend"[^>]*data-weekend-id="2026-10-17"/);
+      assert.match(html, /Oct 17\u2013Oct 18/);
+      assert.match(html, /Deferred weekend/);
+      assert.match(html, /4 tracked tournament options/);
+      assert.match(html, /Considering/);
+      assert.match(html, /Registration open/);
+      if (count === 11) assert.match(html, /Primary plan/);
+    } else {
+      assert.match(html, /No upcoming event/);
+      assert.match(html, /No tournament weekends match these filters/);
+      assert.doesNotMatch(html, /class="deferred-weekend"/);
+    }
+    assert.deepEqual(createScoutTournamentIndex(state).tournaments.map(event => event.id), state.tournaments.map(event => event.id));
+    // Also exercise the production config/state merge at each boundary.
+    assert.deepEqual(dashboardState(date).tournaments.map(event => event.id),
+      (configsJson as TournamentConfig[]).filter(event => event.endDate >= date).map(event => event.id));
+  });
+}
+
+test("future tournaments without observations render without Scout links", () => {
+  const future = { ...fixtureEvent("future", "2099-01-01", "primary"), endDate: "2099-01-02", outcome: "not_checked" as const };
+  const state = { ...fixture, tournaments: currentOrFutureTournaments([future], "2098-12-31") };
+  const html = renderToStaticMarkup(createElement(DashboardClient, { state }));
+  assert.match(html, /Fixture future/);
+  assert.match(html, /First check pending/);
+  assert.doesNotMatch(html, /Scout this tournament|Compare \d+ alternative/);
+  assert.equal(createScoutTournamentIndex(state).tournaments[0].id, "future");
 });
