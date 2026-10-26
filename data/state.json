@@ -1,415 +1,7 @@
 {
-  "generatedAt": "2026-10-25T17:06:28.482Z",
+  "generatedAt": "2026-10-26T19:21:34.642Z",
   "baselineEstablished": true,
   "tournaments": [
-    {
-      "id": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
-      "name": "Keep Humble Fall PCFL Alliance Qualifier",
-      "organizer": "Legacy Sports Fastpitch",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "location": "Folsom",
-      "division": "12U",
-      "weekendId": "2026-10-24",
-      "role": "primary",
-      "sourceType": "legacy",
-      "sourceUrl": "https://play.legacysportsfastpitch.com/single-event-info/keep-humble-fall-pcfl-alliance-qualifier-recVJkgSbcFKMmmS7",
-      "status": "active",
-      "outcome": "success",
-      "teams": [
-        {
-          "rawName": "Foothill Gold - Moyer",
-          "normalizedName": "foothill gold moyer",
-          "confirmed": "yes",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Foothill Gold Fowler",
-          "normalizedName": "foothill gold fowler",
-          "confirmed": "yes",
-          "paid": "yes"
-        },
-        {
-          "rawName": "OutKasts 12U Pink",
-          "normalizedName": "outkasts 12u pink",
-          "confirmed": "yes",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Athletics Mercado Cole 2032",
-          "normalizedName": "athletics mercado cole 2032",
-          "confirmed": "yes",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Team Ca 12u",
-          "normalizedName": "team ca 12u",
-          "confirmed": "yes",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Warriors North Bay",
-          "normalizedName": "warriors north bay",
-          "confirmed": "yes",
-          "paid": "yes"
-        },
-        {
-          "rawName": "All American Mizuno 12U-Colusa",
-          "normalizedName": "all american mizuno 12u colusa",
-          "confirmed": "yes",
-          "paid": "yes"
-        },
-        {
-          "rawName": "WolfPAC 12u",
-          "normalizedName": "wolfpac 12u",
-          "confirmed": "yes",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "ACES Academy Fields 2032",
-          "normalizedName": "aces academy fields 2032",
-          "confirmed": "yes",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Drop Zone Robles/Hough",
-          "normalizedName": "drop zone robles/hough",
-          "confirmed": "yes",
-          "paid": "yes"
-        }
-      ],
-      "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:04:14.268Z",
-      "lastSuccessfulCheck": "2026-10-25T17:04:14.268Z",
-      "officialName": "Keep Humble Fall PCFL Alliance Qualifier",
-      "capacity": 48,
-      "spotsRemaining": 14,
-      "capacityScope": "event",
-      "registrationState": "limited",
-      "registrationStatus": "14 spots left",
-      "registrationObservedAt": "2026-10-25T17:04:14.268Z"
-    },
-    {
-      "id": "first-to-third-monster-mash-2026",
-      "name": "Monster Mash for Cash",
-      "organizer": "1st to 3rd Softball Events",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "location": "Stockton / Tracy",
-      "division": "12U",
-      "sourceType": "tournamentConnect",
-      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
-      "eventMatch": "Monster Mash for Cash",
-      "status": "active",
-      "outcome": "failure",
-      "teams": [
-        {
-          "rawName": "Alameda Blaze 12U-May",
-          "normalizedName": "alameda blaze 12u may",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Cal Nuggets 12U Woods",
-          "normalizedName": "cal nuggets 12u woods",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Corona Angels - Alvarado",
-          "normalizedName": "corona angels alvarado",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Corona Angels Nichols 2032",
-          "normalizedName": "corona angels nichols 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Dirtdogs Sanchez",
-          "normalizedName": "dirtdogs sanchez",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Extreme 12U-GT",
-          "normalizedName": "extreme 12u gt",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Firecrackers Leles Bidwal 12u",
-          "normalizedName": "firecrackers leles bidwal 12u",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Firecrackers Leles/Saenz 12U",
-          "normalizedName": "firecrackers leles/saenz 12u",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Lady Magic DeBiasi",
-          "normalizedName": "lady magic debiasi",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "LTG 12u Sansaver",
-          "normalizedName": "ltg 12u sansaver",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "LTG Wallace 2032",
-          "normalizedName": "ltg wallace 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "NorCal Fusion",
-          "normalizedName": "norcal fusion",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Sorcerer Farris",
-          "normalizedName": "sorcerer farris",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Sorcerers Moffit 2032",
-          "normalizedName": "sorcerers moffit 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Suncats Jimenez - Smith 2032",
-          "normalizedName": "suncats jimenez smith 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Suncats Jimenez - Smith 2033",
-          "normalizedName": "suncats jimenez smith 2033",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "SWAT TURNER 2032",
-          "normalizedName": "swat turner 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Universal Bay Area 12U Tatro/Stites",
-          "normalizedName": "universal bay area 12u tatro/stites",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Universal Fastpitch-Moreno",
-          "normalizedName": "universal fastpitch moreno",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "VIBE 12u Catario",
-          "normalizedName": "vibe 12u catario",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Warrior Academy McDonald/Stefani 12U",
-          "normalizedName": "warrior academy mcdonald/stefani 12u",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Warrior Academy Reynoso",
-          "normalizedName": "warrior academy reynoso",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Firecrackers Leles - Archie (P)",
-          "normalizedName": "firecrackers leles archie (p)",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Tulare Heat-Delgado (P)",
-          "normalizedName": "tulare heat delgado (p)",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        }
-      ],
-      "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:27.893Z",
-      "lastSuccessfulCheck": "2026-10-24T16:35:56.883Z",
-      "officialName": "Monster Mash for Cash",
-      "weekendId": "2026-10-24",
-      "role": "alternate",
-      "registrationState": "closed",
-      "registrationStatus": "Registration closed",
-      "registrationDeadline": "Oct 19, 2026",
-      "registrationObservedAt": "2026-10-24T16:35:56.883Z",
-      "diagnostic": "locator.waitFor: Timeout 25000ms exceeded.\nCall log:\n  - waiting for getByText('Monster Mash for Cash').first() to be visible\n"
-    },
-    {
-      "id": "ast-jack-ball-2026-sacramento",
-      "name": "Jack Ball",
-      "organizer": "All Star Tournaments",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "location": "Sacramento",
-      "division": "12U",
-      "weekendId": "2026-10-24",
-      "role": "alternate",
-      "sourceType": "ast",
-      "sourceUrl": "https://allstartournaments.com/fastpitch/jack-ball/",
-      "locationScope": "SACRAMENTO",
-      "status": "active",
-      "outcome": "success",
-      "teams": [
-        {
-          "rawName": "Nevada National 2014-Glensor",
-          "normalizedName": "nevada national 2014 glensor",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "NV Rampage-Davidson",
-          "normalizedName": "nv rampage davidson",
-          "confirmed": "yes",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Firecrackers Battle Born NV-Carrion",
-          "normalizedName": "firecrackers battle born nv carrion",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Nevada Freedom-Akridge",
-          "normalizedName": "nevada freedom akridge",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Gladiators Gold-Cossio",
-          "normalizedName": "gladiators gold cossio",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Gladiators Black-Aitchison",
-          "normalizedName": "gladiators black aitchison",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "NV Sharks-Christensen",
-          "normalizedName": "nv sharks christensen",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Lassen Lightning-Ortiz",
-          "normalizedName": "lassen lightning ortiz",
-          "confirmed": "unknown",
-          "paid": "yes"
-        }
-      ],
-      "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:04:04.969Z",
-      "lastSuccessfulCheck": "2026-10-25T17:04:04.969Z",
-      "officialName": "Jack Ball",
-      "registrationStatus": "12U availability not published",
-      "registrationState": "unknown",
-      "registrationObservedAt": "2026-10-25T17:04:04.969Z",
-      "capacityScope": "12U"
-    },
-    {
-      "id": "wcp-norcal-championship-challenge-2026",
-      "name": "NorCal Championship Challenge",
-      "organizer": "West Coast Premier",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "location": "Stockton",
-      "division": "12U",
-      "weekendId": "2026-10-24",
-      "role": "alternate",
-      "sourceType": "wcp",
-      "sourceUrl": "https://www.westcoastpremier.com/oct-24-25-norcal-championship-challenge.html",
-      "status": "active",
-      "outcome": "failure",
-      "teams": [],
-      "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:39.186Z",
-      "lastSuccessfulCheck": "2026-10-11T18:06:28.246Z",
-      "officialName": "NorCal Championship Challenge",
-      "registrationState": "unknown",
-      "registrationStatus": "Registration link points to another event",
-      "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11441",
-      "registrationObservedAt": "2026-10-11T18:06:28.246Z",
-      "diagnostic": "West Coast Premier 12U section was not found"
-    },
-    {
-      "id": "usssa-sandlot-dugout-wars-2026",
-      "name": "Sandlot Dugout Wars",
-      "organizer": "USSSA",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "location": "Lincoln",
-      "division": "12U",
-      "weekendId": "2026-10-24",
-      "role": "alternate",
-      "sourceType": "usssa",
-      "sourceUrl": "https://cafastpitch.usssa.com/event/sandlot-dugout-wars/",
-      "status": "active",
-      "outcome": "failure",
-      "teams": [],
-      "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:04:55.172Z",
-      "lastSuccessfulCheck": "2026-09-21T13:18:57.636Z",
-      "officialName": "Sandlot Dugout Wars",
-      "capacityScope": "12U",
-      "registrationState": "open",
-      "registrationStatus": "Registration open",
-      "registrationObservedAt": "2026-09-21T13:18:57.636Z",
-      "capacity": 8,
-      "diagnostic": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n  - waiting for getByText('Max Entries', { exact: true }).first() to be visible\n"
-    },
-    {
-      "id": "pgf-halloween-bash-2026-salinas",
-      "name": "PGF Halloween Bash",
-      "organizer": "Premier Girls Fastpitch",
-      "startDate": "2026-10-24",
-      "endDate": "2026-10-25",
-      "location": "Salinas",
-      "division": "12U",
-      "weekendId": "2026-10-24",
-      "role": "alternate",
-      "sourceType": "tournamentConnectListing",
-      "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/premiergirlsfastpitch",
-      "eventMatch": "2026 PGF Halloween Bash",
-      "status": "active",
-      "outcome": "not_published",
-      "teams": [],
-      "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:04:40.352Z",
-      "lastSuccessfulCheck": "2026-10-25T17:04:40.352Z",
-      "officialName": "2026 PGF Halloween Bash",
-      "registrationStatus": "Event is not currently published by the organizer",
-      "registrationState": "not_published",
-      "registrationDeadline": "Oct 16, 2026",
-      "registrationObservedAt": "2026-10-25T17:04:40.352Z"
-    },
     {
       "id": "first-to-third-south-bay-showdown-2026",
       "name": "South Bay Showdown — Bash for Cash",
@@ -678,15 +270,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:04:51.733Z",
-      "lastSuccessfulCheck": "2026-10-25T17:04:51.733Z",
+      "checkedAt": "2026-10-26T19:20:13.723Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:13.723Z",
       "officialName": "South Bay Showdown",
       "weekendId": "2026-11-07",
       "role": "primary",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Oct 23, 2026",
-      "registrationObservedAt": "2026-10-25T17:04:51.733Z"
+      "registrationObservedAt": "2026-10-26T19:20:13.723Z"
     },
     {
       "id": "ast-mm-candy-classic-2026-sacramento",
@@ -857,6 +449,24 @@
         {
           "rawName": "NorCal PRIDE-Williamson/Cale",
           "normalizedName": "norcal pride williamson/cale",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "CenCal Vixens – Waterson",
+          "normalizedName": "cencal vixens waterson",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Sandlot Crew Peaches",
+          "normalizedName": "sandlot crew peaches",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Waiting List:",
+          "normalizedName": "waiting list:",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -892,12 +502,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:04:52.834Z",
-      "lastSuccessfulCheck": "2026-10-25T17:04:52.834Z",
+      "checkedAt": "2026-10-26T19:20:00.263Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:00.263Z",
       "officialName": "M&M Candy Classic",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-10-25T17:04:52.834Z",
+      "registrationObservedAt": "2026-10-26T19:20:00.263Z",
       "capacityScope": "12U"
     },
     {
@@ -916,7 +526,7 @@
       "outcome": "failure",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:06:28.450Z",
+      "checkedAt": "2026-10-26T19:21:34.612Z",
       "lastSuccessfulCheck": "2026-10-11T18:06:51.153Z",
       "officialName": "Veterans Day Classic",
       "registrationState": "unknown",
@@ -942,13 +552,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:07.422Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:07.422Z",
+      "checkedAt": "2026-10-26T19:20:12.300Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:12.300Z",
       "officialName": "2026 PGF Homerun Hoedown",
       "registrationStatus": "No public registration",
       "registrationState": "not_public",
       "registrationDeadline": "Oct 30, 2026",
-      "registrationObservedAt": "2026-10-25T17:05:07.422Z"
+      "registrationObservedAt": "2026-10-26T19:20:12.300Z"
     },
     {
       "id": "first-to-third-young-guns-bash-2026",
@@ -1076,13 +686,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:18.984Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:18.984Z",
+      "checkedAt": "2026-10-26T19:20:15.751Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:15.751Z",
       "officialName": "Young Guns Bash for Cash",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 9, 2026",
-      "registrationObservedAt": "2026-10-25T17:05:18.984Z"
+      "registrationObservedAt": "2026-10-26T19:20:15.751Z"
     },
     {
       "id": "ast-fall-bat-wars-2026-sacramento",
@@ -1121,12 +731,6 @@
         {
           "rawName": "Tsunami-Ellazar",
           "normalizedName": "tsunami ellazar",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Dublin Banshees-Dussault",
-          "normalizedName": "dublin banshees dussault",
           "confirmed": "unknown",
           "paid": "yes"
         },
@@ -1191,6 +795,24 @@
           "paid": "yes"
         },
         {
+          "rawName": "Mountain Dream-Anderson",
+          "normalizedName": "mountain dream anderson",
+          "confirmed": "unknown",
+          "paid": "yes"
+        },
+        {
+          "rawName": "San Carlos Select-Joyce",
+          "normalizedName": "san carlos select joyce",
+          "confirmed": "unknown",
+          "paid": "yes"
+        },
+        {
+          "rawName": "Athletics Mercado Cheatum",
+          "normalizedName": "athletics mercado cheatum",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
           "rawName": "Vibe-Neslen",
           "normalizedName": "vibe neslen",
           "confirmed": "unknown",
@@ -1233,134 +855,20 @@
           "paid": "unknown"
         },
         {
-          "rawName": "CA Grapettes-Thompson",
-          "normalizedName": "ca grapettes thompson",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
           "rawName": "Redhawks-Cordero",
           "normalizedName": "redhawks cordero",
           "confirmed": "unknown",
           "paid": "unknown"
         },
         {
-          "rawName": "Mountain Dream-Anderson",
-          "normalizedName": "mountain dream anderson",
+          "rawName": "Dublin Banshees-Dussault",
+          "normalizedName": "dublin banshees dussault",
           "confirmed": "unknown",
           "paid": "yes"
         },
         {
-          "rawName": "San Carlos Select-Joyce",
-          "normalizedName": "san carlos select joyce",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Foothill Gold-Moyer",
-          "normalizedName": "foothill gold moyer",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Alpha-Harrop",
-          "normalizedName": "alpha harrop",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "222’s Fastpitch Team Herbie-Holoien",
-          "normalizedName": "222's fastpitch team herbie holoien",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Alpha Athletics-Nocentini",
-          "normalizedName": "alpha athletics nocentini",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Diamond Devils-Bice",
-          "normalizedName": "diamond devils bice",
-          "confirmed": "yes",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Foothill Gold-Kiloh",
-          "normalizedName": "foothill gold kiloh",
-          "confirmed": "yes",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Nevada National 2014-Glensor",
-          "normalizedName": "nevada national 2014 glensor",
-          "confirmed": "yes",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "NorCal Choppers-Hernandez",
-          "normalizedName": "norcal choppers hernandez",
-          "confirmed": "yes",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Woodland Dusters-Salcido",
-          "normalizedName": "woodland dusters salcido",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Peaches-Donato",
-          "normalizedName": "peaches donato",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "NorCal Choppers-Brown",
-          "normalizedName": "norcal choppers brown",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "C-4 Softball-Highley",
-          "normalizedName": "c 4 softball highley",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "Suncats Jimenez-Martinez",
-          "normalizedName": "suncats jimenez martinez",
-          "confirmed": "unknown",
-          "paid": "yes"
-        },
-        {
-          "rawName": "OC Batbusters-Murillo",
-          "normalizedName": "oc batbusters murillo",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Firecrackers Battle Born NV-Carrion",
-          "normalizedName": "firecrackers battle born nv carrion",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Westcoast Wolverines-Perry",
-          "normalizedName": "westcoast wolverines perry",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Athletics Mercado-Cole 2032",
-          "normalizedName": "athletics mercado cole 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Paradise Lady Nuggets-Hansbrough",
-          "normalizedName": "paradise lady nuggets hansbrough",
+          "rawName": "CA Grapettes-Thompson",
+          "normalizedName": "ca grapettes thompson",
           "confirmed": "unknown",
           "paid": "unknown"
         }
@@ -1368,192 +876,32 @@
       "pendingRemovals": [
         {
           "team": {
-            "rawName": "Foothill Gold-Moyer",
-            "normalizedName": "foothill gold moyer",
+            "rawName": "Dublin Banshees-Dussault",
+            "normalizedName": "dublin banshees dussault",
             "confirmed": "unknown",
             "paid": "yes"
           },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
+          "firstMissingAt": "2026-10-26T19:20:13.646Z",
           "observations": 1
         },
         {
           "team": {
-            "rawName": "Alpha-Harrop",
-            "normalizedName": "alpha harrop",
-            "confirmed": "unknown",
-            "paid": "yes"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "222’s Fastpitch Team Herbie-Holoien",
-            "normalizedName": "222's fastpitch team herbie holoien",
-            "confirmed": "unknown",
-            "paid": "yes"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Alpha Athletics-Nocentini",
-            "normalizedName": "alpha athletics nocentini",
-            "confirmed": "unknown",
-            "paid": "yes"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Diamond Devils-Bice",
-            "normalizedName": "diamond devils bice",
-            "confirmed": "yes",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Foothill Gold-Kiloh",
-            "normalizedName": "foothill gold kiloh",
-            "confirmed": "yes",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Nevada National 2014-Glensor",
-            "normalizedName": "nevada national 2014 glensor",
-            "confirmed": "yes",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "NorCal Choppers-Hernandez",
-            "normalizedName": "norcal choppers hernandez",
-            "confirmed": "yes",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Woodland Dusters-Salcido",
-            "normalizedName": "woodland dusters salcido",
-            "confirmed": "unknown",
-            "paid": "yes"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Peaches-Donato",
-            "normalizedName": "peaches donato",
-            "confirmed": "unknown",
-            "paid": "yes"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "NorCal Choppers-Brown",
-            "normalizedName": "norcal choppers brown",
-            "confirmed": "unknown",
-            "paid": "yes"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "C-4 Softball-Highley",
-            "normalizedName": "c 4 softball highley",
-            "confirmed": "unknown",
-            "paid": "yes"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Suncats Jimenez-Martinez",
-            "normalizedName": "suncats jimenez martinez",
-            "confirmed": "unknown",
-            "paid": "yes"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "OC Batbusters-Murillo",
-            "normalizedName": "oc batbusters murillo",
+            "rawName": "CA Grapettes-Thompson",
+            "normalizedName": "ca grapettes thompson",
             "confirmed": "unknown",
             "paid": "unknown"
           },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Firecrackers Battle Born NV-Carrion",
-            "normalizedName": "firecrackers battle born nv carrion",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Westcoast Wolverines-Perry",
-            "normalizedName": "westcoast wolverines perry",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Athletics Mercado-Cole 2032",
-            "normalizedName": "athletics mercado cole 2032",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Paradise Lady Nuggets-Hansbrough",
-            "normalizedName": "paradise lady nuggets hansbrough",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-10-25T17:05:20.344Z",
+          "firstMissingAt": "2026-10-26T19:20:13.646Z",
           "observations": 1
         }
       ],
-      "checkedAt": "2026-10-25T17:05:20.344Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:20.344Z",
+      "checkedAt": "2026-10-26T19:20:13.646Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:13.646Z",
       "officialName": "Fall Bat Wars",
       "capacityScope": "12U",
       "registrationState": "unknown",
       "registrationStatus": "12U availability not published",
-      "registrationObservedAt": "2026-10-25T17:05:20.344Z"
+      "registrationObservedAt": "2026-10-26T19:20:13.646Z"
     },
     {
       "id": "wcp-original-legacy-cup-2026",
@@ -1586,13 +934,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:20.859Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:20.859Z",
+      "checkedAt": "2026-10-26T19:20:14.342Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:14.342Z",
       "officialName": "The Original Legacy Cup — 1st Annual National Qualifier",
       "registrationState": "not_published",
       "registrationStatus": "Event is not currently published by West Coast Premier",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11445",
-      "registrationObservedAt": "2026-10-25T17:05:20.859Z"
+      "registrationObservedAt": "2026-10-26T19:20:14.342Z"
     },
     {
       "id": "first-to-third-harvest-cup-2026",
@@ -1682,15 +1030,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:33.463Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:33.463Z",
+      "checkedAt": "2026-10-26T19:20:25.164Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:25.164Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-10-25T17:05:33.463Z"
+      "registrationObservedAt": "2026-10-26T19:20:25.164Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -1775,6 +1123,12 @@
           "paid": "unknown"
         },
         {
+          "rawName": "Drop Zone Robles/Hough",
+          "normalizedName": "drop zone robles/hough",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
           "rawName": "Tehama Gold-Mendenhall",
           "normalizedName": "tehama gold mendenhall",
           "confirmed": "unknown",
@@ -1782,12 +1136,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:28.941Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:28.941Z",
+      "checkedAt": "2026-10-26T19:20:15.646Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:15.646Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-10-25T17:05:28.941Z",
+      "registrationObservedAt": "2026-10-26T19:20:15.646Z",
       "capacityScope": "12U"
     },
     {
@@ -1873,6 +1227,12 @@
           "paid": "unknown"
         },
         {
+          "rawName": "Drop Zone Robles/Hough",
+          "normalizedName": "drop zone robles/hough",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
           "rawName": "Tehama Gold-Mendenhall",
           "normalizedName": "tehama gold mendenhall",
           "confirmed": "unknown",
@@ -1880,12 +1240,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:30.033Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:30.033Z",
+      "checkedAt": "2026-10-26T19:20:17.086Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:17.086Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-10-25T17:05:30.033Z",
+      "registrationObservedAt": "2026-10-26T19:20:17.086Z",
       "capacityScope": "12U"
     },
     {
@@ -1917,13 +1277,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:34.951Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:34.951Z",
+      "checkedAt": "2026-10-26T19:20:20.789Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:20.789Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-10-25T17:05:34.951Z"
+      "registrationObservedAt": "2026-10-26T19:20:20.789Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -1942,12 +1302,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:37.266Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:37.266Z",
+      "checkedAt": "2026-10-26T19:20:20.985Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:20.985Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-10-25T17:05:37.266Z"
+      "registrationObservedAt": "2026-10-26T19:20:20.985Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -1966,15 +1326,215 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-10-25T17:05:38.404Z",
-      "lastSuccessfulCheck": "2026-10-25T17:05:38.404Z",
+      "checkedAt": "2026-10-26T19:20:24.417Z",
+      "lastSuccessfulCheck": "2026-10-26T19:20:24.417Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-10-25T17:05:38.404Z"
+      "registrationObservedAt": "2026-10-26T19:20:24.417Z"
     }
   ],
   "changes": [
+    {
+      "id": "2026-10-26t19-20-17-086z-ast-turkey-bash-2026-salinas-team-added-drop-zone-robles-hough",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-10-26T19:20:17.086Z",
+      "type": "team_added",
+      "teamName": "Drop Zone Robles/Hough",
+      "detail": "Drop Zone Robles/Hough joined the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-15-646z-ast-turkey-bash-2026-sacramento-team-added-drop-zone-robles-hough",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:15.646Z",
+      "type": "team_added",
+      "teamName": "Drop Zone Robles/Hough",
+      "detail": "Drop Zone Robles/Hough joined the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-paradise-lady-nuggets-hansbrough",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Paradise Lady Nuggets-Hansbrough",
+      "detail": "Paradise Lady Nuggets-Hansbrough is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-athletics-mercado-cole-2032",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Athletics Mercado-Cole 2032",
+      "detail": "Athletics Mercado-Cole 2032 is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-westcoast-wolverines-perry",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Westcoast Wolverines-Perry",
+      "detail": "Westcoast Wolverines-Perry is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-firecrackers-battle-born-nv-carrion",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Firecrackers Battle Born NV-Carrion",
+      "detail": "Firecrackers Battle Born NV-Carrion is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-oc-batbusters-murillo",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "OC Batbusters-Murillo",
+      "detail": "OC Batbusters-Murillo is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-suncats-jimenez-martinez",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Suncats Jimenez-Martinez",
+      "detail": "Suncats Jimenez-Martinez is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-c-4-softball-highley",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "C-4 Softball-Highley",
+      "detail": "C-4 Softball-Highley is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-norcal-choppers-brown",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "NorCal Choppers-Brown",
+      "detail": "NorCal Choppers-Brown is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-peaches-donato",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Peaches-Donato",
+      "detail": "Peaches-Donato is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-woodland-dusters-salcido",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Woodland Dusters-Salcido",
+      "detail": "Woodland Dusters-Salcido is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-norcal-choppers-hernandez",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "NorCal Choppers-Hernandez",
+      "detail": "NorCal Choppers-Hernandez is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-nevada-national-2014-glensor",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Nevada National 2014-Glensor",
+      "detail": "Nevada National 2014-Glensor is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-foothill-gold-kiloh",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Foothill Gold-Kiloh",
+      "detail": "Foothill Gold-Kiloh is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-diamond-devils-bice",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Diamond Devils-Bice",
+      "detail": "Diamond Devils-Bice is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-alpha-athletics-nocentini",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Alpha Athletics-Nocentini",
+      "detail": "Alpha Athletics-Nocentini is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-222-s-fastpitch-team-herbie-holoien",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "222’s Fastpitch Team Herbie-Holoien",
+      "detail": "222’s Fastpitch Team Herbie-Holoien is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-alpha-harrop",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Alpha-Harrop",
+      "detail": "Alpha-Harrop is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-removed-foothill-gold-moyer",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_removed",
+      "teamName": "Foothill Gold-Moyer",
+      "detail": "Foothill Gold-Moyer is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-13-646z-ast-fall-bat-wars-2026-sacramento-team-added-athletics-mercado-cheatum",
+      "tournamentId": "ast-fall-bat-wars-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:13.646Z",
+      "type": "team_added",
+      "teamName": "Athletics Mercado Cheatum",
+      "detail": "Athletics Mercado Cheatum joined the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-00-263z-ast-mm-candy-classic-2026-sacramento-team-added-waiting-list-",
+      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:00.263Z",
+      "type": "team_added",
+      "teamName": "Waiting List:",
+      "detail": "Waiting List: joined the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-00-263z-ast-mm-candy-classic-2026-sacramento-team-added-sandlot-crew-peaches",
+      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:00.263Z",
+      "type": "team_added",
+      "teamName": "Sandlot Crew Peaches",
+      "detail": "Sandlot Crew Peaches joined the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-00-263z-ast-mm-candy-classic-2026-sacramento-team-added-cencal-vixens-waterson",
+      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:00.263Z",
+      "type": "team_added",
+      "teamName": "CenCal Vixens – Waterson",
+      "detail": "CenCal Vixens – Waterson joined the 12U field."
+    },
+    {
+      "id": "2026-10-26t19-20-00-263z-ast-mm-candy-classic-2026-sacramento-confirmed-changed-norcal-pride-williamson-cale",
+      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
+      "occurredAt": "2026-10-26T19:20:00.263Z",
+      "type": "confirmed_changed",
+      "teamName": "NorCal PRIDE-Williamson/Cale",
+      "detail": "NorCal PRIDE-Williamson/Cale confirmation changed to yes."
+    },
     {
       "id": "2026-10-25t17-05-20-344z-ast-fall-bat-wars-2026-sacramento-team-added-san-carlos-select-joyce",
       "tournamentId": "ast-fall-bat-wars-2026-sacramento",
@@ -9646,203 +9206,6 @@
       "type": "team_added",
       "teamName": "Santa Cruz Crushers-Whittington",
       "detail": "Santa Cruz Crushers-Whittington joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-37-51-059z-ast-pink-panther-2026-salinas-team-added-scotts-valley-trouble-sugarman",
-      "tournamentId": "ast-pink-panther-2026-salinas",
-      "occurredAt": "2026-08-21T03:37:51.059Z",
-      "type": "team_added",
-      "teamName": "Scotts Valley Trouble-Sugarman",
-      "detail": "Scotts Valley Trouble-Sugarman joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-37-51-059z-ast-pink-panther-2026-salinas-team-added-ca-storm-bowen",
-      "tournamentId": "ast-pink-panther-2026-salinas",
-      "occurredAt": "2026-08-21T03:37:51.059Z",
-      "type": "team_added",
-      "teamName": "CA Storm-Bowen",
-      "detail": "CA Storm-Bowen joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-37-51-059z-ast-pink-panther-2026-salinas-team-added-toro-68ers-phelps",
-      "tournamentId": "ast-pink-panther-2026-salinas",
-      "occurredAt": "2026-08-21T03:37:51.059Z",
-      "type": "team_added",
-      "teamName": "Toro 68ers-Phelps",
-      "detail": "Toro 68ers-Phelps joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-37-51-059z-ast-pink-panther-2026-salinas-team-added-firecrackers-mh-stenn",
-      "tournamentId": "ast-pink-panther-2026-salinas",
-      "occurredAt": "2026-08-21T03:37:51.059Z",
-      "type": "team_added",
-      "teamName": "Firecrackers MH-Stenn",
-      "detail": "Firecrackers MH-Stenn joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-37-58-831z-first-to-third-phil-mumma-2026-team-added-corona-angels-2032-scott",
-      "tournamentId": "first-to-third-phil-mumma-2026",
-      "occurredAt": "2026-08-21T03:37:58.831Z",
-      "type": "team_added",
-      "teamName": "Corona Angels 2032 Scott",
-      "detail": "Corona Angels 2032 Scott joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-37-56-023z-legacy-freedom-rings-2026-confirmed-changed-nor-cal-choppers-hernandez-12u",
-      "tournamentId": "legacy-freedom-rings-2026",
-      "occurredAt": "2026-08-21T03:37:56.023Z",
-      "type": "confirmed_changed",
-      "teamName": "Nor Cal Choppers Hernandez 12U",
-      "detail": "Nor Cal Choppers Hernandez 12U confirmation changed to yes."
-    },
-    {
-      "id": "2026-08-21t03-37-56-023z-legacy-freedom-rings-2026-confirmed-changed-athletics-mercado-kemp-kreitschitz",
-      "tournamentId": "legacy-freedom-rings-2026",
-      "occurredAt": "2026-08-21T03:37:56.023Z",
-      "type": "confirmed_changed",
-      "teamName": "Athletics Mercado Kemp-Kreitschitz",
-      "detail": "Athletics Mercado Kemp-Kreitschitz confirmation changed to yes."
-    },
-    {
-      "id": "2026-08-21t03-37-56-023z-legacy-freedom-rings-2026-confirmed-changed-firecrackers-bb-carrion",
-      "tournamentId": "legacy-freedom-rings-2026",
-      "occurredAt": "2026-08-21T03:37:56.023Z",
-      "type": "confirmed_changed",
-      "teamName": "Firecrackers BB Carrion",
-      "detail": "Firecrackers BB Carrion confirmation changed to yes."
-    },
-    {
-      "id": "2026-08-21t03-37-56-023z-legacy-freedom-rings-2026-confirmed-changed-norcal-fusion-augusto",
-      "tournamentId": "legacy-freedom-rings-2026",
-      "occurredAt": "2026-08-21T03:37:56.023Z",
-      "type": "confirmed_changed",
-      "teamName": "NorCal Fusion Augusto",
-      "detail": "NorCal Fusion Augusto confirmation changed to no."
-    },
-    {
-      "id": "2026-08-21t03-37-56-023z-legacy-freedom-rings-2026-paid-changed-universal-bayarea-12u-baca-franklin",
-      "tournamentId": "legacy-freedom-rings-2026",
-      "occurredAt": "2026-08-21T03:37:56.023Z",
-      "type": "paid_changed",
-      "teamName": "universal bayarea 12u baca/franklin",
-      "detail": "universal bayarea 12u baca/franklin payment status changed to yes."
-    },
-    {
-      "id": "2026-08-21t03-37-56-023z-legacy-freedom-rings-2026-confirmed-changed-universal-bayarea-12u-baca-franklin",
-      "tournamentId": "legacy-freedom-rings-2026",
-      "occurredAt": "2026-08-21T03:37:56.023Z",
-      "type": "confirmed_changed",
-      "teamName": "universal bayarea 12u baca/franklin",
-      "detail": "universal bayarea 12u baca/franklin confirmation changed to yes."
-    },
-    {
-      "id": "2026-08-21t03-37-55-877z-legacy-stay-humble-2026-08-paid-changed-wolfpac",
-      "tournamentId": "legacy-stay-humble-2026-08",
-      "occurredAt": "2026-08-21T03:37:55.877Z",
-      "type": "paid_changed",
-      "teamName": "WolfPAC",
-      "detail": "WolfPAC payment status changed to yes."
-    },
-    {
-      "id": "2026-08-21t03-37-55-877z-legacy-stay-humble-2026-08-spots-remaining-changed-event",
-      "tournamentId": "legacy-stay-humble-2026-08",
-      "occurredAt": "2026-08-21T03:37:55.877Z",
-      "type": "spots_remaining_changed",
-      "detail": "Published spots remaining changed from 0 to 1."
-    },
-    {
-      "id": "2026-08-19t13-59-11-339z-wcp-bay-area-bash-2026-source-recovered-event",
-      "tournamentId": "wcp-bay-area-bash-2026",
-      "occurredAt": "2026-08-19T13:59:11.339Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
-    },
-    {
-      "id": "2026-08-19t13-59-11-340z-first-to-third-harvest-cup-2026-team-added-ltg-12u-sansaver",
-      "tournamentId": "first-to-third-harvest-cup-2026",
-      "occurredAt": "2026-08-19T13:59:11.340Z",
-      "type": "team_added",
-      "teamName": "LTG 12u Sansaver",
-      "detail": "LTG 12u Sansaver joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-59-04-740z-first-to-third-south-bay-showdown-2026-team-added-ltg-element-12u",
-      "tournamentId": "first-to-third-south-bay-showdown-2026",
-      "occurredAt": "2026-08-19T13:59:04.740Z",
-      "type": "team_added",
-      "teamName": "LTG Element 12U",
-      "detail": "LTG Element 12U joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-59-04-740z-first-to-third-south-bay-showdown-2026-team-added-ltg-12u-sansaver",
-      "tournamentId": "first-to-third-south-bay-showdown-2026",
-      "occurredAt": "2026-08-19T13:59:04.740Z",
-      "type": "team_added",
-      "teamName": "LTG 12u Sansaver",
-      "detail": "LTG 12u Sansaver joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-58-55-508z-first-to-third-monster-mash-2026-team-added-ltg-12u-sansaver",
-      "tournamentId": "first-to-third-monster-mash-2026",
-      "occurredAt": "2026-08-19T13:58:55.508Z",
-      "type": "team_added",
-      "teamName": "LTG 12u Sansaver",
-      "detail": "LTG 12u Sansaver joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-58-52-526z-legacy-keep-humble-pcfl-qualifier-2026-folsom-spots-remaining-changed-event",
-      "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
-      "occurredAt": "2026-08-19T13:58:52.526Z",
-      "type": "spots_remaining_changed",
-      "detail": "Published spots remaining changed from 20 to 19."
-    },
-    {
-      "id": "2026-08-19t13-58-51-207z-first-to-third-pink-out-parks-2026-team-added-ltg-element-12u",
-      "tournamentId": "first-to-third-pink-out-parks-2026",
-      "occurredAt": "2026-08-19T13:58:51.207Z",
-      "type": "team_added",
-      "teamName": "LTG Element 12U",
-      "detail": "LTG Element 12U joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-58-38-332z-ast-monster-mash-2026-sacramento-team-added-sorcerer-green-anderson",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-19T13:58:38.332Z",
-      "type": "team_added",
-      "teamName": "Sorcerer-Green/Anderson",
-      "detail": "Sorcerer-Green/Anderson joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-58-38-332z-ast-monster-mash-2026-sacramento-team-added-sirens-rohrs",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-19T13:58:38.332Z",
-      "type": "team_added",
-      "teamName": "Sirens-Rohrs",
-      "detail": "Sirens-Rohrs joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-58-38-332z-ast-monster-mash-2026-sacramento-team-added-woodland-dusters-salcido",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-19T13:58:38.332Z",
-      "type": "team_added",
-      "teamName": "Woodland Dusters-Salcido",
-      "detail": "Woodland Dusters-Salcido joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-58-38-332z-ast-monster-mash-2026-sacramento-team-added-sacramento-novas-perez",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-19T13:58:38.332Z",
-      "type": "team_added",
-      "teamName": "Sacramento Novas-Perez",
-      "detail": "Sacramento Novas-Perez joined the 12U field."
-    },
-    {
-      "id": "2026-08-19t13-58-38-332z-ast-monster-mash-2026-sacramento-team-added-chico-patriot-mendoza-romero",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-19T13:58:38.332Z",
-      "type": "team_added",
-      "teamName": "Chico Patriot-Mendoza/Romero",
-      "detail": "Chico Patriot-Mendoza/Romero joined the 12U field."
     }
   ]
 }
