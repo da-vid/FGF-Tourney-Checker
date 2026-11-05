@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T20:52:16.675Z",
+  "generatedAt": "2026-11-05T21:09:00.944Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -270,15 +270,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:50:53.918Z",
-      "lastSuccessfulCheck": "2026-11-04T20:50:53.918Z",
+      "checkedAt": "2026-11-05T21:07:37.547Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:37.547Z",
       "officialName": "South Bay Showdown",
       "weekendId": "2026-11-07",
       "role": "primary",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Oct 23, 2026",
-      "registrationObservedAt": "2026-11-04T20:50:53.918Z"
+      "registrationObservedAt": "2026-11-05T21:07:37.547Z"
     },
     {
       "id": "ast-mm-candy-classic-2026-sacramento",
@@ -502,12 +502,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:50:42.155Z",
-      "lastSuccessfulCheck": "2026-11-04T20:50:42.155Z",
+      "checkedAt": "2026-11-05T21:07:26.466Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:26.466Z",
       "officialName": "M&M Candy Classic",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-04T20:50:42.155Z",
+      "registrationObservedAt": "2026-11-05T21:07:26.466Z",
       "capacityScope": "12U"
     },
     {
@@ -526,7 +526,7 @@
       "outcome": "failure",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:52:16.633Z",
+      "checkedAt": "2026-11-05T21:09:00.902Z",
       "lastSuccessfulCheck": "2026-10-11T18:06:51.153Z",
       "officialName": "Veterans Day Classic",
       "registrationState": "unknown",
@@ -552,13 +552,13 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:50:53.569Z",
-      "lastSuccessfulCheck": "2026-11-04T20:50:53.569Z",
+      "checkedAt": "2026-11-05T21:07:38.667Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:38.667Z",
       "officialName": "2026 PGF Homerun Hoedown",
       "registrationStatus": "Registration closed",
       "registrationState": "closed",
       "registrationDeadline": "Oct 30, 2026",
-      "registrationObservedAt": "2026-11-04T20:50:53.569Z"
+      "registrationObservedAt": "2026-11-05T21:07:38.667Z"
     },
     {
       "id": "first-to-third-young-guns-bash-2026",
@@ -710,13 +710,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:50:55.199Z",
-      "lastSuccessfulCheck": "2026-11-04T20:50:55.199Z",
+      "checkedAt": "2026-11-05T21:07:38.856Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:38.856Z",
       "officialName": "Young Guns Bash for Cash",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 9, 2026",
-      "registrationObservedAt": "2026-11-04T20:50:55.199Z"
+      "registrationObservedAt": "2026-11-05T21:07:38.856Z"
     },
     {
       "id": "ast-fall-bat-wars-2026-sacramento",
@@ -919,7 +919,7 @@
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-04T20:51:02.647Z",
+      "checkedAt": "2026-11-05T21:07:47.731Z",
       "lastSuccessfulCheck": "2026-10-26T19:20:13.646Z",
       "officialName": "Fall Bat Wars",
       "capacityScope": "12U",
@@ -959,13 +959,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:50:54.532Z",
-      "lastSuccessfulCheck": "2026-11-04T20:50:54.532Z",
+      "checkedAt": "2026-11-05T21:07:39.882Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:39.882Z",
       "officialName": "The Original Legacy Cup — 1st Annual National Qualifier",
       "registrationState": "not_published",
       "registrationStatus": "Event is not currently published by West Coast Premier",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11445",
-      "registrationObservedAt": "2026-11-04T20:50:54.532Z"
+      "registrationObservedAt": "2026-11-05T21:07:39.882Z"
     },
     {
       "id": "first-to-third-harvest-cup-2026",
@@ -1067,15 +1067,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:51:06.196Z",
-      "lastSuccessfulCheck": "2026-11-04T20:51:06.196Z",
+      "checkedAt": "2026-11-05T21:07:50.843Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:50.843Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-11-04T20:51:06.196Z"
+      "registrationObservedAt": "2026-11-05T21:07:50.843Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -1179,12 +1179,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:50:56.312Z",
-      "lastSuccessfulCheck": "2026-11-04T20:50:56.312Z",
+      "checkedAt": "2026-11-05T21:07:41.025Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:41.025Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-04T20:50:56.312Z",
+      "registrationObservedAt": "2026-11-05T21:07:41.025Z",
       "capacityScope": "12U"
     },
     {
@@ -1289,12 +1289,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:50:57.524Z",
-      "lastSuccessfulCheck": "2026-11-04T20:50:57.524Z",
+      "checkedAt": "2026-11-05T21:07:42.407Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:42.407Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-04T20:50:57.524Z",
+      "registrationObservedAt": "2026-11-05T21:07:42.407Z",
       "capacityScope": "12U"
     },
     {
@@ -1326,13 +1326,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:51:01.947Z",
-      "lastSuccessfulCheck": "2026-11-04T20:51:01.947Z",
+      "checkedAt": "2026-11-05T21:07:47.304Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:47.304Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-11-04T20:51:01.947Z"
+      "registrationObservedAt": "2026-11-05T21:07:47.304Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -1351,12 +1351,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:51:05.233Z",
-      "lastSuccessfulCheck": "2026-11-04T20:51:05.233Z",
+      "checkedAt": "2026-11-05T21:07:51.338Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:51.338Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-04T20:51:05.233Z"
+      "registrationObservedAt": "2026-11-05T21:07:51.338Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -1375,12 +1375,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-04T20:51:05.780Z",
-      "lastSuccessfulCheck": "2026-11-04T20:51:05.780Z",
+      "checkedAt": "2026-11-05T21:07:51.352Z",
+      "lastSuccessfulCheck": "2026-11-05T21:07:51.352Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-04T20:51:05.780Z"
+      "registrationObservedAt": "2026-11-05T21:07:51.352Z"
     }
   ],
   "changes": [
