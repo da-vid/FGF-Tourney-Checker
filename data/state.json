@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T20:50:59.399Z",
+  "generatedAt": "2026-11-11T21:27:03.442Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -137,49 +137,16 @@
           "normalizedName": "california grapettes (p)",
           "confirmed": "unknown",
           "paid": "unknown"
-        },
-        {
-          "rawName": "Mana Elite",
-          "normalizedName": "mana elite",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Califonria Grapettes (P)",
-          "normalizedName": "califonria grapettes (p)",
-          "confirmed": "unknown",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [
-        {
-          "team": {
-            "rawName": "Mana Elite",
-            "normalizedName": "mana elite",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-10T20:50:58.844Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Califonria Grapettes (P)",
-            "normalizedName": "califonria grapettes (p)",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-10T20:50:58.844Z",
-          "observations": 1
-        }
-      ],
-      "checkedAt": "2026-11-10T20:50:58.844Z",
-      "lastSuccessfulCheck": "2026-11-10T20:50:58.844Z",
+      "pendingRemovals": [],
+      "checkedAt": "2026-11-11T21:27:02.018Z",
+      "lastSuccessfulCheck": "2026-11-11T21:27:02.018Z",
       "officialName": "Young Guns Bash for Cash",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Nov 9, 2026",
-      "registrationObservedAt": "2026-11-10T20:50:58.844Z"
+      "registrationObservedAt": "2026-11-11T21:27:02.018Z"
     },
     {
       "id": "ast-fall-bat-wars-2026-sacramento",
@@ -382,7 +349,7 @@
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-10T20:50:56.203Z",
+      "checkedAt": "2026-11-11T21:27:00.281Z",
       "lastSuccessfulCheck": "2026-10-26T19:20:13.646Z",
       "officialName": "Fall Bat Wars",
       "capacityScope": "12U",
@@ -422,13 +389,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-10T20:50:46.339Z",
-      "lastSuccessfulCheck": "2026-11-10T20:50:46.339Z",
+      "checkedAt": "2026-11-11T21:26:49.378Z",
+      "lastSuccessfulCheck": "2026-11-11T21:26:49.378Z",
       "officialName": "The Original Legacy Cup — 1st Annual National Qualifier",
       "registrationState": "not_published",
       "registrationStatus": "Event is not currently published by West Coast Premier",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11445",
-      "registrationObservedAt": "2026-11-10T20:50:46.339Z"
+      "registrationObservedAt": "2026-11-11T21:26:49.378Z"
     },
     {
       "id": "first-to-third-harvest-cup-2026",
@@ -499,6 +466,12 @@
           "paid": "unknown"
         },
         {
+          "rawName": "Team California Gomes National 12U",
+          "normalizedName": "team california gomes national 12u",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
           "rawName": "Universal Fastpitch-Moreno",
           "normalizedName": "universal fastpitch moreno",
           "confirmed": "unknown",
@@ -515,35 +488,18 @@
           "normalizedName": "batbusters harrison",
           "confirmed": "unknown",
           "paid": "unknown"
-        },
-        {
-          "rawName": "Corona Angels",
-          "normalizedName": "corona angels",
-          "confirmed": "unknown",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [
-        {
-          "team": {
-            "rawName": "Corona Angels",
-            "normalizedName": "corona angels",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-10T20:50:58.345Z",
-          "observations": 1
-        }
-      ],
-      "checkedAt": "2026-11-10T20:50:58.345Z",
-      "lastSuccessfulCheck": "2026-11-10T20:50:58.345Z",
+      "pendingRemovals": [],
+      "checkedAt": "2026-11-11T21:27:01.952Z",
+      "lastSuccessfulCheck": "2026-11-11T21:27:01.952Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-11-10T20:50:58.345Z"
+      "registrationObservedAt": "2026-11-11T21:27:01.952Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -576,24 +532,36 @@
         {
           "rawName": "NorCal Choppers-Brown",
           "normalizedName": "norcal choppers brown",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Firecrackers Leles-Hart",
-          "normalizedName": "firecrackers leles hart",
-          "confirmed": "unknown",
+          "confirmed": "yes",
           "paid": "unknown"
         },
         {
           "rawName": "Nevada National 2014-Glensor",
           "normalizedName": "nevada national 2014 glensor",
-          "confirmed": "unknown",
+          "confirmed": "yes",
           "paid": "unknown"
         },
         {
           "rawName": "Bombers-Clark",
           "normalizedName": "bombers clark",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Drop Zone Robles/Hough",
+          "normalizedName": "drop zone robles/hough",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "SSC Frields",
+          "normalizedName": "ssc frields",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Firecrackers Leles-Hart",
+          "normalizedName": "firecrackers leles hart",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -616,32 +584,14 @@
           "paid": "unknown"
         },
         {
-          "rawName": "Athletics Mercado- Cole",
-          "normalizedName": "athletics mercado cole",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
           "rawName": "AASA Morgan",
           "normalizedName": "aasa morgan",
           "confirmed": "unknown",
           "paid": "unknown"
         },
         {
-          "rawName": "Drop Zone Robles/Hough",
-          "normalizedName": "drop zone robles/hough",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "SSC Frields",
-          "normalizedName": "ssc frields",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Sandlot Crew Peaches Hayes",
-          "normalizedName": "sandlot crew peaches hayes",
+          "rawName": "Athletics Mercado- Cole",
+          "normalizedName": "athletics mercado cole",
           "confirmed": "unknown",
           "paid": "unknown"
         }
@@ -649,21 +599,21 @@
       "pendingRemovals": [
         {
           "team": {
-            "rawName": "Sandlot Crew Peaches Hayes",
-            "normalizedName": "sandlot crew peaches hayes",
+            "rawName": "Athletics Mercado- Cole",
+            "normalizedName": "athletics mercado cole",
             "confirmed": "unknown",
             "paid": "unknown"
           },
-          "firstMissingAt": "2026-11-10T20:50:47.544Z",
+          "firstMissingAt": "2026-11-11T21:26:52.569Z",
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-10T20:50:47.544Z",
-      "lastSuccessfulCheck": "2026-11-10T20:50:47.544Z",
+      "checkedAt": "2026-11-11T21:26:52.569Z",
+      "lastSuccessfulCheck": "2026-11-11T21:26:52.569Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-10T20:50:47.544Z",
+      "registrationObservedAt": "2026-11-11T21:26:52.569Z",
       "capacityScope": "12U"
     },
     {
@@ -697,24 +647,36 @@
         {
           "rawName": "NorCal Choppers-Brown",
           "normalizedName": "norcal choppers brown",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Firecrackers Leles-Hart",
-          "normalizedName": "firecrackers leles hart",
-          "confirmed": "unknown",
+          "confirmed": "yes",
           "paid": "unknown"
         },
         {
           "rawName": "Nevada National 2014-Glensor",
           "normalizedName": "nevada national 2014 glensor",
-          "confirmed": "unknown",
+          "confirmed": "yes",
           "paid": "unknown"
         },
         {
           "rawName": "Bombers-Clark",
           "normalizedName": "bombers clark",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Drop Zone Robles/Hough",
+          "normalizedName": "drop zone robles/hough",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "SSC Frields",
+          "normalizedName": "ssc frields",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Firecrackers Leles-Hart",
+          "normalizedName": "firecrackers leles hart",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -737,32 +699,14 @@
           "paid": "unknown"
         },
         {
-          "rawName": "Athletics Mercado- Cole",
-          "normalizedName": "athletics mercado cole",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
           "rawName": "AASA Morgan",
           "normalizedName": "aasa morgan",
           "confirmed": "unknown",
           "paid": "unknown"
         },
         {
-          "rawName": "Drop Zone Robles/Hough",
-          "normalizedName": "drop zone robles/hough",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "SSC Frields",
-          "normalizedName": "ssc frields",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Sandlot Crew Peaches Hayes",
-          "normalizedName": "sandlot crew peaches hayes",
+          "rawName": "Athletics Mercado- Cole",
+          "normalizedName": "athletics mercado cole",
           "confirmed": "unknown",
           "paid": "unknown"
         }
@@ -770,21 +714,21 @@
       "pendingRemovals": [
         {
           "team": {
-            "rawName": "Sandlot Crew Peaches Hayes",
-            "normalizedName": "sandlot crew peaches hayes",
+            "rawName": "Athletics Mercado- Cole",
+            "normalizedName": "athletics mercado cole",
             "confirmed": "unknown",
             "paid": "unknown"
           },
-          "firstMissingAt": "2026-11-10T20:50:49.172Z",
+          "firstMissingAt": "2026-11-11T21:26:53.950Z",
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-10T20:50:49.172Z",
-      "lastSuccessfulCheck": "2026-11-10T20:50:49.172Z",
+      "checkedAt": "2026-11-11T21:26:53.950Z",
+      "lastSuccessfulCheck": "2026-11-11T21:26:53.950Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-10T20:50:49.172Z",
+      "registrationObservedAt": "2026-11-11T21:26:53.950Z",
       "capacityScope": "12U"
     },
     {
@@ -816,13 +760,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-10T20:50:53.429Z",
-      "lastSuccessfulCheck": "2026-11-10T20:50:53.429Z",
+      "checkedAt": "2026-11-11T21:26:58.110Z",
+      "lastSuccessfulCheck": "2026-11-11T21:26:58.110Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-11-10T20:50:53.429Z"
+      "registrationObservedAt": "2026-11-11T21:26:58.110Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -841,12 +785,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-10T20:50:56.646Z",
-      "lastSuccessfulCheck": "2026-11-10T20:50:56.646Z",
+      "checkedAt": "2026-11-11T21:27:01.533Z",
+      "lastSuccessfulCheck": "2026-11-11T21:27:01.533Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-10T20:50:56.646Z"
+      "registrationObservedAt": "2026-11-11T21:27:01.533Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -865,15 +809,143 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-10T20:50:59.357Z",
-      "lastSuccessfulCheck": "2026-11-10T20:50:59.357Z",
+      "checkedAt": "2026-11-11T21:27:03.394Z",
+      "lastSuccessfulCheck": "2026-11-11T21:27:03.394Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-10T20:50:59.357Z"
+      "registrationObservedAt": "2026-11-11T21:27:03.394Z"
     }
   ],
   "changes": [
+    {
+      "id": "2026-11-11t21-26-53-950z-ast-turkey-bash-2026-salinas-team-removed-sandlot-crew-peaches-hayes",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-11T21:26:53.950Z",
+      "type": "team_removed",
+      "teamName": "Sandlot Crew Peaches Hayes",
+      "detail": "Sandlot Crew Peaches Hayes is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-11t21-26-53-950z-ast-turkey-bash-2026-salinas-confirmed-changed-ssc-frields",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-11T21:26:53.950Z",
+      "type": "confirmed_changed",
+      "teamName": "SSC Frields",
+      "detail": "SSC Frields confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-53-950z-ast-turkey-bash-2026-salinas-confirmed-changed-drop-zone-robles-hough",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-11T21:26:53.950Z",
+      "type": "confirmed_changed",
+      "teamName": "Drop Zone Robles/Hough",
+      "detail": "Drop Zone Robles/Hough confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-53-950z-ast-turkey-bash-2026-salinas-confirmed-changed-bombers-clark",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-11T21:26:53.950Z",
+      "type": "confirmed_changed",
+      "teamName": "Bombers-Clark",
+      "detail": "Bombers-Clark confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-53-950z-ast-turkey-bash-2026-salinas-confirmed-changed-nevada-national-2014-glensor",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-11T21:26:53.950Z",
+      "type": "confirmed_changed",
+      "teamName": "Nevada National 2014-Glensor",
+      "detail": "Nevada National 2014-Glensor confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-53-950z-ast-turkey-bash-2026-salinas-confirmed-changed-norcal-choppers-brown",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-11T21:26:53.950Z",
+      "type": "confirmed_changed",
+      "teamName": "NorCal Choppers-Brown",
+      "detail": "NorCal Choppers-Brown confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-52-569z-ast-turkey-bash-2026-sacramento-team-removed-sandlot-crew-peaches-hayes",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-11T21:26:52.569Z",
+      "type": "team_removed",
+      "teamName": "Sandlot Crew Peaches Hayes",
+      "detail": "Sandlot Crew Peaches Hayes is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-11t21-26-52-569z-ast-turkey-bash-2026-sacramento-confirmed-changed-ssc-frields",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-11T21:26:52.569Z",
+      "type": "confirmed_changed",
+      "teamName": "SSC Frields",
+      "detail": "SSC Frields confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-52-569z-ast-turkey-bash-2026-sacramento-confirmed-changed-drop-zone-robles-hough",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-11T21:26:52.569Z",
+      "type": "confirmed_changed",
+      "teamName": "Drop Zone Robles/Hough",
+      "detail": "Drop Zone Robles/Hough confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-52-569z-ast-turkey-bash-2026-sacramento-confirmed-changed-bombers-clark",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-11T21:26:52.569Z",
+      "type": "confirmed_changed",
+      "teamName": "Bombers-Clark",
+      "detail": "Bombers-Clark confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-52-569z-ast-turkey-bash-2026-sacramento-confirmed-changed-nevada-national-2014-glensor",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-11T21:26:52.569Z",
+      "type": "confirmed_changed",
+      "teamName": "Nevada National 2014-Glensor",
+      "detail": "Nevada National 2014-Glensor confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-26-52-569z-ast-turkey-bash-2026-sacramento-confirmed-changed-norcal-choppers-brown",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-11T21:26:52.569Z",
+      "type": "confirmed_changed",
+      "teamName": "NorCal Choppers-Brown",
+      "detail": "NorCal Choppers-Brown confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-11t21-27-01-952z-first-to-third-harvest-cup-2026-team-removed-corona-angels",
+      "tournamentId": "first-to-third-harvest-cup-2026",
+      "occurredAt": "2026-11-11T21:27:01.952Z",
+      "type": "team_removed",
+      "teamName": "Corona Angels",
+      "detail": "Corona Angels is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-11t21-27-01-952z-first-to-third-harvest-cup-2026-team-added-team-california-gomes-national-12u",
+      "tournamentId": "first-to-third-harvest-cup-2026",
+      "occurredAt": "2026-11-11T21:27:01.952Z",
+      "type": "team_added",
+      "teamName": "Team California Gomes National 12U",
+      "detail": "Team California Gomes National 12U joined the 12U field."
+    },
+    {
+      "id": "2026-11-11t21-27-02-018z-first-to-third-young-guns-bash-2026-team-removed-califonria-grapettes-p-",
+      "tournamentId": "first-to-third-young-guns-bash-2026",
+      "occurredAt": "2026-11-11T21:27:02.018Z",
+      "type": "team_removed",
+      "teamName": "Califonria Grapettes (P)",
+      "detail": "Califonria Grapettes (P) is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-11t21-27-02-018z-first-to-third-young-guns-bash-2026-team-removed-mana-elite",
+      "tournamentId": "first-to-third-young-guns-bash-2026",
+      "occurredAt": "2026-11-11T21:27:02.018Z",
+      "type": "team_removed",
+      "teamName": "Mana Elite",
+      "detail": "Mana Elite is no longer listed in the 12U field."
+    },
     {
       "id": "2026-11-10t20-50-49-172z-ast-turkey-bash-2026-salinas-confirmed-changed-diamond-devils-bice",
       "tournamentId": "ast-turkey-bash-2026-salinas",
@@ -8644,133 +8716,6 @@
       "type": "team_added",
       "teamName": "Sacramento Novas-Perez",
       "detail": "Sacramento Novas-Perez joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-41-552z-ast-mm-candy-classic-2026-sacramento-team-added-wolfpac-coffey",
-      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
-      "occurredAt": "2026-08-21T03:39:41.552Z",
-      "type": "team_added",
-      "teamName": "WolfPAC-Coffey",
-      "detail": "WolfPAC-Coffey joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-41-552z-ast-mm-candy-classic-2026-sacramento-team-added-foothill-gold-kiloh",
-      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
-      "occurredAt": "2026-08-21T03:39:41.552Z",
-      "type": "team_added",
-      "teamName": "Foothill Gold-Kiloh",
-      "detail": "Foothill Gold-Kiloh joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-43-993z-first-to-third-south-bay-showdown-2026-team-added-corona-angels-2032-scott",
-      "tournamentId": "first-to-third-south-bay-showdown-2026",
-      "occurredAt": "2026-08-21T03:39:43.993Z",
-      "type": "team_added",
-      "teamName": "Corona Angels 2032 Scott",
-      "detail": "Corona Angels 2032 Scott joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-43-993z-first-to-third-south-bay-showdown-2026-team-added-corona-angels---alvarado",
-      "tournamentId": "first-to-third-south-bay-showdown-2026",
-      "occurredAt": "2026-08-21T03:39:43.993Z",
-      "type": "team_added",
-      "teamName": "Corona Angels - Alvarado",
-      "detail": "Corona Angels - Alvarado joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-43-993z-first-to-third-south-bay-showdown-2026-team-added-california-lady-bulldogs",
-      "tournamentId": "first-to-third-south-bay-showdown-2026",
-      "occurredAt": "2026-08-21T03:39:43.993Z",
-      "type": "team_added",
-      "teamName": "California Lady Bulldogs",
-      "detail": "California Lady Bulldogs joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-24-689z-legacy-keep-humble-pcfl-qualifier-2026-folsom-team-added-powersurge-hooser",
-      "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
-      "occurredAt": "2026-08-21T03:38:24.689Z",
-      "type": "team_added",
-      "teamName": "Powersurge Hooser",
-      "detail": "Powersurge Hooser joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-24-689z-legacy-keep-humble-pcfl-qualifier-2026-folsom-team-added-powersurge-reis-12u",
-      "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
-      "occurredAt": "2026-08-21T03:38:24.689Z",
-      "type": "team_added",
-      "teamName": "PowerSurge Reis 12u",
-      "detail": "PowerSurge Reis 12u joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-24-689z-legacy-keep-humble-pcfl-qualifier-2026-folsom-team-added-nevada-lightning-leone-12u",
-      "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
-      "occurredAt": "2026-08-21T03:38:24.689Z",
-      "type": "team_added",
-      "teamName": "Nevada Lightning Leone 12u",
-      "detail": "Nevada Lightning Leone 12u joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-24-689z-legacy-keep-humble-pcfl-qualifier-2026-folsom-team-added-corona-angels---alvarado",
-      "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
-      "occurredAt": "2026-08-21T03:38:24.689Z",
-      "type": "team_added",
-      "teamName": "Corona Angels - Alvarado",
-      "detail": "Corona Angels - Alvarado joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-24-689z-legacy-keep-humble-pcfl-qualifier-2026-folsom-spots-remaining-changed-event",
-      "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
-      "occurredAt": "2026-08-21T03:38:24.689Z",
-      "type": "spots_remaining_changed",
-      "detail": "Published spots remaining changed from 19 to 12."
-    },
-    {
-      "id": "2026-08-21t03-38-28-060z-first-to-third-pink-out-parks-2026-team-added-corona-angels-2032-scott",
-      "tournamentId": "first-to-third-pink-out-parks-2026",
-      "occurredAt": "2026-08-21T03:38:28.060Z",
-      "type": "team_added",
-      "teamName": "Corona Angels 2032 Scott",
-      "detail": "Corona Angels 2032 Scott joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-14-414z-ast-monster-mash-2026-sacramento-team-removed-sorcerer-green-anderson",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-21T03:38:14.414Z",
-      "type": "team_removed",
-      "teamName": "Sorcerer Green/Anderson",
-      "detail": "Sorcerer Green/Anderson is no longer listed in the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-14-414z-ast-monster-mash-2026-sacramento-team-removed-sirens-rohrs",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-21T03:38:14.414Z",
-      "type": "team_removed",
-      "teamName": "Sirens Rohrs",
-      "detail": "Sirens Rohrs is no longer listed in the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-14-414z-ast-monster-mash-2026-sacramento-team-removed-woodland-dusters-salcido",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-21T03:38:14.414Z",
-      "type": "team_removed",
-      "teamName": "Woodland Dusters Salcido",
-      "detail": "Woodland Dusters Salcido is no longer listed in the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-14-414z-ast-monster-mash-2026-sacramento-team-removed-sacramento-novas-perez",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-21T03:38:14.414Z",
-      "type": "team_removed",
-      "teamName": "Sacramento Novas Perez",
-      "detail": "Sacramento Novas Perez is no longer listed in the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-38-14-414z-ast-monster-mash-2026-sacramento-team-removed-chico-patriot-mendoza-romero",
-      "tournamentId": "ast-monster-mash-2026-sacramento",
-      "occurredAt": "2026-08-21T03:38:14.414Z",
-      "type": "team_removed",
-      "teamName": "Chico Patriot Mendoza/Romero",
-      "detail": "Chico Patriot Mendoza/Romero is no longer listed in the 12U field."
     }
   ]
 }
