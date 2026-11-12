@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T21:27:03.442Z",
+  "generatedAt": "2026-11-12T21:29:38.028Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -140,13 +140,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-11T21:27:02.018Z",
-      "lastSuccessfulCheck": "2026-11-11T21:27:02.018Z",
+      "checkedAt": "2026-11-12T21:29:37.137Z",
+      "lastSuccessfulCheck": "2026-11-12T21:29:37.137Z",
       "officialName": "Young Guns Bash for Cash",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Nov 9, 2026",
-      "registrationObservedAt": "2026-11-11T21:27:02.018Z"
+      "registrationObservedAt": "2026-11-12T21:29:37.137Z"
     },
     {
       "id": "ast-fall-bat-wars-2026-sacramento",
@@ -349,7 +349,7 @@
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-11T21:27:00.281Z",
+      "checkedAt": "2026-11-12T21:29:34.584Z",
       "lastSuccessfulCheck": "2026-10-26T19:20:13.646Z",
       "officialName": "Fall Bat Wars",
       "capacityScope": "12U",
@@ -389,13 +389,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-11T21:26:49.378Z",
-      "lastSuccessfulCheck": "2026-11-11T21:26:49.378Z",
+      "checkedAt": "2026-11-12T21:29:24.377Z",
+      "lastSuccessfulCheck": "2026-11-12T21:29:24.377Z",
       "officialName": "The Original Legacy Cup — 1st Annual National Qualifier",
       "registrationState": "not_published",
       "registrationStatus": "Event is not currently published by West Coast Premier",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11445",
-      "registrationObservedAt": "2026-11-11T21:26:49.378Z"
+      "registrationObservedAt": "2026-11-12T21:29:24.377Z"
     },
     {
       "id": "first-to-third-harvest-cup-2026",
@@ -491,15 +491,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-11T21:27:01.952Z",
-      "lastSuccessfulCheck": "2026-11-11T21:27:01.952Z",
+      "checkedAt": "2026-11-12T21:29:37.139Z",
+      "lastSuccessfulCheck": "2026-11-12T21:29:37.139Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-11-11T21:27:01.952Z"
+      "registrationObservedAt": "2026-11-12T21:29:37.139Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -560,14 +560,14 @@
           "paid": "unknown"
         },
         {
-          "rawName": "Firecrackers Leles-Hart",
-          "normalizedName": "firecrackers leles hart",
-          "confirmed": "unknown",
+          "rawName": "NorCal Peppers-Brunemeyer",
+          "normalizedName": "norcal peppers brunemeyer",
+          "confirmed": "yes",
           "paid": "unknown"
         },
         {
-          "rawName": "NorCal Peppers-Brunemeyer",
-          "normalizedName": "norcal peppers brunemeyer",
+          "rawName": "Firecrackers Leles-Hart",
+          "normalizedName": "firecrackers leles hart",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -588,32 +588,15 @@
           "normalizedName": "aasa morgan",
           "confirmed": "unknown",
           "paid": "unknown"
-        },
-        {
-          "rawName": "Athletics Mercado- Cole",
-          "normalizedName": "athletics mercado cole",
-          "confirmed": "unknown",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [
-        {
-          "team": {
-            "rawName": "Athletics Mercado- Cole",
-            "normalizedName": "athletics mercado cole",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-11T21:26:52.569Z",
-          "observations": 1
-        }
-      ],
-      "checkedAt": "2026-11-11T21:26:52.569Z",
-      "lastSuccessfulCheck": "2026-11-11T21:26:52.569Z",
+      "pendingRemovals": [],
+      "checkedAt": "2026-11-12T21:29:26.185Z",
+      "lastSuccessfulCheck": "2026-11-12T21:29:26.185Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-11T21:26:52.569Z",
+      "registrationObservedAt": "2026-11-12T21:29:26.185Z",
       "capacityScope": "12U"
     },
     {
@@ -675,14 +658,14 @@
           "paid": "unknown"
         },
         {
-          "rawName": "Firecrackers Leles-Hart",
-          "normalizedName": "firecrackers leles hart",
-          "confirmed": "unknown",
+          "rawName": "NorCal Peppers-Brunemeyer",
+          "normalizedName": "norcal peppers brunemeyer",
+          "confirmed": "yes",
           "paid": "unknown"
         },
         {
-          "rawName": "NorCal Peppers-Brunemeyer",
-          "normalizedName": "norcal peppers brunemeyer",
+          "rawName": "Firecrackers Leles-Hart",
+          "normalizedName": "firecrackers leles hart",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -703,32 +686,15 @@
           "normalizedName": "aasa morgan",
           "confirmed": "unknown",
           "paid": "unknown"
-        },
-        {
-          "rawName": "Athletics Mercado- Cole",
-          "normalizedName": "athletics mercado cole",
-          "confirmed": "unknown",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [
-        {
-          "team": {
-            "rawName": "Athletics Mercado- Cole",
-            "normalizedName": "athletics mercado cole",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-11T21:26:53.950Z",
-          "observations": 1
-        }
-      ],
-      "checkedAt": "2026-11-11T21:26:53.950Z",
-      "lastSuccessfulCheck": "2026-11-11T21:26:53.950Z",
+      "pendingRemovals": [],
+      "checkedAt": "2026-11-12T21:29:27.383Z",
+      "lastSuccessfulCheck": "2026-11-12T21:29:27.383Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-11T21:26:53.950Z",
+      "registrationObservedAt": "2026-11-12T21:29:27.383Z",
       "capacityScope": "12U"
     },
     {
@@ -760,13 +726,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-11T21:26:58.110Z",
-      "lastSuccessfulCheck": "2026-11-11T21:26:58.110Z",
+      "checkedAt": "2026-11-12T21:29:32.015Z",
+      "lastSuccessfulCheck": "2026-11-12T21:29:32.015Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-11-11T21:26:58.110Z"
+      "registrationObservedAt": "2026-11-12T21:29:32.015Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -785,12 +751,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-11T21:27:01.533Z",
-      "lastSuccessfulCheck": "2026-11-11T21:27:01.533Z",
+      "checkedAt": "2026-11-12T21:29:35.436Z",
+      "lastSuccessfulCheck": "2026-11-12T21:29:35.436Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-11T21:27:01.533Z"
+      "registrationObservedAt": "2026-11-12T21:29:35.436Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -809,15 +775,47 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-11T21:27:03.394Z",
-      "lastSuccessfulCheck": "2026-11-11T21:27:03.394Z",
+      "checkedAt": "2026-11-12T21:29:37.977Z",
+      "lastSuccessfulCheck": "2026-11-12T21:29:37.977Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-11T21:27:03.394Z"
+      "registrationObservedAt": "2026-11-12T21:29:37.977Z"
     }
   ],
   "changes": [
+    {
+      "id": "2026-11-12t21-29-27-383z-ast-turkey-bash-2026-salinas-team-removed-athletics-mercado--cole",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-12T21:29:27.383Z",
+      "type": "team_removed",
+      "teamName": "Athletics Mercado- Cole",
+      "detail": "Athletics Mercado- Cole is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-12t21-29-27-383z-ast-turkey-bash-2026-salinas-confirmed-changed-norcal-peppers-brunemeyer",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-12T21:29:27.383Z",
+      "type": "confirmed_changed",
+      "teamName": "NorCal Peppers-Brunemeyer",
+      "detail": "NorCal Peppers-Brunemeyer confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-12t21-29-26-185z-ast-turkey-bash-2026-sacramento-team-removed-athletics-mercado--cole",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-12T21:29:26.185Z",
+      "type": "team_removed",
+      "teamName": "Athletics Mercado- Cole",
+      "detail": "Athletics Mercado- Cole is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-12t21-29-26-185z-ast-turkey-bash-2026-sacramento-confirmed-changed-norcal-peppers-brunemeyer",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-12T21:29:26.185Z",
+      "type": "confirmed_changed",
+      "teamName": "NorCal Peppers-Brunemeyer",
+      "detail": "NorCal Peppers-Brunemeyer confirmation changed to yes."
+    },
     {
       "id": "2026-11-11t21-26-53-950z-ast-turkey-bash-2026-salinas-team-removed-sandlot-crew-peaches-hayes",
       "tournamentId": "ast-turkey-bash-2026-salinas",
@@ -8684,38 +8682,6 @@
       "type": "team_added",
       "teamName": "Davis Dynamite-Carreira",
       "detail": "Davis Dynamite-Carreira joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-41-552z-ast-mm-candy-classic-2026-sacramento-team-added-sorcerer-green-anderson",
-      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
-      "occurredAt": "2026-08-21T03:39:41.552Z",
-      "type": "team_added",
-      "teamName": "Sorcerer-Green/Anderson",
-      "detail": "Sorcerer-Green/Anderson joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-41-552z-ast-mm-candy-classic-2026-sacramento-team-added-sirens-rohrs",
-      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
-      "occurredAt": "2026-08-21T03:39:41.552Z",
-      "type": "team_added",
-      "teamName": "Sirens-Rohrs",
-      "detail": "Sirens-Rohrs joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-41-552z-ast-mm-candy-classic-2026-sacramento-team-added-central-valley-cyclones-navvarre",
-      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
-      "occurredAt": "2026-08-21T03:39:41.552Z",
-      "type": "team_added",
-      "teamName": "Central Valley Cyclones-Navvarre",
-      "detail": "Central Valley Cyclones-Navvarre joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-41-552z-ast-mm-candy-classic-2026-sacramento-team-added-sacramento-novas-perez",
-      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
-      "occurredAt": "2026-08-21T03:39:41.552Z",
-      "type": "team_added",
-      "teamName": "Sacramento Novas-Perez",
-      "detail": "Sacramento Novas-Perez joined the 12U field."
     }
   ]
 }
