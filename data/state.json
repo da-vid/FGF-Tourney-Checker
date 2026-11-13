@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T21:29:38.028Z",
+  "generatedAt": "2026-11-13T20:55:08.788Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -140,13 +140,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-12T21:29:37.137Z",
-      "lastSuccessfulCheck": "2026-11-12T21:29:37.137Z",
+      "checkedAt": "2026-11-13T20:55:07.527Z",
+      "lastSuccessfulCheck": "2026-11-13T20:55:07.527Z",
       "officialName": "Young Guns Bash for Cash",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Nov 9, 2026",
-      "registrationObservedAt": "2026-11-12T21:29:37.137Z"
+      "registrationObservedAt": "2026-11-13T20:55:07.527Z"
     },
     {
       "id": "ast-fall-bat-wars-2026-sacramento",
@@ -349,7 +349,7 @@
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-12T21:29:34.584Z",
+      "checkedAt": "2026-11-13T20:55:05.489Z",
       "lastSuccessfulCheck": "2026-10-26T19:20:13.646Z",
       "officialName": "Fall Bat Wars",
       "capacityScope": "12U",
@@ -389,13 +389,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-12T21:29:24.377Z",
-      "lastSuccessfulCheck": "2026-11-12T21:29:24.377Z",
+      "checkedAt": "2026-11-13T20:54:55.010Z",
+      "lastSuccessfulCheck": "2026-11-13T20:54:55.010Z",
       "officialName": "The Original Legacy Cup — 1st Annual National Qualifier",
       "registrationState": "not_published",
       "registrationStatus": "Event is not currently published by West Coast Premier",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11445",
-      "registrationObservedAt": "2026-11-12T21:29:24.377Z"
+      "registrationObservedAt": "2026-11-13T20:54:55.010Z"
     },
     {
       "id": "first-to-third-harvest-cup-2026",
@@ -491,15 +491,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-12T21:29:37.139Z",
-      "lastSuccessfulCheck": "2026-11-12T21:29:37.139Z",
+      "checkedAt": "2026-11-13T20:55:07.626Z",
+      "lastSuccessfulCheck": "2026-11-13T20:55:07.626Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-11-12T21:29:37.139Z"
+      "registrationObservedAt": "2026-11-13T20:55:07.626Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -554,7 +554,7 @@
           "paid": "unknown"
         },
         {
-          "rawName": "SSC Frields",
+          "rawName": "SSC-Frields",
           "normalizedName": "ssc frields",
           "confirmed": "yes",
           "paid": "unknown"
@@ -572,31 +572,31 @@
           "paid": "unknown"
         },
         {
-          "rawName": "All American Mizuno Colusa",
+          "rawName": "All American Mizuno-Colusa",
           "normalizedName": "all american mizuno colusa",
           "confirmed": "unknown",
           "paid": "unknown"
         },
         {
-          "rawName": "Westcoast Wolverines Perry",
+          "rawName": "Westcoast Wolverines-Perry",
           "normalizedName": "westcoast wolverines perry",
           "confirmed": "unknown",
           "paid": "unknown"
         },
         {
-          "rawName": "AASA Morgan",
+          "rawName": "AASA-Morgan",
           "normalizedName": "aasa morgan",
           "confirmed": "unknown",
-          "paid": "unknown"
+          "paid": "yes"
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-12T21:29:26.185Z",
-      "lastSuccessfulCheck": "2026-11-12T21:29:26.185Z",
+      "checkedAt": "2026-11-13T20:54:57.104Z",
+      "lastSuccessfulCheck": "2026-11-13T20:54:57.104Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-12T21:29:26.185Z",
+      "registrationObservedAt": "2026-11-13T20:54:57.104Z",
       "capacityScope": "12U"
     },
     {
@@ -652,7 +652,7 @@
           "paid": "unknown"
         },
         {
-          "rawName": "SSC Frields",
+          "rawName": "SSC-Frields",
           "normalizedName": "ssc frields",
           "confirmed": "yes",
           "paid": "unknown"
@@ -670,31 +670,31 @@
           "paid": "unknown"
         },
         {
-          "rawName": "All American Mizuno Colusa",
+          "rawName": "All American Mizuno-Colusa",
           "normalizedName": "all american mizuno colusa",
           "confirmed": "unknown",
           "paid": "unknown"
         },
         {
-          "rawName": "Westcoast Wolverines Perry",
+          "rawName": "Westcoast Wolverines-Perry",
           "normalizedName": "westcoast wolverines perry",
           "confirmed": "unknown",
           "paid": "unknown"
         },
         {
-          "rawName": "AASA Morgan",
+          "rawName": "AASA-Morgan",
           "normalizedName": "aasa morgan",
           "confirmed": "unknown",
-          "paid": "unknown"
+          "paid": "yes"
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-12T21:29:27.383Z",
-      "lastSuccessfulCheck": "2026-11-12T21:29:27.383Z",
+      "checkedAt": "2026-11-13T20:54:58.304Z",
+      "lastSuccessfulCheck": "2026-11-13T20:54:58.304Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-12T21:29:27.383Z",
+      "registrationObservedAt": "2026-11-13T20:54:58.304Z",
       "capacityScope": "12U"
     },
     {
@@ -726,13 +726,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-12T21:29:32.015Z",
-      "lastSuccessfulCheck": "2026-11-12T21:29:32.015Z",
+      "checkedAt": "2026-11-13T20:55:03.250Z",
+      "lastSuccessfulCheck": "2026-11-13T20:55:03.250Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-11-12T21:29:32.015Z"
+      "registrationObservedAt": "2026-11-13T20:55:03.250Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -751,12 +751,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-12T21:29:35.436Z",
-      "lastSuccessfulCheck": "2026-11-12T21:29:35.436Z",
+      "checkedAt": "2026-11-13T20:55:06.426Z",
+      "lastSuccessfulCheck": "2026-11-13T20:55:06.426Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-12T21:29:35.436Z"
+      "registrationObservedAt": "2026-11-13T20:55:06.426Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -775,15 +775,31 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-12T21:29:37.977Z",
-      "lastSuccessfulCheck": "2026-11-12T21:29:37.977Z",
+      "checkedAt": "2026-11-13T20:55:08.704Z",
+      "lastSuccessfulCheck": "2026-11-13T20:55:08.704Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-12T21:29:37.977Z"
+      "registrationObservedAt": "2026-11-13T20:55:08.704Z"
     }
   ],
   "changes": [
+    {
+      "id": "2026-11-13t20-54-58-304z-ast-turkey-bash-2026-salinas-paid-changed-aasa-morgan",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-13T20:54:58.304Z",
+      "type": "paid_changed",
+      "teamName": "AASA-Morgan",
+      "detail": "AASA-Morgan payment status changed to yes."
+    },
+    {
+      "id": "2026-11-13t20-54-57-104z-ast-turkey-bash-2026-sacramento-paid-changed-aasa-morgan",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-13T20:54:57.104Z",
+      "type": "paid_changed",
+      "teamName": "AASA-Morgan",
+      "detail": "AASA-Morgan payment status changed to yes."
+    },
     {
       "id": "2026-11-12t21-29-27-383z-ast-turkey-bash-2026-salinas-team-removed-athletics-mercado--cole",
       "tournamentId": "ast-turkey-bash-2026-salinas",
@@ -8666,22 +8682,6 @@
       "type": "team_added",
       "teamName": "Corona Angels",
       "detail": "Corona Angels joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-41-552z-ast-mm-candy-classic-2026-sacramento-team-added-apex-berry",
-      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
-      "occurredAt": "2026-08-21T03:39:41.552Z",
-      "type": "team_added",
-      "teamName": "Apex Berry",
-      "detail": "Apex Berry joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t03-39-41-552z-ast-mm-candy-classic-2026-sacramento-team-added-davis-dynamite-carreira",
-      "tournamentId": "ast-mm-candy-classic-2026-sacramento",
-      "occurredAt": "2026-08-21T03:39:41.552Z",
-      "type": "team_added",
-      "teamName": "Davis Dynamite-Carreira",
-      "detail": "Davis Dynamite-Carreira joined the 12U field."
     }
   ]
 }
