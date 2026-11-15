@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T19:12:42.636Z",
+  "generatedAt": "2026-11-15T19:49:20.232Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -16,7 +16,7 @@
       "sourceUrl": "https://softball.tournamentconnect.premiergirlsfastpitch.com/events/register/tournaments/provider/1stto3rdsoftballeventsinc",
       "eventMatch": "Young Guns Bash for Cash",
       "status": "active",
-      "outcome": "success",
+      "outcome": "failure",
       "teams": [
         {
           "rawName": "Bay Area Bombers - Vegas",
@@ -140,13 +140,14 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-14T19:12:42.324Z",
+      "checkedAt": "2026-11-15T19:49:20.177Z",
       "lastSuccessfulCheck": "2026-11-14T19:12:42.324Z",
       "officialName": "Young Guns Bash for Cash",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Nov 9, 2026",
-      "registrationObservedAt": "2026-11-14T19:12:42.324Z"
+      "registrationObservedAt": "2026-11-14T19:12:42.324Z",
+      "diagnostic": "locator.waitFor: Timeout 25000ms exceeded.\nCall log:\n  - waiting for getByText('Young Guns Bash for Cash').first() to be visible\n"
     },
     {
       "id": "ast-fall-bat-wars-2026-sacramento",
@@ -349,7 +350,7 @@
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-14T19:12:39.244Z",
+      "checkedAt": "2026-11-15T19:48:05.334Z",
       "lastSuccessfulCheck": "2026-10-26T19:20:13.646Z",
       "officialName": "Fall Bat Wars",
       "capacityScope": "12U",
@@ -389,13 +390,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-14T19:12:29.099Z",
-      "lastSuccessfulCheck": "2026-11-14T19:12:29.099Z",
+      "checkedAt": "2026-11-15T19:47:55.853Z",
+      "lastSuccessfulCheck": "2026-11-15T19:47:55.853Z",
       "officialName": "The Original Legacy Cup — 1st Annual National Qualifier",
       "registrationState": "not_published",
       "registrationStatus": "Event is not currently published by West Coast Premier",
       "registrationUrl": "https://store.triplecrownsports.com/Store/Index/11445",
-      "registrationObservedAt": "2026-11-14T19:12:29.099Z"
+      "registrationObservedAt": "2026-11-15T19:47:55.853Z"
     },
     {
       "id": "first-to-third-harvest-cup-2026",
@@ -509,15 +510,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-14T19:12:42.315Z",
-      "lastSuccessfulCheck": "2026-11-14T19:12:42.315Z",
+      "checkedAt": "2026-11-15T19:48:07.601Z",
+      "lastSuccessfulCheck": "2026-11-15T19:48:07.601Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "open",
       "registrationStatus": "Registration open",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-11-14T19:12:42.315Z"
+      "registrationObservedAt": "2026-11-15T19:48:07.601Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -592,6 +593,18 @@
         {
           "rawName": "Firecrackers Leles-Hart",
           "normalizedName": "firecrackers leles hart",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Lady Dukes-Verdolivo",
+          "normalizedName": "lady dukes verdolivo",
+          "confirmed": "unknown",
+          "paid": "yes"
+        },
+        {
+          "rawName": "Westcoast Wolverines-Perry",
+          "normalizedName": "westcoast wolverines perry",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -600,21 +613,26 @@
           "normalizedName": "all american mizuno colusa",
           "confirmed": "unknown",
           "paid": "unknown"
-        },
-        {
-          "rawName": "Westcoast Wolverines-Perry",
-          "normalizedName": "westcoast wolverines perry",
-          "confirmed": "unknown",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [],
-      "checkedAt": "2026-11-14T19:12:30.941Z",
-      "lastSuccessfulCheck": "2026-11-14T19:12:30.941Z",
+      "pendingRemovals": [
+        {
+          "team": {
+            "rawName": "All American Mizuno-Colusa",
+            "normalizedName": "all american mizuno colusa",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-11-15T19:47:57.647Z",
+          "observations": 1
+        }
+      ],
+      "checkedAt": "2026-11-15T19:47:57.647Z",
+      "lastSuccessfulCheck": "2026-11-15T19:47:57.647Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-14T19:12:30.941Z",
+      "registrationObservedAt": "2026-11-15T19:47:57.647Z",
       "capacityScope": "12U"
     },
     {
@@ -690,6 +708,18 @@
         {
           "rawName": "Firecrackers Leles-Hart",
           "normalizedName": "firecrackers leles hart",
+          "confirmed": "yes",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Lady Dukes-Verdolivo",
+          "normalizedName": "lady dukes verdolivo",
+          "confirmed": "unknown",
+          "paid": "yes"
+        },
+        {
+          "rawName": "Westcoast Wolverines-Perry",
+          "normalizedName": "westcoast wolverines perry",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -698,21 +728,26 @@
           "normalizedName": "all american mizuno colusa",
           "confirmed": "unknown",
           "paid": "unknown"
-        },
-        {
-          "rawName": "Westcoast Wolverines-Perry",
-          "normalizedName": "westcoast wolverines perry",
-          "confirmed": "unknown",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [],
-      "checkedAt": "2026-11-14T19:12:32.256Z",
-      "lastSuccessfulCheck": "2026-11-14T19:12:32.256Z",
+      "pendingRemovals": [
+        {
+          "team": {
+            "rawName": "All American Mizuno-Colusa",
+            "normalizedName": "all american mizuno colusa",
+            "confirmed": "unknown",
+            "paid": "unknown"
+          },
+          "firstMissingAt": "2026-11-15T19:47:59.026Z",
+          "observations": 1
+        }
+      ],
+      "checkedAt": "2026-11-15T19:47:59.026Z",
+      "lastSuccessfulCheck": "2026-11-15T19:47:59.026Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-14T19:12:32.256Z",
+      "registrationObservedAt": "2026-11-15T19:47:59.026Z",
       "capacityScope": "12U"
     },
     {
@@ -744,13 +779,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-14T19:12:37.186Z",
-      "lastSuccessfulCheck": "2026-11-14T19:12:37.186Z",
+      "checkedAt": "2026-11-15T19:48:03.513Z",
+      "lastSuccessfulCheck": "2026-11-15T19:48:03.513Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-11-14T19:12:37.186Z"
+      "registrationObservedAt": "2026-11-15T19:48:03.513Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -769,12 +804,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-14T19:12:40.686Z",
-      "lastSuccessfulCheck": "2026-11-14T19:12:40.686Z",
+      "checkedAt": "2026-11-15T19:48:06.482Z",
+      "lastSuccessfulCheck": "2026-11-15T19:48:06.482Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-14T19:12:40.686Z"
+      "registrationObservedAt": "2026-11-15T19:48:06.482Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -793,15 +828,54 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-14T19:12:42.605Z",
-      "lastSuccessfulCheck": "2026-11-14T19:12:42.605Z",
+      "checkedAt": "2026-11-15T19:48:08.257Z",
+      "lastSuccessfulCheck": "2026-11-15T19:48:08.257Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-14T19:12:42.605Z"
+      "registrationObservedAt": "2026-11-15T19:48:08.257Z"
     }
   ],
   "changes": [
+    {
+      "id": "2026-11-15t19-47-59-026z-ast-turkey-bash-2026-salinas-team-added-lady-dukes-verdolivo",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-15T19:47:59.026Z",
+      "type": "team_added",
+      "teamName": "Lady Dukes-Verdolivo",
+      "detail": "Lady Dukes-Verdolivo joined the 12U field."
+    },
+    {
+      "id": "2026-11-15t19-47-59-026z-ast-turkey-bash-2026-salinas-confirmed-changed-firecrackers-leles-hart",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-15T19:47:59.026Z",
+      "type": "confirmed_changed",
+      "teamName": "Firecrackers Leles-Hart",
+      "detail": "Firecrackers Leles-Hart confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-15t19-47-57-647z-ast-turkey-bash-2026-sacramento-team-added-lady-dukes-verdolivo",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-15T19:47:57.647Z",
+      "type": "team_added",
+      "teamName": "Lady Dukes-Verdolivo",
+      "detail": "Lady Dukes-Verdolivo joined the 12U field."
+    },
+    {
+      "id": "2026-11-15t19-47-57-647z-ast-turkey-bash-2026-sacramento-confirmed-changed-firecrackers-leles-hart",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-15T19:47:57.647Z",
+      "type": "confirmed_changed",
+      "teamName": "Firecrackers Leles-Hart",
+      "detail": "Firecrackers Leles-Hart confirmation changed to yes."
+    },
+    {
+      "id": "2026-11-15t19-49-20-177z-first-to-third-young-guns-bash-2026-source-unhealthy-event",
+      "tournamentId": "first-to-third-young-guns-bash-2026",
+      "occurredAt": "2026-11-15T19:49:20.177Z",
+      "type": "source_unhealthy",
+      "detail": "The official source could not be read."
+    },
     {
       "id": "2026-11-14t19-12-32-256z-ast-turkey-bash-2026-salinas-paid-changed-bombers-clark",
       "tournamentId": "ast-turkey-bash-2026-salinas",
@@ -8662,44 +8736,6 @@
       "type": "team_added",
       "teamName": "Titans Nagappala 12u",
       "detail": "Titans Nagappala 12u joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t06-01-13-703z-wcp-power-in-pink-2026-source-recovered-event",
-      "tournamentId": "wcp-power-in-pink-2026",
-      "occurredAt": "2026-08-21T06:01:13.703Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
-    },
-    {
-      "id": "2026-08-21t06-00-31-984z-wcp-golden-ticket-2026-source-recovered-event",
-      "tournamentId": "wcp-golden-ticket-2026",
-      "occurredAt": "2026-08-21T06:00:31.984Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
-    },
-    {
-      "id": "2026-08-21t06-00-37-807z-legacy-fight-the-fight-2026-fernley-team-removed-firecrackers-bb-carriom",
-      "tournamentId": "legacy-fight-the-fight-2026-fernley",
-      "occurredAt": "2026-08-21T06:00:37.807Z",
-      "type": "team_removed",
-      "teamName": "Firecrackers BB Carriom",
-      "detail": "Firecrackers BB Carriom is no longer listed in the 12U field."
-    },
-    {
-      "id": "2026-08-21t06-00-33-843z-legacy-fight-the-fight-2026-team-removed-athletics-mercado-verdolivo",
-      "tournamentId": "legacy-fight-the-fight-2026",
-      "occurredAt": "2026-08-21T06:00:33.843Z",
-      "type": "team_removed",
-      "teamName": "Athletics Mercado Verdolivo",
-      "detail": "Athletics Mercado Verdolivo is no longer listed in the 12U field."
-    },
-    {
-      "id": "2026-08-21t06-00-25-058z-legacy-stay-humble-fall-pcfl-2026-folsom-team-removed-cailyn",
-      "tournamentId": "legacy-stay-humble-fall-pcfl-2026-folsom",
-      "occurredAt": "2026-08-21T06:00:25.058Z",
-      "type": "team_removed",
-      "teamName": "Cailyn",
-      "detail": "Cailyn is no longer listed in the 12U field."
     }
   ]
 }
