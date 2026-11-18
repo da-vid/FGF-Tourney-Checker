@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T22:25:28.485Z",
+  "generatedAt": "2026-11-18T21:58:18.370Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -17,12 +17,6 @@
       "outcome": "success",
       "teams": [
         {
-          "rawName": "Athletics Mercado Cole 2032",
-          "normalizedName": "athletics mercado cole 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
           "rawName": "Corona Angels - Alvarado",
           "normalizedName": "corona angels alvarado",
           "confirmed": "unknown",
@@ -37,6 +31,12 @@
         {
           "rawName": "fc_brashear_haskell",
           "normalizedName": "fc_brashear_haskell",
+          "confirmed": "unknown",
+          "paid": "unknown"
+        },
+        {
+          "rawName": "Lady Dukes Cole 2032",
+          "normalizedName": "lady dukes cole 2032",
           "confirmed": "unknown",
           "paid": "unknown"
         },
@@ -89,26 +89,8 @@
           "paid": "unknown"
         },
         {
-          "rawName": "AASA 12u Martinez",
-          "normalizedName": "aasa 12u martinez",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "ACES Academy Fields 2032",
-          "normalizedName": "aces academy fields 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Cal Nuggets 12U Futures Attard",
-          "normalizedName": "cal nuggets 12u futures attard",
-          "confirmed": "unknown",
-          "paid": "unknown"
-        },
-        {
-          "rawName": "Cal Nuggets 12U Woods",
-          "normalizedName": "cal nuggets 12u woods",
+          "rawName": "Athletics Mercado Cole 2032",
+          "normalizedName": "athletics mercado cole 2032",
           "confirmed": "unknown",
           "paid": "unknown"
         }
@@ -116,54 +98,24 @@
       "pendingRemovals": [
         {
           "team": {
-            "rawName": "AASA 12u Martinez",
-            "normalizedName": "aasa 12u martinez",
+            "rawName": "Athletics Mercado Cole 2032",
+            "normalizedName": "athletics mercado cole 2032",
             "confirmed": "unknown",
             "paid": "unknown"
           },
-          "firstMissingAt": "2026-11-17T22:25:28.447Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "ACES Academy Fields 2032",
-            "normalizedName": "aces academy fields 2032",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-17T22:25:28.447Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Cal Nuggets 12U Futures Attard",
-            "normalizedName": "cal nuggets 12u futures attard",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-17T22:25:28.447Z",
-          "observations": 1
-        },
-        {
-          "team": {
-            "rawName": "Cal Nuggets 12U Woods",
-            "normalizedName": "cal nuggets 12u woods",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-17T22:25:28.447Z",
+          "firstMissingAt": "2026-11-18T21:58:18.338Z",
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-17T22:25:28.447Z",
-      "lastSuccessfulCheck": "2026-11-17T22:25:28.447Z",
+      "checkedAt": "2026-11-18T21:58:18.338Z",
+      "lastSuccessfulCheck": "2026-11-18T21:58:18.338Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-11-17T22:25:28.447Z"
+      "registrationObservedAt": "2026-11-18T21:58:18.338Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -200,10 +152,10 @@
           "paid": "yes"
         },
         {
-          "rawName": "Nevada National 2014-Glensor",
-          "normalizedName": "nevada national 2014 glensor",
-          "confirmed": "yes",
-          "paid": "unknown"
+          "rawName": "Next Generation Fastpitch-Buenrostro",
+          "normalizedName": "next generation fastpitch buenrostro",
+          "confirmed": "unknown",
+          "paid": "yes"
         },
         {
           "rawName": "Bombers-Clark",
@@ -248,30 +200,36 @@
           "paid": "unknown"
         },
         {
-          "rawName": "Aces Academy",
-          "normalizedName": "aces academy",
+          "rawName": "Cal Nuggets Futures-Attard",
+          "normalizedName": "cal nuggets futures attard",
           "confirmed": "unknown",
+          "paid": "yes"
+        },
+        {
+          "rawName": "Nevada National 2014-Glensor",
+          "normalizedName": "nevada national 2014 glensor",
+          "confirmed": "yes",
           "paid": "unknown"
         }
       ],
       "pendingRemovals": [
         {
           "team": {
-            "rawName": "Aces Academy",
-            "normalizedName": "aces academy",
-            "confirmed": "unknown",
+            "rawName": "Nevada National 2014-Glensor",
+            "normalizedName": "nevada national 2014 glensor",
+            "confirmed": "yes",
             "paid": "unknown"
           },
-          "firstMissingAt": "2026-11-17T22:25:15.977Z",
+          "firstMissingAt": "2026-11-18T21:58:06.945Z",
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-17T22:25:15.977Z",
-      "lastSuccessfulCheck": "2026-11-17T22:25:15.977Z",
+      "checkedAt": "2026-11-18T21:58:06.945Z",
+      "lastSuccessfulCheck": "2026-11-18T21:58:06.945Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-17T22:25:15.977Z",
+      "registrationObservedAt": "2026-11-18T21:58:06.945Z",
       "capacityScope": "12U"
     },
     {
@@ -309,10 +267,10 @@
           "paid": "yes"
         },
         {
-          "rawName": "Nevada National 2014-Glensor",
-          "normalizedName": "nevada national 2014 glensor",
-          "confirmed": "yes",
-          "paid": "unknown"
+          "rawName": "Next Generation Fastpitch-Buenrostro",
+          "normalizedName": "next generation fastpitch buenrostro",
+          "confirmed": "unknown",
+          "paid": "yes"
         },
         {
           "rawName": "Bombers-Clark",
@@ -357,30 +315,36 @@
           "paid": "unknown"
         },
         {
-          "rawName": "Aces Academy",
-          "normalizedName": "aces academy",
+          "rawName": "Cal Nuggets Futures-Attard",
+          "normalizedName": "cal nuggets futures attard",
           "confirmed": "unknown",
+          "paid": "yes"
+        },
+        {
+          "rawName": "Nevada National 2014-Glensor",
+          "normalizedName": "nevada national 2014 glensor",
+          "confirmed": "yes",
           "paid": "unknown"
         }
       ],
       "pendingRemovals": [
         {
           "team": {
-            "rawName": "Aces Academy",
-            "normalizedName": "aces academy",
-            "confirmed": "unknown",
+            "rawName": "Nevada National 2014-Glensor",
+            "normalizedName": "nevada national 2014 glensor",
+            "confirmed": "yes",
             "paid": "unknown"
           },
-          "firstMissingAt": "2026-11-17T22:25:16.117Z",
+          "firstMissingAt": "2026-11-18T21:58:07.100Z",
           "observations": 1
         }
       ],
-      "checkedAt": "2026-11-17T22:25:16.117Z",
-      "lastSuccessfulCheck": "2026-11-17T22:25:16.117Z",
+      "checkedAt": "2026-11-18T21:58:07.100Z",
+      "lastSuccessfulCheck": "2026-11-18T21:58:07.100Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-17T22:25:16.117Z",
+      "registrationObservedAt": "2026-11-18T21:58:07.100Z",
       "capacityScope": "12U"
     },
     {
@@ -412,13 +376,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-17T22:25:19.087Z",
-      "lastSuccessfulCheck": "2026-11-17T22:25:19.087Z",
+      "checkedAt": "2026-11-18T21:58:09.481Z",
+      "lastSuccessfulCheck": "2026-11-18T21:58:09.481Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-11-17T22:25:19.087Z"
+      "registrationObservedAt": "2026-11-18T21:58:09.481Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -437,12 +401,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-17T22:25:20.350Z",
-      "lastSuccessfulCheck": "2026-11-17T22:25:20.350Z",
+      "checkedAt": "2026-11-18T21:58:11.477Z",
+      "lastSuccessfulCheck": "2026-11-18T21:58:11.477Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-17T22:25:20.350Z"
+      "registrationObservedAt": "2026-11-18T21:58:11.477Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -461,15 +425,103 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-17T22:25:20.277Z",
-      "lastSuccessfulCheck": "2026-11-17T22:25:20.277Z",
+      "checkedAt": "2026-11-18T21:58:11.168Z",
+      "lastSuccessfulCheck": "2026-11-18T21:58:11.168Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-17T22:25:20.277Z"
+      "registrationObservedAt": "2026-11-18T21:58:11.168Z"
     }
   ],
   "changes": [
+    {
+      "id": "2026-11-18t21-58-07-100z-ast-turkey-bash-2026-salinas-team-removed-aces-academy",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-18T21:58:07.100Z",
+      "type": "team_removed",
+      "teamName": "Aces Academy",
+      "detail": "Aces Academy is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-07-100z-ast-turkey-bash-2026-salinas-team-added-cal-nuggets-futures-attard",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-18T21:58:07.100Z",
+      "type": "team_added",
+      "teamName": "Cal Nuggets Futures-Attard",
+      "detail": "Cal Nuggets Futures-Attard joined the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-07-100z-ast-turkey-bash-2026-salinas-team-added-next-generation-fastpitch-buenrostro",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-18T21:58:07.100Z",
+      "type": "team_added",
+      "teamName": "Next Generation Fastpitch-Buenrostro",
+      "detail": "Next Generation Fastpitch-Buenrostro joined the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-06-945z-ast-turkey-bash-2026-sacramento-team-removed-aces-academy",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-18T21:58:06.945Z",
+      "type": "team_removed",
+      "teamName": "Aces Academy",
+      "detail": "Aces Academy is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-06-945z-ast-turkey-bash-2026-sacramento-team-added-cal-nuggets-futures-attard",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-18T21:58:06.945Z",
+      "type": "team_added",
+      "teamName": "Cal Nuggets Futures-Attard",
+      "detail": "Cal Nuggets Futures-Attard joined the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-06-945z-ast-turkey-bash-2026-sacramento-team-added-next-generation-fastpitch-buenrostro",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-18T21:58:06.945Z",
+      "type": "team_added",
+      "teamName": "Next Generation Fastpitch-Buenrostro",
+      "detail": "Next Generation Fastpitch-Buenrostro joined the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-18-338z-first-to-third-harvest-cup-2026-team-removed-cal-nuggets-12u-woods",
+      "tournamentId": "first-to-third-harvest-cup-2026",
+      "occurredAt": "2026-11-18T21:58:18.338Z",
+      "type": "team_removed",
+      "teamName": "Cal Nuggets 12U Woods",
+      "detail": "Cal Nuggets 12U Woods is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-18-338z-first-to-third-harvest-cup-2026-team-removed-cal-nuggets-12u-futures-attard",
+      "tournamentId": "first-to-third-harvest-cup-2026",
+      "occurredAt": "2026-11-18T21:58:18.338Z",
+      "type": "team_removed",
+      "teamName": "Cal Nuggets 12U Futures Attard",
+      "detail": "Cal Nuggets 12U Futures Attard is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-18-338z-first-to-third-harvest-cup-2026-team-removed-aces-academy-fields-2032",
+      "tournamentId": "first-to-third-harvest-cup-2026",
+      "occurredAt": "2026-11-18T21:58:18.338Z",
+      "type": "team_removed",
+      "teamName": "ACES Academy Fields 2032",
+      "detail": "ACES Academy Fields 2032 is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-18-338z-first-to-third-harvest-cup-2026-team-removed-aasa-12u-martinez",
+      "tournamentId": "first-to-third-harvest-cup-2026",
+      "occurredAt": "2026-11-18T21:58:18.338Z",
+      "type": "team_removed",
+      "teamName": "AASA 12u Martinez",
+      "detail": "AASA 12u Martinez is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-18t21-58-18-338z-first-to-third-harvest-cup-2026-team-added-lady-dukes-cole-2032",
+      "tournamentId": "first-to-third-harvest-cup-2026",
+      "occurredAt": "2026-11-18T21:58:18.338Z",
+      "type": "team_added",
+      "teamName": "Lady Dukes Cole 2032",
+      "detail": "Lady Dukes Cole 2032 joined the 12U field."
+    },
     {
       "id": "2026-11-17t22-25-16-117z-ast-turkey-bash-2026-salinas-team-removed-westcoast-wolverines-perry",
       "tournamentId": "ast-turkey-bash-2026-salinas",
@@ -8299,85 +8351,6 @@
       "occurredAt": "2026-08-21T06:44:23.112Z",
       "type": "registration_status_changed",
       "detail": "Registration changed from open to unknown."
-    },
-    {
-      "id": "2026-08-21t06-44-40-745z-wcp-veterans-day-classic-2026-source-recovered-event",
-      "tournamentId": "wcp-veterans-day-classic-2026",
-      "occurredAt": "2026-08-21T06:44:40.745Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
-    },
-    {
-      "id": "2026-08-21t06-44-07-610z-wcp-power-in-pink-2026-source-recovered-event",
-      "tournamentId": "wcp-power-in-pink-2026",
-      "occurredAt": "2026-08-21T06:44:07.610Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
-    },
-    {
-      "id": "2026-08-21t06-42-55-849z-wcp-golden-ticket-2026-source-recovered-event",
-      "tournamentId": "wcp-golden-ticket-2026",
-      "occurredAt": "2026-08-21T06:42:55.849Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
-    },
-    {
-      "id": "2026-08-21t06-42-49-428z-pgf-stockton-tracy-qualifier-2026-10-team-added-universal-bay-area-12u-tatro-stites",
-      "tournamentId": "pgf-stockton-tracy-qualifier-2026-10",
-      "occurredAt": "2026-08-21T06:42:49.428Z",
-      "type": "team_added",
-      "teamName": "Universal Bay Area 12U Tatro/Stites",
-      "detail": "Universal Bay Area 12U Tatro/Stites joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t06-42-49-428z-pgf-stockton-tracy-qualifier-2026-10-team-added-sorcerer-farris",
-      "tournamentId": "pgf-stockton-tracy-qualifier-2026-10",
-      "occurredAt": "2026-08-21T06:42:49.428Z",
-      "type": "team_added",
-      "teamName": "Sorcerer Farris",
-      "detail": "Sorcerer Farris joined the 12U field."
-    },
-    {
-      "id": "2026-08-21t06-42-49-428z-pgf-stockton-tracy-qualifier-2026-10-registration-status-changed-event",
-      "tournamentId": "pgf-stockton-tracy-qualifier-2026-10",
-      "occurredAt": "2026-08-21T06:42:49.428Z",
-      "type": "registration_status_changed",
-      "detail": "Registration changed from unknown to open."
-    },
-    {
-      "id": "2026-08-21t06-42-49-428z-pgf-stockton-tracy-qualifier-2026-10-source-recovered-event",
-      "tournamentId": "pgf-stockton-tracy-qualifier-2026-10",
-      "occurredAt": "2026-08-21T06:42:49.428Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
-    },
-    {
-      "id": "2026-08-21t06-37-51-305z-pgf-stockton-qualifier-2027-04-registration-status-changed-event",
-      "tournamentId": "pgf-stockton-qualifier-2027-04",
-      "occurredAt": "2026-08-21T06:37:51.305Z",
-      "type": "registration_status_changed",
-      "detail": "Registration changed from unknown to open."
-    },
-    {
-      "id": "2026-08-21t06-37-47-795z-pgf-stockton-qualifier-2027-02-registration-status-changed-event",
-      "tournamentId": "pgf-stockton-qualifier-2027-02",
-      "occurredAt": "2026-08-21T06:37:47.795Z",
-      "type": "registration_status_changed",
-      "detail": "Registration changed from unknown to open."
-    },
-    {
-      "id": "2026-08-21t06-36-28-464z-legacy-keep-humble-pcfl-qualifier-2026-folsom-source-recovered-event",
-      "tournamentId": "legacy-keep-humble-pcfl-qualifier-2026-folsom",
-      "occurredAt": "2026-08-21T06:36:28.464Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
-    },
-    {
-      "id": "2026-08-21t06-36-20-015z-legacy-finish-the-fight-2026-source-recovered-event",
-      "tournamentId": "legacy-finish-the-fight-2026",
-      "occurredAt": "2026-08-21T06:36:20.015Z",
-      "type": "source_recovered",
-      "detail": "The official source is healthy again."
     }
   ]
 }
