@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T21:58:18.370Z",
+  "generatedAt": "2026-11-19T22:10:50.873Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -87,35 +87,18 @@
           "normalizedName": "ltg sansaver (p)",
           "confirmed": "unknown",
           "paid": "unknown"
-        },
-        {
-          "rawName": "Athletics Mercado Cole 2032",
-          "normalizedName": "athletics mercado cole 2032",
-          "confirmed": "unknown",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [
-        {
-          "team": {
-            "rawName": "Athletics Mercado Cole 2032",
-            "normalizedName": "athletics mercado cole 2032",
-            "confirmed": "unknown",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-18T21:58:18.338Z",
-          "observations": 1
-        }
-      ],
-      "checkedAt": "2026-11-18T21:58:18.338Z",
-      "lastSuccessfulCheck": "2026-11-18T21:58:18.338Z",
+      "pendingRemovals": [],
+      "checkedAt": "2026-11-19T22:10:50.833Z",
+      "lastSuccessfulCheck": "2026-11-19T22:10:50.833Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-11-18T21:58:18.338Z"
+      "registrationObservedAt": "2026-11-19T22:10:50.833Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -204,32 +187,15 @@
           "normalizedName": "cal nuggets futures attard",
           "confirmed": "unknown",
           "paid": "yes"
-        },
-        {
-          "rawName": "Nevada National 2014-Glensor",
-          "normalizedName": "nevada national 2014 glensor",
-          "confirmed": "yes",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [
-        {
-          "team": {
-            "rawName": "Nevada National 2014-Glensor",
-            "normalizedName": "nevada national 2014 glensor",
-            "confirmed": "yes",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-18T21:58:06.945Z",
-          "observations": 1
-        }
-      ],
-      "checkedAt": "2026-11-18T21:58:06.945Z",
-      "lastSuccessfulCheck": "2026-11-18T21:58:06.945Z",
+      "pendingRemovals": [],
+      "checkedAt": "2026-11-19T22:10:39.107Z",
+      "lastSuccessfulCheck": "2026-11-19T22:10:39.107Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-18T21:58:06.945Z",
+      "registrationObservedAt": "2026-11-19T22:10:39.107Z",
       "capacityScope": "12U"
     },
     {
@@ -319,32 +285,15 @@
           "normalizedName": "cal nuggets futures attard",
           "confirmed": "unknown",
           "paid": "yes"
-        },
-        {
-          "rawName": "Nevada National 2014-Glensor",
-          "normalizedName": "nevada national 2014 glensor",
-          "confirmed": "yes",
-          "paid": "unknown"
         }
       ],
-      "pendingRemovals": [
-        {
-          "team": {
-            "rawName": "Nevada National 2014-Glensor",
-            "normalizedName": "nevada national 2014 glensor",
-            "confirmed": "yes",
-            "paid": "unknown"
-          },
-          "firstMissingAt": "2026-11-18T21:58:07.100Z",
-          "observations": 1
-        }
-      ],
-      "checkedAt": "2026-11-18T21:58:07.100Z",
-      "lastSuccessfulCheck": "2026-11-18T21:58:07.100Z",
+      "pendingRemovals": [],
+      "checkedAt": "2026-11-19T22:10:39.529Z",
+      "lastSuccessfulCheck": "2026-11-19T22:10:39.529Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-18T21:58:07.100Z",
+      "registrationObservedAt": "2026-11-19T22:10:39.529Z",
       "capacityScope": "12U"
     },
     {
@@ -376,13 +325,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-18T21:58:09.481Z",
-      "lastSuccessfulCheck": "2026-11-18T21:58:09.481Z",
+      "checkedAt": "2026-11-19T22:10:42.652Z",
+      "lastSuccessfulCheck": "2026-11-19T22:10:42.652Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-11-18T21:58:09.481Z"
+      "registrationObservedAt": "2026-11-19T22:10:42.652Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -401,12 +350,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-18T21:58:11.477Z",
-      "lastSuccessfulCheck": "2026-11-18T21:58:11.477Z",
+      "checkedAt": "2026-11-19T22:10:42.964Z",
+      "lastSuccessfulCheck": "2026-11-19T22:10:42.964Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-18T21:58:11.477Z"
+      "registrationObservedAt": "2026-11-19T22:10:42.964Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -425,15 +374,39 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-18T21:58:11.168Z",
-      "lastSuccessfulCheck": "2026-11-18T21:58:11.168Z",
+      "checkedAt": "2026-11-19T22:10:43.194Z",
+      "lastSuccessfulCheck": "2026-11-19T22:10:43.194Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-18T21:58:11.168Z"
+      "registrationObservedAt": "2026-11-19T22:10:43.194Z"
     }
   ],
   "changes": [
+    {
+      "id": "2026-11-19t22-10-39-529z-ast-turkey-bash-2026-salinas-team-removed-nevada-national-2014-glensor",
+      "tournamentId": "ast-turkey-bash-2026-salinas",
+      "occurredAt": "2026-11-19T22:10:39.529Z",
+      "type": "team_removed",
+      "teamName": "Nevada National 2014-Glensor",
+      "detail": "Nevada National 2014-Glensor is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-19t22-10-39-107z-ast-turkey-bash-2026-sacramento-team-removed-nevada-national-2014-glensor",
+      "tournamentId": "ast-turkey-bash-2026-sacramento",
+      "occurredAt": "2026-11-19T22:10:39.107Z",
+      "type": "team_removed",
+      "teamName": "Nevada National 2014-Glensor",
+      "detail": "Nevada National 2014-Glensor is no longer listed in the 12U field."
+    },
+    {
+      "id": "2026-11-19t22-10-50-833z-first-to-third-harvest-cup-2026-team-removed-athletics-mercado-cole-2032",
+      "tournamentId": "first-to-third-harvest-cup-2026",
+      "occurredAt": "2026-11-19T22:10:50.833Z",
+      "type": "team_removed",
+      "teamName": "Athletics Mercado Cole 2032",
+      "detail": "Athletics Mercado Cole 2032 is no longer listed in the 12U field."
+    },
     {
       "id": "2026-11-18t21-58-07-100z-ast-turkey-bash-2026-salinas-team-removed-aces-academy",
       "tournamentId": "ast-turkey-bash-2026-salinas",
@@ -8329,28 +8302,6 @@
       "occurredAt": "2026-08-21T13:18:49.300Z",
       "type": "registration_status_changed",
       "detail": "Registration changed from not published to unknown."
-    },
-    {
-      "id": "2026-08-21t13-18-50-540z-legacy-stay-humble-fall-pcfl-2026-folsom-confirmed-changed-corona-angels---alvarado",
-      "tournamentId": "legacy-stay-humble-fall-pcfl-2026-folsom",
-      "occurredAt": "2026-08-21T13:18:50.540Z",
-      "type": "confirmed_changed",
-      "teamName": "Corona Angels - Alvarado",
-      "detail": "Corona Angels - Alvarado confirmation changed to yes."
-    },
-    {
-      "id": "2026-08-21t06-44-25-550z-pgf-stockton-qualifier-2027-04-registration-status-changed-event",
-      "tournamentId": "pgf-stockton-qualifier-2027-04",
-      "occurredAt": "2026-08-21T06:44:25.550Z",
-      "type": "registration_status_changed",
-      "detail": "Registration changed from open to unknown."
-    },
-    {
-      "id": "2026-08-21t06-44-23-112z-pgf-stockton-qualifier-2027-02-registration-status-changed-event",
-      "tournamentId": "pgf-stockton-qualifier-2027-02",
-      "occurredAt": "2026-08-21T06:44:23.112Z",
-      "type": "registration_status_changed",
-      "detail": "Registration changed from open to unknown."
     }
   ]
 }
