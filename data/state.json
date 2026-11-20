@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T22:10:50.873Z",
+  "generatedAt": "2026-11-20T21:50:06.572Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -90,15 +90,15 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-19T22:10:50.833Z",
-      "lastSuccessfulCheck": "2026-11-19T22:10:50.833Z",
+      "checkedAt": "2026-11-20T21:50:06.531Z",
+      "lastSuccessfulCheck": "2026-11-20T21:50:06.531Z",
       "officialName": "Harvest Cup - Crush for Credit",
       "weekendId": "2026-11-21",
       "role": "primary",
       "registrationState": "closed",
       "registrationStatus": "Registration closed",
       "registrationDeadline": "Nov 16, 2026",
-      "registrationObservedAt": "2026-11-19T22:10:50.833Z"
+      "registrationObservedAt": "2026-11-20T21:50:06.531Z"
     },
     {
       "id": "ast-turkey-bash-2026-sacramento",
@@ -190,12 +190,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-19T22:10:39.107Z",
-      "lastSuccessfulCheck": "2026-11-19T22:10:39.107Z",
+      "checkedAt": "2026-11-20T21:49:53.995Z",
+      "lastSuccessfulCheck": "2026-11-20T21:49:53.995Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-19T22:10:39.107Z",
+      "registrationObservedAt": "2026-11-20T21:49:53.995Z",
       "capacityScope": "12U"
     },
     {
@@ -288,12 +288,12 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-19T22:10:39.529Z",
-      "lastSuccessfulCheck": "2026-11-19T22:10:39.529Z",
+      "checkedAt": "2026-11-20T21:49:53.917Z",
+      "lastSuccessfulCheck": "2026-11-20T21:49:53.917Z",
       "officialName": "Turkey Bash Toys 4 Tots",
       "registrationStatus": "12U availability not published",
       "registrationState": "unknown",
-      "registrationObservedAt": "2026-11-19T22:10:39.529Z",
+      "registrationObservedAt": "2026-11-20T21:49:53.917Z",
       "capacityScope": "12U"
     },
     {
@@ -325,13 +325,13 @@
         }
       ],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-19T22:10:42.652Z",
-      "lastSuccessfulCheck": "2026-11-19T22:10:42.652Z",
+      "checkedAt": "2026-11-20T21:49:57.211Z",
+      "lastSuccessfulCheck": "2026-11-20T21:49:57.211Z",
       "officialName": "Bay Area Bash for Cash",
       "registrationState": "unknown",
       "registrationStatus": "Registration page available",
       "registrationUrl": "https://form.fillout.com/t/jgLZxKhQtAus",
-      "registrationObservedAt": "2026-11-19T22:10:42.652Z"
+      "registrationObservedAt": "2026-11-20T21:49:57.211Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-02",
@@ -350,12 +350,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-19T22:10:42.964Z",
-      "lastSuccessfulCheck": "2026-11-19T22:10:42.964Z",
+      "checkedAt": "2026-11-20T21:49:57.712Z",
+      "lastSuccessfulCheck": "2026-11-20T21:49:57.712Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-19T22:10:42.964Z"
+      "registrationObservedAt": "2026-11-20T21:49:57.712Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -374,12 +374,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-19T22:10:43.194Z",
-      "lastSuccessfulCheck": "2026-11-19T22:10:43.194Z",
+      "checkedAt": "2026-11-20T21:49:57.775Z",
+      "lastSuccessfulCheck": "2026-11-20T21:49:57.775Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-19T22:10:43.194Z"
+      "registrationObservedAt": "2026-11-20T21:49:57.775Z"
     }
   ],
   "changes": [
