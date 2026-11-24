@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T01:41:09.057Z",
+  "generatedAt": "2026-11-24T23:30:11.757Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -19,12 +19,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-24T01:41:09.024Z",
-      "lastSuccessfulCheck": "2026-11-24T01:41:09.024Z",
+      "checkedAt": "2026-11-24T23:30:11.722Z",
+      "lastSuccessfulCheck": "2026-11-24T23:30:11.722Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-24T01:41:09.024Z"
+      "registrationObservedAt": "2026-11-24T23:30:11.722Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -43,22 +43,15 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-24T01:41:09.023Z",
-      "lastSuccessfulCheck": "2026-11-24T01:41:09.023Z",
+      "checkedAt": "2026-11-24T23:30:11.671Z",
+      "lastSuccessfulCheck": "2026-11-24T23:30:11.671Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-24T01:41:09.023Z"
+      "registrationObservedAt": "2026-11-24T23:30:11.671Z"
     }
   ],
   "changes": [
-    {
-      "id": "2026-11-22t20-46-31-683z-first-to-third-harvest-cup-2026-source-unhealthy-event",
-      "tournamentId": "first-to-third-harvest-cup-2026",
-      "occurredAt": "2026-11-22T20:46:31.683Z",
-      "type": "source_unhealthy",
-      "detail": "The official source could not be read."
-    },
     {
       "id": "2026-11-19t22-10-39-529z-ast-turkey-bash-2026-salinas-team-removed-nevada-national-2014-glensor",
       "tournamentId": "ast-turkey-bash-2026-salinas",
@@ -7837,13 +7830,6 @@
       "type": "paid_changed",
       "teamName": "Lost Coast Chaos",
       "detail": "Lost Coast Chaos payment status changed to yes."
-    },
-    {
-      "id": "2026-08-22t00-55-11-876z-wcp-bay-area-bash-2026-source-unhealthy-event",
-      "tournamentId": "wcp-bay-area-bash-2026",
-      "occurredAt": "2026-08-22T00:55:11.876Z",
-      "type": "source_unhealthy",
-      "detail": "The official source could not be read."
     },
     {
       "id": "2026-08-22t00-53-17-973z-legacy-keep-humble-pcfl-qualifier-2026-folsom-spots-remaining-changed-event",
