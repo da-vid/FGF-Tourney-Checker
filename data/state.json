@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T23:30:11.757Z",
+  "generatedAt": "2026-11-25T23:06:42.554Z",
   "baselineEstablished": true,
   "tournaments": [
     {
@@ -19,12 +19,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-24T23:30:11.722Z",
-      "lastSuccessfulCheck": "2026-11-24T23:30:11.722Z",
+      "checkedAt": "2026-11-25T23:06:42.472Z",
+      "lastSuccessfulCheck": "2026-11-25T23:06:42.472Z",
       "officialName": "STOCKTON 12U 02/20/2027 02/21/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-24T23:30:11.722Z"
+      "registrationObservedAt": "2026-11-25T23:06:42.472Z"
     },
     {
       "id": "pgf-stockton-qualifier-2027-04",
@@ -43,12 +43,12 @@
       "outcome": "success",
       "teams": [],
       "pendingRemovals": [],
-      "checkedAt": "2026-11-24T23:30:11.671Z",
-      "lastSuccessfulCheck": "2026-11-24T23:30:11.671Z",
+      "checkedAt": "2026-11-25T23:06:42.526Z",
+      "lastSuccessfulCheck": "2026-11-25T23:06:42.526Z",
       "officialName": "STOCKTON 12U 04/24/2027 04/25/2027 12U CA Western",
       "registrationState": "unknown",
       "registrationStatus": "Published by PGF; registration not yet open",
-      "registrationObservedAt": "2026-11-24T23:30:11.671Z"
+      "registrationObservedAt": "2026-11-25T23:06:42.526Z"
     }
   ],
   "changes": [
